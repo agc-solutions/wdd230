@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Michroma&family=Montserrat:wght@100;200;300;500;600&family=Poiret+One&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #001d3d;    
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    text-align: center;
+       
+}
+.learning-card, .info-card {
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-top-width: 0;
+    border-right-width: 1px;
+    border-left-width: 1px;
+
+}
+
+nav a {
+    list-style-type:decimal-leading-zero ;
+    text-align: center;
+    color: #ffff00;
+    text-decoration: none;
+    padding: 35px;
+    
+}    
+li a {    
+    list-style-type:decimal-leading-zero;
+    color: #ffff00;
+    text-align:right;
+    text-decoration: none;
+}
+
+body {
+    background-color: #396e94; 
+    font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding:20px;
+    color: #ffff00;
+    text-shadow: #000 2px 3px 2px;    
+}
+
+.info-card {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #ffff00;
+    padding: 35px;
+}
+
+footer, h1, h3 {
+    background-color: #001d3d;
+    text-align: center;
+    color: #ffff00;
+    text-decoration: none;
+    padding: 25px 50px;
+    margin-top: 20px;
+}    
+
+
+  
+  
