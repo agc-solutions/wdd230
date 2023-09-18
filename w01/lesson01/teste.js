@@ -3,3 +3,8 @@ targetEvent = "Christmass";
 daycount = 54;
 const daysUntil = "There are " + daycount + " days until " + targetEvent + "!";
 console.log(daysUntil);
+console.log("There are " + daycount + " days until " + targetEvent + "!");
+console.log('There are $daycount days until ${tatgetEvent}!');
+// consele.log(There are $'{daycount}' days until $'{targetEvent}'!);
+const daysUntil2 = 'There are ${daycount} days until ${tatgetEvent}!';
+console.log(daysUntil2);
