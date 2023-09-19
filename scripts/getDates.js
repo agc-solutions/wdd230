@@ -1,12 +1,10 @@
-// Get the current year
-var currentYear = new Date().getFullYear();
+// set current year in footer
+const currentDate = new Date();
+document.querySelector('#year').textContent = currentDate.getFullYear();
 
-// Set the copyright year dinamically
-document.querySelector("footer p:1").textContent = "&copy" + currentYear + "Your Company";
 
 //Get the last modified date
 var lastModifiedDate =  new Date(document.lastModified);
 
 // Set the last modified date dynamically
-document.querySelector("footer p: last-child").textContent = "Last Modified: " + lastModifiedDate;
-
+document.querySelector('#lastModified').textContent = lastModifiedDate;

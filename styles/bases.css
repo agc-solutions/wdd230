@@ -37,6 +37,16 @@ li a {
     text-decoration: none;
 }
 
+ul {
+    /* Removes bullets and semantics*/
+    list-style-type: none;
+}
+
+li::before{
+    /* returns olnly the semantics */
+    content: "\200B";
+}
+
 body {
     background-color: #17568a; 
     font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
