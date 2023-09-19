@@ -12,14 +12,14 @@ nav {
     text-align: center;
        
 }
-.learning-card, .info-card {
+.learning-card, .info-card, nav {
     border-style: solid;
     border-color: #001d3d;
     border-bottom-width: 1px;
     border-top-width: 0;
     border-right-width: 1px;
     border-left-width: 1px;
-
+    
 }
 
 nav a {
@@ -55,6 +55,8 @@ h2 {
     text-align: center;
     color: #ffff00;
     padding: 35px;
+    /* padding: 35px 5px 0.5px; */
+    margin-bottom: -35px;
 }
 
 footer, h1, h3 {
