@@ -2,7 +2,6 @@
 const currentDate = new Date();
 document.querySelector('#year').textContent = currentDate.getFullYear();
 
-
 //Get the last modified date
 var lastModifiedDate =  new Date(document.lastModified);
 
