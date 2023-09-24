@@ -17,10 +17,10 @@ header {
     margin-top: 20px;
 }
 
-section {
+/* section {
     display:grid;
     align-items: center;   
-}
+} */
 
 .info-card {    
     border-color: #001d3d;    
