@@ -63,7 +63,7 @@ footer {
 
 /* Phone or baseline views *************************/
 main {
-    max-width: 767px;
+    /* max-width: 767px; */
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
