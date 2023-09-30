@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Michroma&family=Montserrat:wght@100;200;300;500;600&family=Poiret+One&family=Poppins:wght@200;300;400;500;600&display=swap');
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 header {
     display: flex;
     justify-content: center;
@@ -34,10 +34,12 @@ header {
 	content: "❎";
 }
 
-/* nav {
-    max-width: 700px;
-    margin: 1rem auto;       
-}*/
+nav {
+    margin: 0;
+    margin-top: -1.35rem;
+    padding: 0;
+    box-sizing: border-box;        
+}
 .navigation {
     display: flex;
     flex-direction: column;
@@ -81,7 +83,7 @@ header {
     max-width: 580px;
     height: 100vh;
 } 
-.learning-card, .info-card, nav {
+.learning-card, .info-card {
     border-style: solid;
     border-color: #001d3d;
     border-bottom-width: 1px;
