@@ -48,7 +48,6 @@ nav a:hover {
     color: #D9C2A3;
 }
 
-
 body {
     background-color: #396e94; 
     font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
@@ -57,7 +56,6 @@ body {
     padding: 0;
     text-shadow: #000 2px 3px 2px;
 }
-
 
 .call {
     background-color: darkred;
@@ -86,17 +84,12 @@ footer {
     justify-content: space-around;
     align-items: center;
 }    
-.home-title {
+.cham-city {
     color: #ffff00;
     font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
     font-size: 1.2em;
     margin-top: 10rem;
 }
-
-/* main section img {
-    box-sizing: border-box;
-    text-align: center;
-} */
 
 /* small view navigation */
 #menu {
@@ -247,15 +240,40 @@ nav {
 
 .co1, .co2, .co3 {
     display: flex;
+    flex-direction: column;
     background-color: #000;
     opacity: 0.5;
     border-radius: 25px;
     padding: 20px;
     color: #ffff;
     margin-top: 50px;
+    width: 40%;
+    height: 30vh;
+    justify-content: center;
 }
 .co2 {
     margin-inline: 30px;
+}
+.digcert, .network, .spee {
+    padding: 10px;
+    /* margin-top: 10px; */
+    margin-bottom: 1px;
+    border-radius: 25px;
+    /* margin-right: 100px; */
+    /* margin-left: -160%; */
+    text-align: justify;
+    
+}
+/* .serv-box :last-child {
+    font-size: 10px;
+    margin-top: 20px;
+} */
+
+.dg, .nt, .sp {
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: justify;
+    padding: 15px;
 }
 
 
@@ -360,7 +378,7 @@ nav {
         color: #ffff99;
     } */
 
-    .home-title {
+    .cham-city {
         font-size: 2.5rem;
         color: #ffff99;
         margin: 1rem;
