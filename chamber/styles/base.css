@@ -255,7 +255,7 @@ nav {
     margin-top: 50px;
     width: 40%;
     height: 30vh;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .co2 {
     margin-inline: 30px;
@@ -265,9 +265,10 @@ nav {
     /* margin-top: 10px; */
     margin-bottom: 1px;
     border-radius: 25px;
+    font-size: 10px;
     /* margin-right: 100px; */
     /* margin-left: -160%; */
-    text-align: justify;
+    /* text-align: justify; */
     
 }
 /* .serv-box :last-child {
@@ -276,9 +277,9 @@ nav {
 } */
 
 .dg, .nt, .sp {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 20px;
-    text-align: justify;
+    /* text-align: justify; */
     padding: 15px;
 }
 
@@ -418,5 +419,14 @@ nav {
 
     .location, .date, .temp, .prev-hum, .prev-text {
         font-size: 20px;
+    }
+    .dg, .nt, .sp {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .digcert, .network, .spee {
+        padding: 15px;
+        
     }
 }
