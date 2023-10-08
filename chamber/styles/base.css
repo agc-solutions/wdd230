@@ -291,8 +291,7 @@ nav {
 } */
 
 .dg, .nt, .sp, .msg p {
-    font-size: 12px;
-    color: #000;
+    font-size: 12px;    
     margin-top: 20px;
     font-weight: bold;
     /* text-align: justify; */
