@@ -83,7 +83,13 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}    
+}  
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+  }
 /* .cham-city {
     color: #ffff00;
     font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
@@ -118,6 +124,9 @@ h1 {
 
 h2 {
     font-size: 1rem;
+}
+h3 {
+    font-size: 0.7rem;
 }
 
 #menu::before {
@@ -186,7 +195,7 @@ nav {
     padding: 20px;
     margin-top: 150px;
     width: 40%;
-    height: 30vh; 
+    height: 15%; 
     /* justify-content: space-around; */
     /* align-items: center;    */
 }
@@ -219,6 +228,7 @@ nav {
     font-size: 10px;
     color: #eee;
 }
+
 .temp {
     font-size: 10px;
     color: #ffff;
@@ -227,6 +237,12 @@ nav {
     font-size: 10px;
     color: #ffff;
     margin-top: 20px;
+}
+
+.hum-temp {
+    display: flex;
+    align-items: center;    
+    font-size: 20px;
 }
 
 .serv-box {
@@ -254,7 +270,7 @@ nav {
     color: #ffff;
     margin-top: 50px;
     width: 40%;
-    height: 30vh;
+    height: 30%;
     /* justify-content: center; */
 }
 .co2 {
@@ -263,9 +279,9 @@ nav {
 .digcert, .network, .spee {
     padding: 10px;
     margin-bottom: 1px;
-    border-radius: 25px;
+    border-radius: 15px;
     font-size: 10px;
-    background-color: #bbb;
+    background-color: #ffff00;
     text-shadow: none;
     float: right;  
 }
@@ -274,29 +290,37 @@ nav {
     margin-top: 20px;
 } */
 
-.dg, .nt, .sp {
+.dg, .nt, .sp, .msg p {
     font-size: 12px;
+    color: #000;
     margin-top: 20px;
+    font-weight: bold;
     /* text-align: justify; */
     padding: 15px;
+
 }
 
 .events {
+    margin-top: 90px;
+}
+
+.event {
     margin-top: 30px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
 }
-.msg p {
+/* .msg p {
     font-family: 'Montserrat', 'Rock Salt', sans-serif;
     font-size: 18px;
     color: wheat;
     padding: 15px;
     overflow: auto;
-}
+} */
 
 .msg {
     line-height: 1.5em;
-    box-shadow: 5px 5px 10px #6f7364;    
+    box-shadow: 5px 5px 10px black;    
     align-items: center;
     justify-content: center;
     display: flex;
@@ -308,24 +332,31 @@ nav {
     color: #ffff;
     margin-top: 50px;
     width: 40%;
-    height: 40vh;
+    height: 40%;
+    margin-left: 20px;
+    margin-top: 160px;
+    text-shadow: none;
 }
 
 .join {
-    background-color: #E3D0BA;
+    background-color: #ffff00;
     color: black;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 15px;
+    font-size: 11px;
+    padding: 10px 15px;
+    margin-top: 10%;
+    border-radius: 10px;
     justify-content: center;
+    z-index: +1;
     
 }
 
 .nrf2024 {
     border-radius: 15px;
     width: 40%;
+    height: 40%;
+    margin-right: 20px;
 }
 
 
@@ -439,6 +470,10 @@ nav {
         font-size: 2rem;
         text-align: center;        
     }
+
+    h3 {
+        font-size: 1.4rem;
+    }
     body {
         font-size: 22px;
     }
@@ -464,7 +499,7 @@ nav {
     .location, .date, .temp, .prev-hum, .prev-text {
         font-size: 20px;
     }
-    .dg, .nt, .sp {
+    .dg, .nt, .sp, .msg p {
         font-size: 18px;
         padding: 20px;
     }
@@ -476,24 +511,24 @@ nav {
 
     
     
-    .events {
+    /* .events {
         margin-top: 30px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
-    .event {
+    /* .event {
         display: flex;
-    }
+    } */
 
-    .msg {
+    /* .msg {
         margin-top: -600px;
         margin-left:1000px;
         text-shadow: none;
     }
-    
+     */
 }
 
 
