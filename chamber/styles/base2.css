@@ -459,76 +459,70 @@ nav {
         color: #ffff99;
     } 
 
-    /* .cham-city {
+    .cham-city {
         font-size: 2.5rem;
         color: #ffff99;
         margin: 1rem;
-    } */
+    } 
 
-    /* h2 {
+    h2 {
         font-size: 2rem;
         text-align: center;        
-    } */
+    }
 
-    /* h3 {
+    h3 {
         font-size: 1.4rem;
-    } */
-    /* body {
+    }
+    body {
         font-size: 22px;
-    } */
-    /* #menu {
+    }
+    #menu {
         display: none; /*hide hamburger button*/
-    /* } 
+    }
     .navigation{
         flex-direction: row;
-    } */
-    /* .navigation li {
+    }
+    .navigation li {
         display: block;
         flex: 1 1 100%;
-    } */
+    }
 
-    /* .stuff {
+    .stuff {
         margin: 1rem auto;
-    } */
+    }
 
-    /* .box {
+    .box {
         margin-top: 300px;
-    } */
+    }
 
-    /* .location, .date, .temp, .prev-hum, .prev-text {
+    .location, .date, .temp, .prev-hum, .prev-text {
         font-size: 20px;
-    } */
-    /* .dg, .nt, .sp, .msg p {
+    }
+    .dg, .nt, .sp, .msg p {
         font-size: 18px;
         padding: 20px;
-    } */
+    }
 
-    /* .digcert, .network, .spee {
-        padding: 15px;
-        
-    }  */
-
-    
-    
-    /* .events {
+    .digcert, .network, .spee {
+        padding: 15px;        
+    }
+   
+    .events {
         margin-top: 30px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-    } */
+    }
 
-    /* .event {
+    .event {
         display: flex;
-    } */
+    }
 
-    /* .msg {
+    .msg {
         margin-top: -600px;
         margin-left:1000px;
         text-shadow: none;
     }
-     */
+     
 }
-
-
-
