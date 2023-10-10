@@ -495,9 +495,9 @@ nav {
         margin-top: 300px;
     }
 
-    .location, .date, .temp, .prev-hum, .prev-text {
+    /* .location, .date, .temp, .prev-hum, .prev-text {
         font-size: 20px;
-    }
+    } */
     /* .dg, .nt, .sp, .msg p {
         font-size: 18px;
         padding: 20px;
