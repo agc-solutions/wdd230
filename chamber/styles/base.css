@@ -272,3 +272,56 @@ nav {
     text-shadow: none;
     float: right;  
 }
+
+.dg, .nt, .sp, .msg p {
+    font-size: 12px;    
+    margin-top: 20px;
+    font-weight: bold;
+    /* text-align: justify; */
+    padding: 15px;
+
+}
+.events {
+    margin-top: 90px;
+}
+
+.event {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.msg {
+    line-height: 1.5em;
+    box-shadow: 5px 5px 10px black;    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    opacity: 0.5;
+    border-radius: 25px;
+    padding: 20px;
+    color: #ffff;
+    margin-top: 50px;
+    width: 40%;
+    height: 40%;
+    margin-left: 20px;
+    margin-top: 160px;
+    text-shadow: none;
+}
+
+.join {
+    background-color: #ffff00;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 10px 15px;
+    margin-top: 10%;
+    border-radius: 10px;
+    justify-content: center;
+    z-index: +1;
+    
+}
