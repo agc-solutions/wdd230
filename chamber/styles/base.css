@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Michroma&family=Montserrat:wght@100;200;300;500;600&family=Poiret+One&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
 /* * {
     margin: 0;
     padding: 0;
@@ -45,6 +47,7 @@ nav a:hover {
     background-color: black;
     color: #D9C2A3;
 }
+
 body {
     background-color: #396e94; 
     font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
@@ -53,6 +56,7 @@ body {
     padding: 0;
     text-shadow: #000 2px 3px 2px;
 }
+
 .call {
     background-color: darkred;
     color: #ffff00;
@@ -81,6 +85,17 @@ footer {
     align-items: center;
 }  
 
+/* hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+  } */
+/* .cham-city {
+    color: #ffff00;
+    font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
+    font-size: 1.2em;
+    margin-top: 10rem;
+} */
 h1 {
     color: #ffff00;
     font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
@@ -169,6 +184,8 @@ nav {
     max-width: 580px;
     height: 100vh;
 } 
+
+
 /* Weather Card */
 
 .box {
@@ -202,6 +219,7 @@ nav {
     color: #eee;
     margin-top: 20px;
 }
+
 .prev-img {
     width: 60px;
     margin-right: 10px;
@@ -210,6 +228,7 @@ nav {
     font-size: 10px;
     color: #eee;
 }
+
 .temp {
     font-size: 10px;
     color: #ffff;
@@ -257,7 +276,6 @@ nav {
 .co2 {
     margin-inline: 30px;
 }
-
 .digcert, .network, .spee {
     padding: 10px;
     margin-bottom: 1px;
@@ -267,6 +285,10 @@ nav {
     text-shadow: none;
     float: right;  
 }
+/* .serv-box :last-child {
+    font-size: 10px;
+    margin-top: 20px;
+} */
 
 .dg, .nt, .sp, .msg p {
     font-size: 12px;    
@@ -276,6 +298,7 @@ nav {
     padding: 15px;
 
 }
+
 .events {
     margin-top: 90px;
 }
@@ -297,7 +320,7 @@ nav {
     opacity: 0.5;
     border-radius: 25px;
     padding: 20px;
-    color: #ffff;
+    color: #ffff00;
     margin-top: 50px;
     width: 40%;
     height: 40%;
@@ -327,30 +350,97 @@ nav {
     margin-right: 20px;
 }
 
-.location {
+
+    
+    /* box-shadow: 0 2px 30px rgba(black, 0.2); */
+   
+    /* position: relative; */
+    /* overflow: hidden; */
+    /* transform: translate3d(0, 0, 0); */
+    /* min-width: 200px; */
+    /* min-height: 350px; */
+  
+  
+  /* .wave {
+    opacity: 0.3;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    background: white;
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 3000ms infinite linear;
+    z-index: 1;
+  }
+  
+  .wave.-three {
+    animation: drift 5000ms infinite linear;
+    z-index: 2 !important;
+    opacity: 0.2;
+  }
+  
+  .wave.-two {
+    animation: drift 7000ms infinite linear;
+    opacity: 0.1;
+    z-index: 3 !important;
+  }
+  
+  .box:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  @keyframes drift {
+    from {
+      transform: rotate(0deg);
+    }
+    from {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45%;
+    z-index: 4;
+  }*/
+  
+  .location {
     text-align: center;
     font-weight: 800;
-}
-
-.date {
+  }
+  
+  .date {
     text-align: center;
     margin-top: 5%;
     color: lighten(grey, 10%);
     font-size: 70%;
-}
-
-.temp {
+  }
+  
+  .temp {
     margin-top: 10%;
     text-align: center;
-}
-
-.weathercon {
+  }
+  
+  .weathercon {
     height: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3em;
-}
+  }
 
 
 @media screen and (min-width: 640px) {
@@ -359,24 +449,24 @@ nav {
         margin: 1rem;
         color: #ffff99;
     } 
+
     h2 {
         font-size: 2rem;
         text-align: center;        
-    } 
+    }
 
     h3 {
         font-size: 1.4rem;
     }
     body {
         font-size: 22px;
-    } 
+    }
     #menu {
         display: none; /*hide hamburger button*/
     } 
-    .navigation{
+    .navigation {
         flex-direction: row;
-    } 
-
+    }
     .navigation li {
         display: block;
         flex: 1 1 100%;
@@ -385,21 +475,23 @@ nav {
     .stuff {
         margin: 1rem auto;
     }
+
     .box {
         margin-top: 300px;
     }
+
     .location, .date, .temp, .prev-hum, .prev-text {
         font-size: 20px;
-    } 
+    }
     .dg, .nt, .sp, .msg p {
         font-size: 18px;
         padding: 20px;
     }
 
     .digcert, .network, .spee {
-        padding: 15px;
-        
-    }
+        padding: 15px;        
+    }   
+    
     .events {
         margin-top: 30px;
         display: flex;
@@ -410,5 +502,8 @@ nav {
 
     .event {
         display: flex;
-    } 
+    }
 }
+
+
+
