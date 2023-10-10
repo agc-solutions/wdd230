@@ -452,7 +452,7 @@ nav {
    */
 
 
-@media screen and (min-width: 640px) {
+/* @media screen and (min-width: 640px) {
     h1 {
         font-size: 2.5rem;
         margin: 1rem;
@@ -470,11 +470,11 @@ nav {
     }
     body {
         font-size: 22px;
-    }
+    } */
     #menu {
         display: none; /*hide hamburger button*/
     }
-    .navigation{
+    /* .navigation{
         flex-direction: row;
     }
     .navigation li {
@@ -488,7 +488,7 @@ nav {
 
     .box {
         margin-top: 300px;
-    }
+    } */
 
     /* .location, .date, .temp, .prev-hum, .prev-text {
         font-size: 20px;
