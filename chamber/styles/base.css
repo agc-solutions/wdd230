@@ -476,9 +476,9 @@ nav {
     /* body {
         font-size: 22px;
     } */
-    #menu {
+    /* #menu {
         display: none; /*hide hamburger button*/
-    }
+    } */
     .navigation{
         flex-direction: row;
     }
