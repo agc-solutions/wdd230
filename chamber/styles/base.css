@@ -498,10 +498,10 @@ nav {
     .location, .date, .temp, .prev-hum, .prev-text {
         font-size: 20px;
     }
-    .dg, .nt, .sp, .msg p {
+    /* .dg, .nt, .sp, .msg p {
         font-size: 18px;
         padding: 20px;
-    }
+    } */
 
     /* .digcert, .network, .spee {
         padding: 15px;
