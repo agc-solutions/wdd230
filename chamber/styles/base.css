@@ -83,3 +83,165 @@ footer {
     justify-content: space-around;
     align-items: center;
 }  
+
+h1 {
+    color: #ffff00;
+    font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
+    font-size: 1.2em;
+    margin-top: 10rem;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	/* padding: .25rem .75rem;
+	background-color: #eee; */
+    padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+    
+}
+
+h1 {
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+h3 {
+    font-size: 0.7rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+nav {
+    margin: 0;
+    margin-top: -1.35rem;
+    padding: 0;
+    box-sizing: border-box;        
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    /* background-color: black; */
+}
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #ffff00;
+}
+.navigation li a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+.stuff {
+    margin: .5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+} 
+/* Weather Card */
+
+.box {
+    background-color: #000;
+    opacity: 0.5;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 150px;
+    width: 40%;
+    height: 15%; 
+    /* justify-content: space-around; */
+    /* align-items: center;    */
+}
+
+.location {
+    color: #ffff;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.date {
+    color: #ffff;
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.minor-box {
+    display: flex;
+    align-items: center;
+    color: #eee;
+    margin-top: 20px;
+}
+
+.prev-img {
+    width: 60px;
+    margin-right: 10px;
+}
+.prev-text {
+    font-size: 10px;
+    color: #eee;
+}
+
+.temp {
+    font-size: 10px;
+    color: #ffff;
+}
+.prev-hum {
+    font-size: 10px;
+    color: #ffff;
+    margin-top: 20px;
+}
+
+.hum-temp {
+    display: flex;
+    align-items: center;    
+    font-size: 20px;
+}
+
+.serv-box {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.serv {
+    margin-top: 20px;
+    /* display: flex; */
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    color: #ffff00;
+    /* background-color: #000; */
+}
