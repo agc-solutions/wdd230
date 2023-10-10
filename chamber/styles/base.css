@@ -385,5 +385,12 @@ nav {
         font-size: 22px;
     } 
 
+    #menu {
+        display: none; /*hide hamburger button*/
+    } 
+    .navigation{
+        flex-direction: row;
+    } 
+
 
   }
