@@ -309,14 +309,6 @@ nav {
     flex-direction: row;
     justify-content: center;
 }
-/* .msg p {
-    font-family: 'Montserrat', 'Rock Salt', sans-serif;
-    font-size: 18px;
-    color: wheat;
-    padding: 15px;
-    overflow: auto;
-} */
-
 .msg {
     line-height: 1.5em;
     box-shadow: 5px 5px 10px black;    
@@ -328,7 +320,7 @@ nav {
     opacity: 0.5;
     border-radius: 25px;
     padding: 20px;
-    color: #ffff;
+    color: #ffff00;
     margin-top: 50px;
     width: 40%;
     height: 40%;
@@ -510,12 +502,6 @@ nav {
 
     .event {
         display: flex;
-    }
-
-    .msg {
-        margin-top: -600px;
-        margin-left:1000px;
-        text-shadow: none;
     }
 }
 
