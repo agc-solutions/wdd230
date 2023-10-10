@@ -85,11 +85,11 @@ footer {
     align-items: center;
 }  
 
-hr {
+/* hr {
     height: 3px;
     margin: 35px 0;
     background: var(--accent1-color);
-  }
+  } */
 /* .cham-city {
     color: #ffff00;
     font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
