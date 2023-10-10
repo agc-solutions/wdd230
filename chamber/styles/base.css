@@ -482,10 +482,10 @@ nav {
     .navigation{
         flex-direction: row;
     } */
-    .navigation li {
+    /* .navigation li {
         display: block;
         flex: 1 1 100%;
-    }
+    } */
 
     .stuff {
         margin: 1rem auto;
