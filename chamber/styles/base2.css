@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Michroma&family=Montserrat:wght@100;200;300;500;600&family=Poiret+One&family=Poppins:wght@200;300;400;500;600&display=swap');
-
-
 /* * {
     margin: 0;
     padding: 0;
@@ -47,7 +45,6 @@ nav a:hover {
     background-color: black;
     color: #D9C2A3;
 }
-
 body {
     background-color: #396e94; 
     font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
@@ -56,7 +53,6 @@ body {
     padding: 0;
     text-shadow: #000 2px 3px 2px;
 }
-
 .call {
     background-color: darkred;
     color: #ffff00;
@@ -184,8 +180,6 @@ nav {
     max-width: 580px;
     height: 100vh;
 } 
-
-
 /* Weather Card */
 
 .box {
@@ -205,14 +199,12 @@ nav {
     font-size: 10px;
     font-weight: 300;
 }
-
 .date {
     color: #ffff;
     font-size: 10px;
     font-weight: 300;
     margin-top: 15px;
 }
-
 .minor-box {
     display: flex;
     align-items: center;
@@ -337,7 +329,7 @@ nav {
     text-shadow: none;
 }
 
-/* .join {
+.join {
     background-color: #ffff00;
     color: black;
     font-weight: bold;
@@ -349,14 +341,14 @@ nav {
     justify-content: center;
     z-index: +1;
     
-} */
+}
 
-/* .nrf2024 {
+.nrf2024 {
     border-radius: 15px;
     width: 40%;
     height: 40%;
     margin-right: 20px;
-} */
+}
 
 
     
@@ -415,41 +407,41 @@ nav {
     from {
       transform: rotate(360deg);
     }
-  }
+  }*/
   
-  .info {
+.info {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 45%;
     z-index: 4;
-  }
+}
   
-  .location {
+.location {
     text-align: center;
     font-weight: 800;
-  }
+}
   
-  .date {
+.date {
     text-align: center;
     margin-top: 5%;
     color: lighten(grey, 10%);
     font-size: 70%;
-  }
+}
   
-  .temp {
+.temp {
     margin-top: 10%;
     text-align: center;
-  }
+}
   
-  .weathercon {
+.weathercon {
     height: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3em;
-  }
-   */
+}
+
 
 
 @media screen and (min-width: 640px) {
@@ -459,11 +451,11 @@ nav {
         color: #ffff99;
     } 
 
-    .cham-city {
+    /* .cham-city {
         font-size: 2.5rem;
         color: #ffff99;
         margin: 1rem;
-    } 
+    }  */
 
     h2 {
         font-size: 2rem;
