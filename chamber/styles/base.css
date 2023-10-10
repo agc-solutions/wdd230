@@ -1,1 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Michroma&family=Montserrat:wght@100;200;300;500;600&family=Poiret+One&family=Poppins:wght@200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:rgba(20,30,13, .3);
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    /* justify-content: space-around; */
+    /* justify-content:flex-end; */
+} 
+
+#hero-img {
+    display:block;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 100%;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+#hero-msg {
+    grid-column: 4/28;
+    grid-row: 2/3;
+    margin-top: -400px;
+}
+
+nav a, .button-box {
+    text-align: center;
+    margin-top: 20px;
+}
+nav a {    
+    color: #ffff00;
+    text-decoration: none;
+    padding: 35px;
+}   
+
+nav a:hover {
+    background-color: black;
+    color: #D9C2A3;
+}
+body {
+    background-color: #396e94; 
+    font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    text-shadow: #000 2px 3px 2px;
+}
+.call {
+    background-color: darkred;
+    color: #ffff00;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    /* margin-top: 50px; */
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.call:hover {
+    background-color: #ffff00;
+    color: darkred;
+} 
+
+footer {
+    background-color: #001d3d;
+    text-align: center;
+    color: #ffff00;
+    text-decoration: none;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
