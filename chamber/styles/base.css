@@ -459,12 +459,7 @@ nav {
         color: #ffff99;
     }
 
-    /* .cham-city {
-        font-size: 2.5rem;
-        color: #ffff99;
-        margin: 1rem;
-    } */
-
+    
     h2 {
         font-size: 2rem;
         text-align: center;        
@@ -495,7 +490,7 @@ nav {
         margin-top: 300px;
     }
 
-    .location, .date, .temp, .prev-hum, .prev-text {
+    /* .location, .date, .temp, .prev-hum, .prev-text {
         font-size: 20px;
     }
     .dg, .nt, .sp, .msg p {
@@ -506,7 +501,7 @@ nav {
     .digcert, .network, .spee {
         padding: 15px;
         
-    } 
+    }  */
 
     
     
