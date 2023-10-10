@@ -452,29 +452,34 @@ nav {
    */
 
 
-/* @media screen and (min-width: 640px) {
+@media screen and (min-width: 640px) {
     h1 {
         font-size: 2.5rem;
         margin: 1rem;
         color: #ffff99;
     }
 
-    
-    h2 {
+    /* .cham-city {
+        font-size: 2.5rem;
+        color: #ffff99;
+        margin: 1rem;
+    } */
+
+    /* h2 {
         font-size: 2rem;
         text-align: center;        
     }
 
     h3 {
         font-size: 1.4rem;
-    }
+    } */
     body {
         font-size: 22px;
-    } */
+    }
     #menu {
         display: none; /*hide hamburger button*/
     }
-    /* .navigation{
+    .navigation{
         flex-direction: row;
     }
     .navigation li {
@@ -488,9 +493,9 @@ nav {
 
     .box {
         margin-top: 300px;
-    } */
+    }
 
-    /* .location, .date, .temp, .prev-hum, .prev-text {
+    .location, .date, .temp, .prev-hum, .prev-text {
         font-size: 20px;
     }
     .dg, .nt, .sp, .msg p {
@@ -501,7 +506,7 @@ nav {
     .digcert, .network, .spee {
         padding: 15px;
         
-    }  */
+    } 
 
     
     
