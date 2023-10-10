@@ -291,6 +291,13 @@ nav {
     flex-direction: row;
     justify-content: center;
 }
+.msg p {
+    font-family: 'Montserrat', 'Rock Salt', sans-serif;
+    font-size: 18px;
+    color: wheat;
+    padding: 15px;
+    overflow: auto;
+}
 
 .msg {
     line-height: 1.5em;
@@ -426,6 +433,11 @@ nav {
     .event {
         display: flex;
     } 
+    .msg {
+        margin-top: -600px;
+        margin-left:1000px;
+        text-shadow: none;
+    }
 
 
   }
