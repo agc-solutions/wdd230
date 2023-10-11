@@ -56,7 +56,7 @@ body {
     padding: 0;
     text-shadow: #000 2px 3px 2px;
 }
-
+/* button sign up */
 .call {
     background-color: darkred;
     color: #ffff00;
@@ -67,7 +67,7 @@ body {
     border-radius: 5px;
     box-shadow: 5px 5px 10px black;
 }
-
+/* button sign up */
 .call:hover {
     background-color: #ffff00;
     color: darkred;
@@ -136,6 +136,7 @@ h3 {
 #menu.open::before {
 	content: "❎";
 }
+/* nav, navigation,  –> menu header */
 nav {
     margin: 0;
     margin-top: -1.35rem;
@@ -189,16 +190,32 @@ nav {
 /* Weather Card */
 
 .box {
-    background-color: #000;
-    opacity: 0.5;
+    /* background-color: #000;
+    opacity: 0.5; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
     border-radius: 25px;
     padding: 20px;
     margin-top: 150px;
     width: 40%;
     height: 15%; 
-    /* justify-content: space-around; */
-    /* align-items: center;    */
 }
+
+.box::after{
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    border-radius: 25px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 
 .location {
     color: #ffff;
@@ -263,8 +280,11 @@ nav {
 .co1, .co2, .co3 {
     display: flex;
     flex-direction: column;
-    background-color: #000;
-    opacity: 0.5;
+    /* background-color: #000;
+    opacity: 0.5; */
+    background-size: cover;
+    position: relative;
+    z-index: 1;
     border-radius: 25px;
     padding: 20px;
     color: #ffff;
@@ -276,6 +296,17 @@ nav {
 .co2 {
     margin-inline: 30px;
 }
+
+.co1::after, .co2::after, .co3::after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    border-radius: 25px;
+    opacity: 0.5;
+    z-index: -1;
+}
 .digcert, .network, .spee {
     padding: 10px;
     margin-bottom: 1px;
@@ -285,18 +316,19 @@ nav {
     text-shadow: none;
     float: right;  
 }
-/* .serv-box :last-child {
-    font-size: 10px;
-    margin-top: 20px;
-} */
+/* hover –> services & events buttons */
 
+.digcert:hover, .network:hover, .spee:hover, .join:hover{
+    background-color: red;
+    color: #ffff00;
+    font-weight: bold;
+}
 .dg, .nt, .sp, .msg p {
     font-size: 12px;    
     margin-top: 20px;
     font-weight: bold;
     /* text-align: justify; */
     padding: 15px;
-
 }
 
 .events {
@@ -316,11 +348,14 @@ nav {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: #000;
-    opacity: 0.5;
+    /* background-color: #000; */
+    /* opacity: 0.5; */
+    background-size: cover;
+    position: relative;
+    z-index: 1;
     border-radius: 25px;
     padding: 20px;
-    color: #ffff00;
+    color: #ffff;
     margin-top: 50px;
     width: 40%;
     height: 40%;
@@ -329,18 +364,28 @@ nav {
     text-shadow: none;
 }
 
+.msg::after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    border-radius: 25px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
 .join {
     background-color: #ffff00;
     color: black;
     font-weight: bold;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 12px;
     padding: 10px 15px;
     margin-top: 10%;
     border-radius: 10px;
     justify-content: center;
-    z-index: +1;
-    
+    z-index: +1;    
 }
 
 .nrf2024 {
