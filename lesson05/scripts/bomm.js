@@ -31,14 +31,19 @@ button.addEventListener('click', () =>{
         const delBtn = document.createElement('button');
 
         listItem.appendChild(listText);
+        //populate the li elements textContent or innerHTML with the input value
         listText.textContent = myChap;
+        //append the li element with the delete button
         listItem.appendChild(delBtn);
         //populate the button textContent with a ❌
         delBtn.textContent = '❌';
         list.appendChild(listItem);
 
+        //  add an event listener to the delete button that removes the li element 
+        //  when clicked
         delBtn.addEventListener('click', () => {
             list.removeChild(listItem);
+            input.focus();
         });
         input.focus();
     }
