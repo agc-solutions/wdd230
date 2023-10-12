@@ -52,16 +52,16 @@ button.addEventListener('click', () =>{
         message.innerHTML = `Please enter a chapter.`;
     }  
 
-    let el = document.getElementById("close-button");
-    console.log(el.ariaLabel); // "Close"
-    el.ariaLabel = "Close dialog";
-    console.log(el.ariaLabel); // "Close dialog"
+    // let el = document.getElementById("close-button");
+    // console.log(el.ariaLabel); // "Close"
+    // el.ariaLabel = "Close dialog";
+    // console.log(el.ariaLabel); // "Close dialog"
 
 
-    function closeHandler() {
-        Enabler.reportManualClose(); 
-        Enabler.close();
-      }
+    // function closeHandler() {
+    //     Enabler.reportManualClose(); 
+    //     Enabler.close();
+    //   }
       
-      document.getElementById('close-btn').addEventListener('click', closeHandler, false);
+    //   document.getElementById('close-btn').addEventListener('click', closeHandler, false);
 })
