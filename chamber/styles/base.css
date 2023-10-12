@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Megrim&family=Michroma&family=Montserrat:wght@100;200;300;500;600&family=Poiret+One&family=Poppins:wght@200;300;400;500;600&display=swap');
 
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
 header {
     background-color:rgba(20,30,13, .3);
@@ -208,6 +208,7 @@ nav {
 .box::after{
     content: '';
     background-color: #000;
+    /* background-color: #ffff00; */
     position: absolute;
     width: 100%;
     height:100%;
@@ -491,6 +492,16 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 3em;
+  }
+
+  #mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    margin-top: 30px;
+    /* justify-content:flex-end; */
   }
 
 
