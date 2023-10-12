@@ -1,4 +1,3 @@
-
 // STEP 2: JavaScript
 // 1. In your js file, declare three const variables that hold references 
 //    to the input, button, and .list elements.
