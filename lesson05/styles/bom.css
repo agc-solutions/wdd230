@@ -56,6 +56,19 @@ button {
     justify-content: space-between;
  }
 
+
+ /* #close-btn {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    top: 0px;
+    left: 278px;
+    cursor: pointer;
+    z-index:220;
+    background-image: '❌';
+    background-repeat: no-repeat;
+  } */
+
  @media only screen and (min-width: 32.5rem){
     h1 {
         font-size: 2rem;

@@ -1,3 +1,4 @@
+
 // STEP 2: JavaScript
 // 1. In your js file, declare three const variables that hold references 
 //    to the input, button, and .list elements.
@@ -29,6 +30,8 @@ button.addEventListener('click', () =>{
         const listText = document.createElement('span');
         // create a delete button
         const delBtn = document.createElement('button');
+        // keeps the "message" box empty while typing a scripture
+        message.innerHTML = ``
 
         listItem.appendChild(listText);
         //populate the li elements textContent or innerHTML with the input value
@@ -46,7 +49,20 @@ button.addEventListener('click', () =>{
             input.focus();
         });
         input.focus();
-    }
-        
-         
+    } else {
+        message.innerHTML = `Please enter a chapter.`;
+    }  
+
+    // let el = document.getElementById("close-button");
+    // console.log(el.ariaLabel); // "Close"
+    // el.ariaLabel = "Close dialog";
+    // console.log(el.ariaLabel); // "Close dialog"
+
+
+    // function closeHandler() {
+    //     Enabler.reportManualClose(); 
+    //     Enabler.close();
+    //   }
+      
+    //   document.getElementById('close-btn').addEventListener('click', closeHandler, false);
 })
