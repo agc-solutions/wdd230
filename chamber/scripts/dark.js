@@ -15,6 +15,7 @@ modeBtn.addEventListener('click', () => {
         body.style.background = '#396e94'
         main.style.color = '#000';
         //teste.style.background = '#000'
+        //teste.style.background = '#000, opacity 0.5'
         modeBtn.textContent = '🕶️';
 
     }
