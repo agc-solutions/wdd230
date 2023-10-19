@@ -23,7 +23,13 @@
 <body>
     
     <header>
-        <img class="Me" src="images/ME.png" alt="My picture">
+        <!-- lesson 06 - Home page Enhancement
+                Convert your profile image and any other images used on this page 
+                to the Google WebP image format.
+ -->
+        <!-- <img class="Me" src="images/ME.png" alt="My picture"> -->
+        <img class="Me" src="images/ME.webp" alt="My picture profile">
+
         <h1>Adamastor G Cavalcante</h1>
     </header>
 
@@ -47,6 +53,18 @@
     </nav>
     
     <main>
+        
+        <div class="hero">
+            <picture>
+                <source srcset="images/sao-paulo-brazil-temple-lds.webp" media="(max-width: 400px)">
+                <source srcset="images/hero-small.webp" media="(max-width: 960px)">               
+                <img src="images/sao-paulo-brazil-temple-lds-prop-orig.webp" alt="São Paulo Brazil Temple">
+                
+            </picture>
+            <div class="herolabel">
+                <p>São Paulo Brazil Temple</p>
+            </div>
+        </div>
         <h2>
             WDD 230: Web Frontend Development
         </h2>
