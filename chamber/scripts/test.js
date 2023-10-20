@@ -1,6 +1,6 @@
 
-const temperature = 50; // Example temperature in Celsius
-const windSpeed = 20; // Example wind speed in km/h
+const temperature = 50; // Example temperature in Fahrenheit
+const windSpeed = 20; // Example wind speed in mph
 const windChill = calculateWindChill(temperature, windSpeed);
 
 
