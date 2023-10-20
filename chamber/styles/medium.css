@@ -55,7 +55,7 @@
         margin-top: 300px;
     }
 
-    .location, .date, .temp, .prev-hum, .prev-text {
+    .location, .date, .temp, .prev-hum, .prev-text, .speed, .wind{
         font-size: 20px;
     }
     .dg, .nt, .sp, .msg p {
@@ -63,7 +63,7 @@
         padding: 20px;
     }
 
-    .digcert, .network, .spee {
+    .digcert, .network, .speed, .wind {
         padding: 15px;        
     }   
     
