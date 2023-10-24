@@ -218,7 +218,7 @@ footer {
     position: absolute;
     top: 30px;
     left: 30px;
-    background: radial-gradient((#ffff00, #000));
+    background: radial-gradient(#ffff00, #000);
     border: 1px solid rgba(0, 0, 0, .75);
     padding: 1.5rem;
     box-shadow: 0 0 3rem #ffff;
