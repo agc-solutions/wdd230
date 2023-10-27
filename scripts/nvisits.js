@@ -1,6 +1,7 @@
 // initialize display elements
 const todayDisplay = document.querySelector(".today");
 const visitsDisplay = document.querySelector(".visits");
+const times = document.querySelector("#times");
 
 //get the stored value in localStorage
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
@@ -9,7 +10,8 @@ let numVisits = Number(window.localStorage.getItem("visits-ls"));
 if (numVisits !== 0) {
     visitsDisplay.textContent = numVisits;
 } else {
-    visitsDisplay.textContent = `This is your first visit!`
+    visitsDisplay.textContent = `This is your first visit!`;
+    times.textContent = '';
 }
 
 // increment the number of visits
