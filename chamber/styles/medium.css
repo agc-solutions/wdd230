@@ -97,7 +97,7 @@
     /*.rocorn {border-radius: 15px 150px;} */
 
     .a1 {
-        rotate: .05turn;
+        rotate: 0.05turn;
         border: 1px solid rgba(0,0,0,.3);
         padding: 1px;
         }
