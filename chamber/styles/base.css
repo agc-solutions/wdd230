@@ -440,7 +440,7 @@ main {
   .date {
     text-align: center;
     margin-top: 5%;
-    color: lighten(grey, 10%);
+    /* color: lighten(black, 10%); */
     font-size: 70%;
   }
 
