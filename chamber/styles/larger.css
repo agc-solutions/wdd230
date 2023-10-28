@@ -34,6 +34,13 @@
     body {
         font-size: 20px;
     }
-    
+
+    /* lesson 07 */
+
+    .discover-home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+   
 }
 

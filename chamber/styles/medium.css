@@ -78,5 +78,32 @@
     .event {
         display: flex;
     }
+
+    /* lesson 07 */
+
+    .discover-home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
    
+    /* CSS Images Effects */
+
+    /* .pctr 
+    img { width: 250px; height: auto; margin: .25rem;}
+    figcaption {font-size: smaller;}
+    /* hover effect */
+   /* .hover:hover {box-shadow: 0 0 50px #333;}*/
+    /* rounded corners - boxmodel */
+    /*.rocorn {border-radius: 15px 150px;} */
+
+    .a1 {
+        rotate: .05turn;
+        border: 1px solid rgba(0,0,0,.3);
+        padding: 1px;
+        }
+
+    /* hover effect */
+    .a3:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }
