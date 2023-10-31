@@ -607,6 +607,13 @@ h4 {
     }
 }
 
+.leg, .leg1 {
+    text-shadow: none;
+    font-size: small;
+    padding: 8px;
+    font-weight: bold;
+}
+
 
 
 /* .discover-home-grid { */
