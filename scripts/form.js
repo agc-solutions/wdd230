@@ -8,6 +8,7 @@ function checkSame() {
     if (pwd1.value !== pwd2.value) {
         message.textContent = "Passwords Do Not Match!";
         message.style.visibility = "show";
+        
         // pwd2.style.backgroundColor = "#fff0f3";
         // pwd2.value = "";
         // pwd2.focus();
