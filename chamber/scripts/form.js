@@ -2,15 +2,15 @@ const form = document.getElementById("form");
 const fname = document.getElementById("fname");
 const lname = document.getElementById("lname");
 const email = document.getElementById("email");
-const password = document.getElementById("password");
-const confirmpassword = document.getElementById("confirmpassword");
+const title = document.getElementById("title");
+const phone = document.getElementById("phone");
+const orgname = document.getElementById("orgname");
 
 form.addEventListener("submit", (Event) => {
     Event.preventDefault();
     
     checkform();
 
-    //alert("Success!!")
 })
 
 fname.addEventListener("blur", () => {
@@ -25,7 +25,15 @@ email.addEventListener("blur", () => {
     checkInputEmail();
 })
 
-email.addEventListener("blur", () => {
+title.addEventListener("blur", () => {
+    checkInputPassword();
+})
+
+phone.addEventListener("blur", () => {
+    checkInputPassword();
+})
+
+orgname.addEventListener("blur", () => {
     checkInputPassword();
 })
 
@@ -40,7 +48,6 @@ function checkInputfname() {
         formItem.className = "form-content"
     }
 
-    // console.log(usernameValue)
 }
 
 function checkInputlname() {
@@ -54,7 +61,6 @@ function checkInputlname() {
         formItem.className = "form-content"
     }
 
-    // console.log(usernameValue)
 }
 
 
@@ -72,35 +78,44 @@ function checkInputEmail() {
 
 
 
-function checkInputPassword() {
-    const passwordValue = password.value;
+function checkInputtitle() {
+    const titleValue = title.value;
 
-    if (passwordValue === "") {
+    if (titleValue === "") {
         //show the alert error message
-        errorInput(password, "A password is mandatory!")
-    } else if (passwordValue.length < 8){
-        errorInput(password, "The at least 8 characters!")
+        errorInput(title, "A title is mandatory!")
+    } else if (titleValue.length < 7){
+        errorInput(title, "The at least 7 characters!")
     } else {
-        const formItem = password.parentElement;
+        const formItem = title.parentElement;
         formItem.className = "form-content"
     }
 }
 
+function checkInputphone() {
+    const phoneValue = phone.value;
 
-function checkInputconfirmpassword() {
-    const passwordValue = password.value;
-    const confirmpasswordValue = confirmpassword.value;
-
-    if (confirmpasswordValue === "") {
+    if (phoneValue === "") {
         //show the alert error message
-        errorInput(confirmpassword, "Password confirmation is mandatory!")
-    } else if (confirmpasswordValue !== passwordValue) {
-        errorInput(confirmpassword, "The passwords are not equals!")
+        errorInput(phone, "A phone is mandatory!")
     } else {
-        const formItem = confirmpassword.parentElement;
+        const formItem = phone.parentElement;
         formItem.className = "form-content"
     }
 }
+
+function checkInputorgname() {
+    const orgnameValue = orgname.value;
+
+    if (orgnameValue === "") {
+        //show the alert error message
+        errorInput(orgname, "A orgname is mandatory!")
+    } else {
+        const formItem = orgname.parentElement;
+        formItem.className = "form-content"
+    }
+}
+
 
 function checkform() {
     checkInputfname();

@@ -694,7 +694,7 @@ form label.top input, form label.top select {
 
 .form-content a {
     position: absolute;
-    bottom: -8px;
+    bottom: -9px;
     left: 0;
     visibility: hidden;
 }
