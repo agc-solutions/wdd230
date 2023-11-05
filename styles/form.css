@@ -30,7 +30,7 @@ form label, form div {
     text-shadow: none;
 }
 
-form label input, form label.top select {
+form label input, form label select {
     display: block;
     /* font-size: 1rem; */
     border: solid 1px #999;

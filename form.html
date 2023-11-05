@@ -34,37 +34,50 @@
             </ul>
         </nav>
         
-        <form method="get" action="record.html">        
-            <fieldset>
-                <legend>Login</legend>
-                    <label>Username:<input type="text" id="uname" name="uname" required placeholder="Please enter your username."></label>        
-                    <label for="pwrd">Password:<input type="password" id="pwrd" name="pwrd" pattern="[A-Za-z0-9]{8}" placeholder="8 or more characters alpha-numerics" required></label>        
-                    <label for="pwrd2">Confirm Password<input type="password" id="pwrd2" name="pwrd2" required></label>        
-                        <div id="formmessage"></div>
-                    <label>Email <abbr title="Please enter a valid email address" aria-label ="required">*</abbr><input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@byui.edu" ></label> 
-                    <label>Page Rating<input type="range" id="pr" name="pr" min="1" max="10" value="1" step="1"
-                            list="rangevalues">
+            
+            <form method="get" action="record.html">        
+                <fieldset>
+                    <legend>Create Account</legend>
+                        <label>Create Username*:
+                            <input 
+                            type="text" 
+                            id="uname" 
+                            name="uname" required placeholder="Please enter your username."></label>        
+                        <label for="pwrd">Create Password:<abbr title="For Your Password, Use: Minimum of 8 characters, Letters and numbers" aria-label ="required">*</abbr>
+                            <input type="password" 
+                            id="pwrd" 
+                            name="pwrd" 
+                            pattern="[A-Za-z0-9]{8}" 
+                            placeholder="8 or more characters alpha-numerics" required></label>
+                            <!-- <span id="passwordError">Password must be at least 8 characters.</span> 
+                            <span id="passwordError">Password must contain at least one letter.</span>       
+                            <span id="passwordError">Password must contain at least one number.</span>        -->
+                        <label for="pwrd2">Confirm Password*<input type="password" id="pwrd2" name="pwrd2" required></label>        
+                            <div id="formmessage"></div>
+                        <label>Email <abbr title="Please enter a valid email address" aria-label ="required">*</abbr><input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="someone@byui.edu" ></label> 
+                        <label>Page Rating<input type="range" id="pr" name="pr" min="1" max="10" value="1" step="1"
+                                list="rangevalues">
+                            
+                            <datalist id="rangevalues">
+                                <!-- <option value="0"></option> -->
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                                <option value="6"></option>
+                                <option value="7"></option>
+                                <option value="8"></option>
+                                <option value="9"></option>
+                                <option value="10"></option>
+                            </datalist>
+                        </label>
+                        <div id="rangevalue">1</div>
                         
-                        <datalist id="rangevalues">
-                            <!-- <option value="0"></option> -->
-                            <option value="1"></option>
-                            <option value="2"></option>
-                            <option value="3"></option>
-                            <option value="4"></option>
-                            <option value="5"></option>
-                            <option value="6"></option>
-                            <option value="7"></option>
-                            <option value="8"></option>
-                            <option value="9"></option>
-                            <option value="10"></option>
-                        </datalist>
-                    </label>
-                    <div id="rangevalue">1</div>
-                    
-            </fieldset>
-            <input type="submit" value="Login" class="submitBtn">
-        
-        </form>
+                </fieldset>
+                <input type="submit" value="Login" class="submitBtn">
+            
+            </form>
     
 
     <footer>
@@ -78,6 +91,7 @@
     <script src="scripts/range.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/site.js"></script>
+    <script src="scripts/password.js"></script>
     
 </body>
 </html>

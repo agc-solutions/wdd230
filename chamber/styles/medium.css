@@ -114,4 +114,18 @@
         padding: 8px;
         font-weight: bold;
     }
+
+
+     /* ----------------FORM------------------- */
+
+     .beneftitle {
+        font-size: 1.5rem;
+    }
+
+    .msmeans, .provides {
+        font-size: 2rem;
+        padding: 15px;
+            
+    }
+    
 }

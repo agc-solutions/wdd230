@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Praia Grande Chamber of Commerce">
+    <meta property="og:type" content="website">
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/agc-solutions/wdd230/blob/main/images/rsz_4praiagrande.png">
+    <meta property="og:url" content="https://agc-solutions.github.io/wdd230/chamber/index.html">
+    <meta property="og:url" content="https://github.com/agc-solutions/wdd/lesson03/chamber-site-plan.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preload" href="style/base.css" as="style">
+
+    <!-- <link rel="stylesheet" href="styles/base2.css"> -->
+
+    <title>Praia Grande Chamber of Commerce</title>
+    <meta name="author" content="Adamastor Guedes Cavalcante">
+    <meta name="description" content="Praia Grande Chamber of Commerce. 
+    This name represents a city in which the chamber operates.">
+
+</head>
+<body>
+    <div id="content">
+        <header id="header2">
+            <nav>
+                <button id="menu"></button>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="index-p3.html">Directory</a></li>
+                    <li><a href="index-p4.html">Join</a></li>
+                </ul>
+            </nav>
+            <div id="mode">🕶️</div>
+        </header>
+        <div id="hero2">
+            <div id="hero2-box">
+                <picture>
+                    <source srcset="images/wdd230-org-small.webp" media="(max-width: 600px)">
+                    <source srcset="images/wdd230-org-medium.webp" media="(max-width: 1000px)">
+                    <img id="hero2-img" src="images/wdd230-org-large.webp" alt="">
+                </picture>
+            </div>
+            <section id="hero2-msg">
+                <h1 class="home-title">Praia Grande City Chamber of Commerce</h1>
+                <h4>Make a difference!!</h4>
+                <div class="button-box2">
+                    <a class='call' href="https://api.whatsapp.com/send?phone=99999999999" target="_blank">Sign up!</a>
+                </div>
+            </section>
+        </div>
+        
+    <main class="join-home-grid">
+        <div class="princ">
+            <div class="chambermembership">
+                <div class="values">
+                    <div class="smallb">
+                        <h2>$500/yr.</h2>
+                        <div class="icon">✔</div>
+                        <p>For small businesses looking to establish their business profile and get meaningfully connected with the community</p>
+                    </div>
+                    <div class="growingb">
+                        <h2>$750/yr.</h2>
+                        <div class="icon">✔</div>
+                        <p>For growing businesses looking to build customer awareness with marketing exposure
+                        </p>
+                    </div>
+                    <div class="maxbenef">
+                        <h2>$1,500/yr.</h2>
+                        <div class="icon">✔</div>
+                        <p>For businesses looking to maximize their benefits with enhanced visibility and attention</p>
+                    </div>
+                </div>
+                <!-- </div> -->
+            
+                <div class="container">            
+                    <section class="header">
+                        <h2>New Member Request Form</h2>
+                    </section>
+                    <form id="form" method="get" action="thankyou.html">
+                        <fieldset class="info">
+                            <legend>Aplicant information</legend>
+                            <div class="form-content">
+                                <label class="top" for="firstname">First Name* <input type="text" name="fname" id="fname" required>
+                                    <a>Error message....</a>
+                                </label>
+                            </div>
+                            <div class="form-content">
+                                <label class="top" for="lastname">Last Name* <input type="text" name="lname" id="lname" required>
+                                    <a>Error message....</a>
+                                </label>
+                            </div>
+                            <div class="form-content">
+                                <label class="top" for="title">Title/Position <input type="text" name="title" id="title" pattern="[A-Za-z]{7}">
+                                    <a>Error message....</a>
+                                </label>
+                            </div>
+                            <div class="form-content">
+                                <label class="top" for="email">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required>
+                                    <a>Error message....</a>
+                                </label>
+                            </div>
+                            <div class="form-content">
+                                <label class="top" for="phone">Phone* <input type="tel" name="phone" id="phone" placeholder="1235556789">
+                                    <a>Error message....</a>
+                                </label> 
+                            </div>
+                            <div class="form-content">                   
+                                <label class="top" for="orgname">Business/Organization's name: <input type="text" name="orgname" id="orgname" required>
+                                    <a>Error message....</a>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="choose">
+                            <legend>Membership Level</legend>                    
+                            <label class="sbs" id="np"> <input type="radio" name="audience" value="nonprofit"> NP Membership is for non profit organizations and there is no fee. </label>
+                            <label class="sbs"> <input type="radio" name="audience" value="bronze"> Bronze Membership</label>
+                            <label class="sbs"> <input type="radio" name="audience" value="silver"> Silver Membership</label>
+                            <label class="sbs"> <input type="radio" name="audience" value="gold"> Gold Membership</label>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Organization's description</legend>
+                            <textarea class="txta" name="descript" id="descript" rows="4" cols="50"></textarea>                    
+                            <label class="timestamp" for="timestamp"> <input type="hidden" name="timestamp" id="timestamp" value=""></label>
+                        </fieldset>
+
+                        <button id="btnfrm" type="submit">JOIN</button>
+
+                    </form>
+
+                </div>
+            </div>
+            <div class="benef">
+                <div class="beneftitle">
+                    <span class="stitle">Praia Grande Chamber
+                        <i>of</i>
+                        Commerce
+                    </span>
+                </div>
+                <div class="msmeans">
+                    <h3>Membership Means</h3>
+                </div>
+                <div class="increase">
+                    <ul>
+                        <li class="favrating">
+                            <strong>49% increase</strong>in consumer favorability rating
+                        </li>
+                        <li class="aware">
+                            <strong>73% increase</strong> in consumer awareness
+                        </li>
+                        <li class="reput">
+                            <strong>68% increase</strong> in local reputation
+                        </li>
+                        <li class="repeat">
+                            <strong>80% increased</strong> likelihood of repeat business
+                        </li>
+                    </ul>
+                </div>
+                <div class="provides">
+                    <h3>Membership Provides</h3>
+                </div>
+                <div class="prov">
+                    <ul>
+                        <li class="adv">
+                            <strong>Advocacy</strong> on behalf of local business
+                        </li>
+                        <li class="Ntwrk">
+                            <strong>Networking</strong> event development
+                        </li>
+                        <li class="rsrc">
+                            <strong>Resource</strong> development and management
+                        </li>
+                        <li class="rltsp">
+                            <strong>Relationships</strong> to last a lifetime
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer> 
+        <div class="contact-info">
+            <p class="contact-name">Praia Grande Chamber of Commerce</p>
+            <p class="contact-address">Av. Pres. Costa e Silva, 1.500 - Boqueirão</p>
+        </div>
+        <div class="e-contact">
+            <p class="email">pgcc@praiagrande.com</p>
+            <p class="phone">+(55)13 9999-9999</p>
+            <p class="local">location Map</p>
+        </div> 
+        
+        <hr>
+
+        <p>Adamastor Guedes Cavalcante - WDD230 - Project
+        &copy;<span id="year"></span></p>
+        <p>Brazil</p>
+        <p>Last Update:</p>
+        <p id="lastUpdate"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/cham.js"></script>
+    <!-- <script src="scripts/weather.js"></script> -->
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/test.js"></script>
+    <script src="scripts/form.js"></script>
+
+
+    <!-- Toggle Rounded switch -->
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+
+    
+
+
+</body>
+
+</html>

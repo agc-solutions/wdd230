@@ -41,6 +41,33 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    /* ----------------FORM------------------- */
+
+
+    .princ {
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .values {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-right: 15px;
+    }
+    .benef {
+        height:fit-content;
+    }
+    .beneftitle {
+        font-size: 2rem;
+    }
+    .msmeans, .provides {
+        font-size: 20rem;
+        padding: 10px;
+    }
    
 }
 
