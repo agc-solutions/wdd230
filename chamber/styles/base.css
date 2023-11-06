@@ -592,6 +592,13 @@ h4 {
     width: 100%;
 }
 
+.a1:hover, .a2:hover, .a3:hover, .a4:hover, .a5:hover, .a6:hover {
+    transition: transform 1.2s;
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.4);
+}
+
+
 .pctr {
     width: 100%;
     /* background: #000; */
@@ -631,7 +638,7 @@ h4 {
     margin: 14px;
     max-width: 600px;
     width: 100%;
-    box-sizing: 0 3px 5px rgba(0,0,0, 0.5);
+    box-sizing: 0 3px 5px rgba(0, 0, 0, 0.5);
     /*esconde tudo o que passa do container  */
     overflow: hidden;
 }
