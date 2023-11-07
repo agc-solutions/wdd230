@@ -10,7 +10,7 @@ form fieldset {
     max-width: 30rem;
     align-items: center;
     justify-content: center;
-    background-color: #001d3d;  
+    background-color: #001d3d;
 }
 
 form legend {
@@ -25,12 +25,13 @@ form label, form div {
     padding-top: 1rem;
     /* color: #9c2c13; */
     color: #ffff00;
-    font-size: 20px;  
+    font-size: 20px;
     /* font-size: .8rem; */
     text-shadow: none;
 }
 
 form label input, form label select {
+    /* -webkit-appearance: none; */
     display: block;
     /* font-size: 1rem; */
     border: solid 1px #999;
@@ -61,6 +62,14 @@ form label input:required {
 
 form label input:required:valid {
     border-left: green solid 6px;
+}
+
+#answrrec {
+    justify-content: center;
+    text-align: center;
+    margin-left: 50px;
+    /* color: #9c2c13; */
+    padding: 10px;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
