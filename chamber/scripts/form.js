@@ -26,15 +26,15 @@ email.addEventListener("blur", () => {
 })
 
 title.addEventListener("blur", () => {
-    checkInputPassword();
+    checkInputtitle();
 })
 
 phone.addEventListener("blur", () => {
-    checkInputPassword();
+    checkInputphone();
 })
 
 orgname.addEventListener("blur", () => {
-    checkInputPassword();
+    checkInputorgname();
 })
 
 function checkInputfname() {
@@ -83,9 +83,10 @@ function checkInputtitle() {
 
     if (titleValue === "") {
         //show the alert error message
-        errorInput(title, "A title is mandatory!")
+        errorInput(title, "Type alpha, hyphens, spaces with at least 7 characters ")
     } else if (titleValue.length < 7){
-        errorInput(title, "The at least 7 characters!")
+        // alert("Type just alpha characters, hyphens, and spaces with at least 7 characters ")
+        errorInput(title, "Type at least 7 characters!")
     } else {
         const formItem = title.parentElement;
         formItem.className = "form-content"

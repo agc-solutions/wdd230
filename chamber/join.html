@@ -65,17 +65,20 @@
             <div class="chambermembership">
                 <div class="values">
                     <div class="smallb">
+                        <h2>BRONZE</h2>
                         <h2>$500/yr.</h2>
                         <div class="icon">✔</div>
                         <p>For small businesses looking to establish their business profile and get meaningfully connected with the community</p>
                     </div>
                     <div class="growingb">
+                        <h2>SILVER</h2>
                         <h2>$750/yr.</h2>
                         <div class="icon">✔</div>
                         <p>For growing businesses looking to build customer awareness with marketing exposure
                         </p>
                     </div>
                     <div class="maxbenef">
+                        <h2>GOLD</h2>
                         <h2>$1,500/yr.</h2>
                         <div class="icon">✔</div>
                         <p>For businesses looking to maximize their benefits with enhanced visibility and attention</p>
@@ -87,7 +90,9 @@
                     <section class="header">
                         <h2>New Member Request Form</h2>
                     </section>
-                    <form id="form" method="get" action="thankyou.html">
+                   
+                    <form method="get" action="thankyou.html">
+                         <!-- <div id="form"></div> -->
                         <fieldset class="info">
                             <legend>Aplicant information</legend>
                             <div class="form-content">
@@ -101,7 +106,7 @@
                                 </label>
                             </div>
                             <div class="form-content">
-                                <label class="top" for="title">Title/Position <input type="text" name="title" id="title" pattern="[A-Za-z]{7}">
+                                <label class="top" for="title">Title/Position <input type="text" name="title" id="title" pattern="[A-Za-z\ \-]{7}">
                                     <a>Error message....</a>
                                 </label>
                             </div>
@@ -116,7 +121,7 @@
                                 </label> 
                             </div>
                             <div class="form-content">                   
-                                <label class="top" for="orgname">Business/Organization's name: <input type="text" name="orgname" id="orgname" required>
+                                <label class="top" for="orgname">Business/Organization's name*: <input type="text" name="orgname" id="orgname" required>
                                     <a>Error message....</a>
                                 </label>
                             </div>
@@ -137,6 +142,7 @@
                         </fieldset>
 
                         <button id="btnfrm" type="submit">JOIN</button>
+                        <!-- <input type="submit" value="JOIN" class="submitBtn"> -->
 
                     </form>
 
