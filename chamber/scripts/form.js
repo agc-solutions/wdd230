@@ -147,3 +147,5 @@ function errorInput(input, message) {
 
     formItem.className = "form-content error"
 }
+
+document.getElementById("timestamp").value= new Date().toISOString();
