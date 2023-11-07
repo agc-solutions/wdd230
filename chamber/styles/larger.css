@@ -68,6 +68,13 @@
         font-size: 20rem;
         padding: 10px;
     }
+
+    .chambermembership h2 {
+        font-size: 2rem;
+    }
+    .chambermembership p {
+        font-size: 22px;
+    }
    
 }
 

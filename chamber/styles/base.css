@@ -791,6 +791,12 @@ ul {
     width: 96%;
     max-width: 20rem;
 } */
+.chambermembership h2 {
+    font-size: 1.4rem;
+}
+.chambermembership p {
+    font-size: 15px;
+}
 
 #tks {
     text-shadow: none;

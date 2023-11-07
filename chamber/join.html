@@ -55,7 +55,7 @@
                 <h1 class="home-title">Praia Grande City Chamber of Commerce</h1>
                 <h4>Make a difference!!</h4>
                 <div class="button-box2">
-                    <a class='call' href="https://api.whatsapp.com/send?phone=99999999999" target="_blank">Sign up!</a>
+                    <a class='call' href="https://api.whatsapp.com/send?phone=99999999999" target="_blank">Call us!</a>
                 </div>
             </section>
         </div>
@@ -92,58 +92,58 @@
                     </section>
                    
                     <form method="get" action="thankyou.html">
-                         <!-- <div id="form"></div> -->
-                        <fieldset class="info">
-                            <legend>Aplicant information</legend>
-                            <div class="form-content">
-                                <label class="top" for="fname">First Name* <input type="text" name="fname" id="fname" required>
-                                    <a>Error message....</a>
-                                </label>
-                            </div>
-                            <div class="form-content">
-                                <label class="top" for="lname">Last Name* <input type="text" name="lname" id="lname" required>
-                                    <a>Error message....</a>
-                                </label>
-                            </div>
-                            <div class="form-content">
-                                <label class="top" for="title">Title/Position <input type="text" name="title" id="title" pattern="[A-Za-z\ \-]{7}">
-                                    <a>Error message....</a>
-                                </label>
-                            </div>
-                            <div class="form-content">
-                                <label class="top" for="email">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required>
-                                    <a>Error message....</a>
-                                </label>
-                            </div>
-                            <div class="form-content">
-                                <label class="top" for="phone">Phone* <input type="tel" name="phone" id="phone" placeholder="1235556789">
-                                    <a>Error message....</a>
-                                </label> 
-                            </div>
-                            <div class="form-content">                   
-                                <label class="top" for="orgname">Business/Organization's name*: <input type="text" name="orgname" id="orgname" required>
-                                    <a>Error message....</a>
-                                </label>
-                            </div>
-                        </fieldset>
+                        <div id="form">
+                            <fieldset class="info">
+                                <legend>Aplicant information</legend>
+                                <div class="form-content">
+                                    <label class="top" for="fname">First Name* <input type="text" name="fname" id="fname" required>
+                                        <a>Error message....</a>
+                                    </label>
+                                </div>
+                                <div class="form-content">
+                                    <label class="top" for="lname">Last Name* <input type="text" name="lname" id="lname" required>
+                                        <a>Error message....</a>
+                                    </label>
+                                </div>
+                                <div class="form-content">
+                                    <label class="top" for="title">Title/Position <input type="text" name="title" id="title" pattern="[A-Za-z\ \-]{7}">
+                                        <a>Error message....</a>
+                                    </label>
+                                </div>
+                                <div class="form-content">
+                                    <label class="top" for="email">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required>
+                                        <a>Error message....</a>
+                                    </label>
+                                </div>
+                                <div class="form-content">
+                                    <label class="top" for="phone">Phone* <input type="tel" name="phone" id="phone" placeholder="1235556789">
+                                        <a>Error message....</a>
+                                    </label> 
+                                </div>
+                                <div class="form-content">                   
+                                    <label class="top" for="orgname">Business/Organization's name*: <input type="text" name="orgname" id="orgname" required>
+                                        <a>Error message....</a>
+                                    </label>
+                                </div>
+                            </fieldset>
+                        <!-- </div> -->
+                            <fieldset class="choose">
+                                <legend>Membership Level</legend>                    
+                                <label class="sbs" id="np"> <input type="radio" name="audience" value="nonprofit"> NP Membership is for non profit organizations and there is no fee. </label>
+                                <label class="sbs"> <input type="radio" name="audience" value="bronze"> Bronze Membership</label>
+                                <label class="sbs"> <input type="radio" name="audience" value="silver"> Silver Membership</label>
+                                <label class="sbs"> <input type="radio" name="audience" value="gold"> Gold Membership</label>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Organization's description</legend>
+                                <textarea class="txta" name="descript" id="descript" rows="4" cols="50"></textarea>                    
+                            <label class="timestamp"> <input type="hidden" name="timestamp" id="timestamp" value=""></label>
+                            </fieldset>
 
-                        <fieldset class="choose">
-                            <legend>Membership Level</legend>                    
-                            <label class="sbs" id="np"> <input type="radio" name="audience" value="nonprofit"> NP Membership is for non profit organizations and there is no fee. </label>
-                            <label class="sbs"> <input type="radio" name="audience" value="bronze"> Bronze Membership</label>
-                            <label class="sbs"> <input type="radio" name="audience" value="silver"> Silver Membership</label>
-                            <label class="sbs"> <input type="radio" name="audience" value="gold"> Gold Membership</label>
-                        </fieldset>
-                        
-                        <fieldset>
-                            <legend>Organization's description</legend>
-                            <textarea class="txta" name="descript" id="descript" rows="4" cols="50"></textarea>                    
-                           <label class="timestamp"> <input type="hidden" name="timestamp" id="timestamp" value=""></label> -->
-                        </fieldset>
-
-                        <button id="btnfrm" type="submit">JOIN</button>
-                        <!-- <input type="submit" value="JOIN" class="submitBtn"> -->
-
+                            <button id="btnfrm" type="submit">JOIN</button>
+                            <!-- <input type="submit" value="JOIN" class="submitBtn"> -->
+                        </div>
                     </form>
 
                 </div>

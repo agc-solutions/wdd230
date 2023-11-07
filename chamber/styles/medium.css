@@ -127,5 +127,11 @@
         padding: 15px;
             
     }
+    .chambermembership h2 {
+        font-size: 1.6rem;
+    }
+    .chambermembership p {
+        font-size: 18px;
+    }
     
 }
