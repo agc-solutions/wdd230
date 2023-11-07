@@ -67,7 +67,6 @@ form label input:required:valid {
 #answrrec {
     justify-content: center;
     text-align: center;
-    margin-left: 50px;
     /* color: #9c2c13; */
     padding: 10px;
 }
