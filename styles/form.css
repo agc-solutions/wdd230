@@ -38,10 +38,10 @@ form label input, form label select {
     border-radius: 4px;
     padding: .75rem;
     /* color: #555; */
-    color: aqua;
+    /* color: #ffff00; */
     width: 100%;
     max-width: 20rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
 
@@ -56,12 +56,21 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
+.submitBtn:hover {
+	color: #ffff00;
+    transition: transform 1.2s;
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.4);
+}
+
 form label input:required {
     border-left: red solid 6px;
+    /* background-color: #26428B; */
 }
 
 form label input:required:valid {
     border-left: green solid 6px;
+    /* background-color: #26428B; */
 }
 
 #answrrec {
@@ -77,3 +86,5 @@ form label input:required:valid {
     display: table;
     clear: both;
   }
+
+ 

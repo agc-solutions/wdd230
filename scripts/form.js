@@ -21,3 +21,5 @@ function checkSame() {
         pwd2.style.color = "#000";        
     }
 }
+
+
