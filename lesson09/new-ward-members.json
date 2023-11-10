@@ -1,0 +1,28 @@
+{
+    "familyName": "Smith",
+    "movedInDate": "2023-04-06",
+    "numberOfRecords": "4",
+    "bishopricVisit": true,
+    "familyMembers": [
+        {
+            "name": "Joseph Smith",
+            "gender": "Male",
+            "birthdate": "1999-01-20"
+        },
+        {
+            "name": "Lucy Smith",
+            "gender": "Female",
+            "birthdate": "2000-05-10"
+        },
+        {
+            "name": "Joseph Smith Junior",
+            "gender": "Male",
+            "birthdate": "2022-03-12"
+        },
+        {
+            "name": "Sarah Smith",
+            "gender": "Female",
+            "birthdate": "2023-06-28"
+        }        
+    ]
+}
