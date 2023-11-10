@@ -2,7 +2,17 @@
 
 
 /*----------- FORM --------------*/
-form fieldset {
+:root form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ffff00;
+    border-radius: 15px;
+    padding: .5rem 2%;
+    max-width: 30rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #001d3d;
+  }
+/* form fieldset {
     margin: 2rem 0;
     border: 1px solid #445ba9;
     border-radius: 15px;
@@ -11,7 +21,7 @@ form fieldset {
     align-items: center;
     justify-content: center;
     background-color: #001d3d;
-}
+} */
 
 form legend {
     /* color: #445ba9; */
