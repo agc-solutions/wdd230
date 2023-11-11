@@ -1,0 +1,67 @@
+{ 
+    "companies": [
+        {
+        "name": "AGC-SOLUTIONS",
+        "address": "Av. Guilhermina, 648 cj. 85 - Praia Grande - SP",
+        "phone": "5513999888777",
+        "website":"agcsolutions.com.br",
+        "icon": "./images/agc-solutions.png",
+        "membershipLevel": "Platinum",
+        "ID": "0001"
+    },
+    {
+        "name": "ESLC-PROJETOS",
+        "address": "Av. Guilhermina, 648 cj. 85 - Praia Grande - SP",
+        "phone": "5513999888777",
+        "website":"eslc.com.br",
+        "icon": "./images/eslc.png",
+        "membershipLevel": "Platinum",
+        "ID": "0002"
+    },
+    {
+        "name": "AÇAÍ DU JOUR",
+        "address": "Av. Guilhermina, 648 cj. 85 - Praia Grande - SP",
+        "phone": "5513999888777",
+        "website":"açaidujour.com.br",
+        "icon": "",
+        "membershipLevel": "Platinum",
+        "ID": "0003"
+    },
+    {
+        "name": "KLC - ODONTO",
+        "address": "Av. Guilhermina, 648 cj. 75 - Praia Grande - SP",
+        "phone": "5513999888777",
+        "website":"klc.com.br",
+        "icon": "",
+        "membershipLevel": "Platinum",
+        "ID": "0004"
+    },
+    {
+        "name": "K1 DEDETIZADORA",
+        "address": "Av. Pres. Kennedy, 53 cj. 12 - Praia Grande - SP",
+        "phone": "5513987654321",
+        "website":"k1.com.br",
+        "icon": "./images/k1.png",
+        "membershipLevel": "Silver",
+        "ID": "0005"
+    },
+    {
+        "name": "ATTENTUS - CONTABILIDADE",
+        "address": "Av. Tupi, 200 cj. 01 - Praia Grande - SP",
+        "phone": "5513123456789",
+        "website":"attentus.com.br",
+        "icon": "./images/attentus.jpeg",
+        "membershipLevel": "Gold",
+        "ID": "0006"
+    },
+    {
+        "name": "i9 - MODA EVANGÉLICA",
+        "address": "Rua Venezuela, 100 - Praia Grande - SP",
+        "phone": "5513456789123",
+        "website":"i9.com.br",
+        "icon": "./images/inove.ico",
+        "membershipLevel": "Gold",
+        "ID": "0007"
+    }
+]
+}
