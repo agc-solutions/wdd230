@@ -24,7 +24,7 @@ const cards = document.querySelector('#cards');
 async function getProphetData(url) { // #4
     const response = await fetch(url); // #5
     const data = await response.json(); // #6
-    console.table(data.prophets); // #7
+    //console.table(data.prophets); // #7
     displayProphets(data.prophets);
 }
 getProphetData(url); // #8
@@ -59,18 +59,25 @@ getProphetData(url); // #8
 const displayProphets = (prophets) => {  //#11
     prophets.forEach((prophet) => {      // #12
         let card = document.createElement('section'); //13.A
-        let fullName = document.createElement('__');  //13.B
+        let fullName = document.createElement('h2');  //13.B
         let portrait = document.createElement('img'); //13.C
-         fullName.textContent = `${prophet.name} ${prophet.lastname}`;  //13.D
+        fullName.textContent = `${prophet.name} ${prophet.lastname}`;  //13.D
 
+        let birthdate = document.createElement('p');
+        birthdate.textContent = `Date of Birth: ${prophet.birthdate}`;
+
+        let birthplace = document.createElement('p');
+        birthplace.textContent = `Place of Birth: ${prophet.birthplace}`;
         portrait.setAttribute('src', prophet.imageurl); //13.E.1
         portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`); //13.E.2
         portrait.setAttribute('loading', 'lazy'); //13.E.3
         portrait.setAttribute('width', '340'); //13.E.4
         portrait.setAttribute('height', '440'); //13.E.5
         card.appendChild(fullName); //13.F
+        card.appendChild(birthdate);
+        card.appendChild(birthplace);
         card.appendChild(portrait);
-
+        
         cards.appendChild(card);  //13.G
     });
 

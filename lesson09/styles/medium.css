@@ -1,12 +1,20 @@
 /* Tablet Views */
 @media only screen and (min-width: 37.5em){
-       section {
+       /* section {
         grid-template-columns: 1fr 1fr;
     }
 
     section:nth-child(3) {
         display: block;
     }
+} */
+main > #cards{
+    top: 1.5rem;
+    right: 2rem;
+    border: 1px solid #ccc;
+    background-color: lightyellow;
+    padding: 0.25rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 }
-
-    
+} 

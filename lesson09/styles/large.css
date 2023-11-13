@@ -1,10 +1,25 @@
 /* Desktop Views */
 @media only screen and (min-width: 60em){
-    section {
+    /* main {
      grid-template-columns: 1fr 1fr 1fr;
- }
+ } */
 
- section:nth-child(3) {
+ /* section:nth-child(3) {
      display: block;
- }
+ } */
+
+
+ section {
+    /* position: absolute; */
+    top: 1.5rem;
+    right: 2rem;
+    border: 1px solid #ccc;
+    background-color: lightyellow;
+    padding: 0.25rem;
+    display: grid;
+    /* align-items: center; */
+    /* grid-template-columns: 1fr 1fr;
+    display: grid; */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
 }
