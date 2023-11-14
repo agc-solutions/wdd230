@@ -17,22 +17,22 @@ async function getLessonsData(linksURL) {
 const displayLessons = (lessons) => {
   lessons.forEach((lesson) => {
     let lactiv = document.createElement('li');
+    
     let numWeek = document.createElement('p');
     let aula = document.createElement('a');
-    aula.setAttribute('href', lesson.url);
-    numWeek.textContent = `${lesson.lesson} ${lesson.url}`;
+    aula.href = `${baseURL}${lesson.url}`;
+    aula.textContent = lesson.title;  
+       
 
-    
-    
-
+    numWeek.textContent = `${lesson.lesson}`;
    
-    // let lessonTitle = document.createElement('span');
-    // lessonTitle.textContent = `${lesson.title}`;
+    let lessonTitle = document.createElement('span');
+    
 
     
     lactiv.appendChild(numWeek);
-    
-    //lactiv.appendChild(lessonTitle);
+    lactiv.appendChild(aula);    
+    lactiv.appendChild(lessonTitle);
 
     lactivs.appendChild(lactiv);
     
