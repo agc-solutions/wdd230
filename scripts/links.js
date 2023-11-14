@@ -13,19 +13,19 @@ async function getLessonsData(linksURL) {
 
 const displayLessons = (lessons) => {
   lessons.forEach((lesson) => {
-    let lactiv = document.createElement('section');
+    let lactiv = document.createElement('li');
     let numWeek = document.createElement('p');
     numWeek.textContent = `${lesson.lesson}`;
-    let url = document = `${'a'}`;
-    // url.textContent = `${lesson.url}`
-    let title = document.createElement('title');
-    title.textContent = `${lesson.title}`;
+    // let url = document = `${'a'}`;
+    // // url.textContent = `${lesson.url}`
+    // let title = document.createElement('title');
+    // title.textContent = `${lesson.title}`;
 
-    url.setAttribute('href', lesson.url);
+    // url.setAttribute('href', lesson.url);
     
     lactiv.appendChild(numWeek);
-    lactiv.appendChild(url);
-    lactiv.appendChild(title);
+    // lactiv.appendChild(url);
+    // lactiv.appendChild(title);
 
     lactivs.appendChild(lactiv);
     
