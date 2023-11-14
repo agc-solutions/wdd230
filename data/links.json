@@ -1,7 +1,7 @@
 {
     "lessons": [
         {
-        "lesson": "01",
+        "lesson": "Week 01",
         "links": [
             {
                 "url":"lesson01/holygrail.html",
@@ -14,7 +14,7 @@
         ]
     },
     {
-        "lesson": "02",
+        "lesson": "Week 02",
         "links": [
             {
                 "url":"lesson02/mediaquery.html",
@@ -27,7 +27,7 @@
         ]
     },
     {
-        "lesson": "03",
+        "lesson": "Week 03",
         "links": [
             {
                 "url":"lesson03/images/combinator-exercises.png",
@@ -48,7 +48,7 @@
         ]
     }, 
     {
-        "lesson": "04",
+        "lesson": "Week 04",
         "links": [
             {
                 "url":"https://codepen.io/Adamastor/pen/MWZqYow",
@@ -57,7 +57,7 @@
         ]
     },
     {
-        "lesson": "05",
+        "lesson": "Week 05",
         "links": [
             {
                 "url":"lesson05/bom.html",
@@ -66,7 +66,7 @@
         ]
     },
     {
-        "lesson": "06",
+        "lesson": "Week 06",
         "links": [
             {
                 "url":"lesson06/images/landscape.webp",
@@ -79,7 +79,7 @@
         ]
     },
     {
-        "lesson": "07",
+        "lesson": "Week 07",
         "links": [
             {
                 "url":"lesson03/lazyload.html",
@@ -92,7 +92,7 @@
         ]
     },
     {
-        "lesson": "08",
+        "lesson": "Week 08",
         "links": [
             {
                 "url":"lesson08/tablebuild.html",
@@ -109,7 +109,20 @@
         ]
     },
     {
-        "lesson": "09",
+        "lesson": "Week 09",
+        "links": [
+            {
+                "url":"lesson09/new-ward-members.json",
+                "title": "JSON"
+            },
+            {
+                "url":"lesson09/prophets.html",
+                "title": "FETCH API"
+            }
+        ]
+    },
+    {
+        "lesson": "Week 10",
         "links": [
             {
                 "url":"lesson09/new-ward-members.json",
