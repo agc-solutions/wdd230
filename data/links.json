@@ -61,7 +61,7 @@
         "links": [
             {
                 "url":"lesson05/bom.html",
-                "title": ">DOM Manipulation: Book of Mormon Favorite Chapters Application Build"
+                "title": "DOM Manipulation: Book of Mormon Favorite Chapters Application Build"
             }            
         ]
     },
@@ -125,12 +125,12 @@
         "lesson": "10",
         "links": [
             {
-                "url":"lesson09/new-ward-members.json",
-                "title": "JSON"
+                "url":"lesson10/",
+                "title": "API Weather Information"
             },
             {
-                "url":"lesson09/prophets.html",
-                "title": "FETCH API"
+                "url":"lesson10/",
+                "title": "Weather API"
             }
         ]
     }

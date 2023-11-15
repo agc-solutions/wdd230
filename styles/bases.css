@@ -231,7 +231,30 @@ footer {
     font-size: 1.5rem;
     font-family:Poiret one;
   }
+  .week, #activity-links, .week ul {
+    margin: 0;
+    padding: 0;
+  }
+  .week {
+    display: flex;
+    flex-direction: row;
+    /* grid-template-rows: 1fr 4fr; */
+    align-items: center;
+    padding-left: 20px;
+    /* margin-top: -15px;
+    margin-bottom: -30px;
+    padding-top: -20px;
+    padding-bottom: -20px; */
 
+}
+
+.week ul {
+    display: flex;
+    flex-direction: row;
+}
+.week a {
+    margin: 5px;
+}
 
 
 @media screen and (min-width: 960px) {
@@ -285,4 +308,6 @@ footer {
         margin-bottom: 20px;  */
          
     }
+
+   
 }
