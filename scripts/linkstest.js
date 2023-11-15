@@ -47,7 +47,30 @@ async function getLinks() {
 
 
 
-  // este deu certo 
+  // este deu certo para este json
+//{
+//   "lessons": [
+//     {
+//         "lesson": "Week 01:",
+//         "url": "lesson01/holygrail.html",
+//         "title": "Holy Layout"
+//     },
+//     {
+//         "lesson": "Week 02:",
+//         "url": "lesson02/mediaquery.html",
+//         "title": "Media Queries"
+//     },
+//     {
+//         "lesson": "Week 03:",
+//         "url": "lesson03/images/combinator-exercises.png",
+//         "title": "Combinators"
+//     }
+// ]
+// }
+
+
+
+
 //   const baseURL = "https://agc-solutions.github.io/wdd230/";
 // const linksURL = "https://agc-solutions.github.io/wdd230/data/links.json";
 
