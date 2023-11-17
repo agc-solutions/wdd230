@@ -260,6 +260,40 @@ footer {
     margin: 5px;
 }
 
+/* WEATHER */
+
+
+#weather-data {
+    /* margin-top: 1.5rem; */
+    /* padding-top: 1.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .6rem 0;
+}
+#weather-data span {
+    margin: 0.6rem;
+}
+#country {
+    height: 18px;
+}
+#description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+    border-bottom: 1px solid #ffff00;
+}
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#temperature {
+    /* font-family: 'Michroma', sans-serif; */
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+}
+
 
 @media screen and (min-width: 960px) {
     h1 {
@@ -300,18 +334,11 @@ footer {
         margin-left: 20px;
         margin-right: 20px;
         
-
-        /* border-style: solid;
-        border-color: #001d3d;
-        border-bottom-width: 1px;
-        border-top-width: 0;
-        border-right-width: 1px;
-        border-left-width: 1px;
-        padding-bottom: 15px;
-        box-shadow: 5px 5px 10px black;
-        margin-bottom: 20px;  */
-         
     }
 
+    /* WEATHER */
+    #country {
+        height: 32px;
+    }
    
 }

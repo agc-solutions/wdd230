@@ -1,8 +1,12 @@
+const baseURL = "https://agc-solutions.github.io/wdd230/";
+const directoryURL = "https://agc-solutions.github.io/wdd230/chamber/data/members.json";
+
+
 const directory = 'data/members.json';
 
 const companies = document.querySelector("#companies")
 
-fetch(directory).then((Response) => {
+fetch(directoryURL).then((Response) => {
     Response.json().then((members) => {
         members.companies.map((company) => {
             companies.innerHTML += `<li> ${company.name} - ${company.address}</li>`

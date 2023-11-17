@@ -791,6 +791,7 @@ ul {
     width: 96%;
     max-width: 20rem;
 } */
+
 .chambermembership h2 {
     font-size: 1.4rem;
 }
@@ -798,7 +799,7 @@ ul {
     font-size: 15px;
 }
 
-#tks {
+#tks, #companies {
     text-shadow: none;
     font-weight: bold;
 }
