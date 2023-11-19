@@ -1,95 +1,66 @@
-$(document).ready(function() {
-    navigator.geolocation.getCurrentPosition(success, error);
-  
-    function success(pos) {
-      var lat = pos.coords.latitude;
-      var long = pos.coords.longitude;
-      weather(lat, long);
-    }
-  
-    function error() {
-      console.log("There was an error");
-    }
-  
-    function weather(lat, long) {
-      var URL = `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`;
-      $.getJSON(URL, function(data) {
-        display(data);
-      });
-    }
-  
-    function display(data) {
-      var city = data.name.toUpperCase();
-      var temp =
-        Math.round(data.main.temp_max) +
-        "&deg; C | " +
-        Math.round(Math.round(data.main.temp_max) * 1.8 + 32) +
-        "&deg; F";
-      var desc = data.weather[0].description;
-      var date = new Date();
-  
-      var months = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
-      ];
-  
-      var weekday = new Array(7);
-      weekday[0] = "Sunday";
-      weekday[1] = "Monday";
-      weekday[2] = "Tuesday";
-      weekday[3] = "Wednesday";
-      weekday[4] = "Thursday";
-      weekday[5] = "Friday";
-      weekday[6] = "Saturday";
-  
-      var font_color;
-      var bg_color;
-      if (Math.round(data.main.temp_max) > 25) {
-        font_color = "#d36326";
-        bg_color = "#f3f5d2";
-      } else {
-        font_color = "#44c3de";
-        bg_color = "#eff3f9";
-      }
-  
-      if (data.weather[0].main == "Sunny" || data.weather[0].main == "sunny") {
-        $(".weathercon").html(
-          "<i class='fas fa-sun' style='color: #d36326;'></i>"
-        );
-      } else {
-        $(".weathercon").html(
-          "<i class='fas fa-cloud' style='color: #44c3de;'></i>"
-        );
-      }
-  
-      var minutes =
-        date.getMinutes() < 11 ? "0" + date.getMinutes() : date.getMinutes();
-      var date =
-        weekday[date.getDay()].toUpperCase() +
-        " | " +
-        months[date.getMonth()].toUpperCase().substring(0, 3) +
-        " " +
-        date.getDate() +
-        " | " +
-        date.getHours() +
-        ":" +
-        minutes;
-      $(".location").html(city);
-      $(".temp").html(temp);
-      $(".date").html(date);
-      $(".box").css("background", bg_color);
-      $(".location").css("color", font_color);
-      $(".temp").css("color", font_color);
-    }
-  });
-  
+const apikey = '469b77d53d39523dbb94c8453b1bed1c';
+//const apiCountryURL = 'https://flagsapi.com/BR/flat/32.png';
+const apiCountryURL = 'https://countryflagsapi.com/png/';
+const city = 'Praia Grande';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.777&lon=6.66&appid=469b77d53d39523dbb94c8453b1bed1c';
+
+
+const tempElement = document.querySelector('#tempt');
+const humidityElement = document.querySelector('.humidity');
+const weatherIconElement = document.querySelector('.prev-img');
+const cityElement = document.querySelector('.location');
+const descElement = document.querySelector('.prev-text');
+const countryElement = document.querySelector('#country');
+const windElement = document.querySelector('#wsp');
+const windChillElement = document.querySelector('#wind_chill');
+
+
+
+const getWeatherData = async(city) => {
+    const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apikey}&lang=pt_br`;
+
+    const res = await fetch(apiWeatherURL);
+    const data = await res.json();
+    // console.log(data);
+    return data
+}
+const showWeatherData = async(city) => {
+    const data = await getWeatherData(city);
+    cityElement.innerText = data.name;
+    tempElement.innerText = `Temperature: ${parseInt(data.main.temp)}°C`;
+    descElement.innerText = data.weather[0].description;
+    weatherIconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
+    countryElement.setAttribute('src', apiCountryURL + data.sys.country);
+    humidityElement.innerText = `Humidity: ${data.main.humidity}%`;
+    windElement.innerText = `Wind Speed: ${data.wind.speed}km/h`;
+    windChillElement.innerText = `Wind Speed2: ${windSpeed}mph | ${kmh}Km/h`;
+}
+
+    showWeatherData(city);
+
+
+    const temperature = 'temp'; // Example temperature in Fahrenheit
+    const windSpeed = 'wind'; // Example wind speed in mph
+    const windChill = calculateWindChill(temperature, windSpeed);
+
+
+    var windChillCelsius = (windChill - 32) * (5 / 9);
+    windChillCelsius = Math.round(windChillCelsius * 100) / 100;
+    windChillCelsius = windChillCelsius.toFixed(1);
+
+
+    console.log("Wind Chill factor: " + windChillCelsius + "°C");
+
+    // Update the HTML content with the wind chill factor
+    document.getElementById("wind-chill").innerHTML = `Wind Chill: ${windChill}ºF | ${windChillCelsius}ºC`;
+
+    var tempCels = (temperature - 32) * (5 / 9);
+    document.getElementById("tempt2").innerHTML = `Temperature: ${temperature}ºF | ${tempCels}ºC`;
+
+    var kmh = (windSpeed * 1.609);
+    kmh = kmh.toFixed(0);
+
+    document.getElementById("wsp").innerHTML = `Wind Speed: ${windSpeed}mph | ${kmh}Km/h`;
+
+
+

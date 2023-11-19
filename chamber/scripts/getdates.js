@@ -11,3 +11,6 @@ document.querySelector('#year').textContent = currentDate.getFullYear();
 
 let text = document.lastModified;
 document.getElementById("lastUpdate").innerHTML = text;
+
+
+document.querySelector('#hoje').textContent = currentDate.toLocaleDateString();

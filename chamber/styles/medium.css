@@ -55,7 +55,7 @@
         margin-top: 300px;
     }
 
-    .location, .date, .temp, .prev-hum, .prev-text, .speed, .wind{
+    .location, .date, .temp, .humidity, .prev-text, .speed, .wind{
         font-size: 20px;
     }
     .dg, .nt, .sp, .msg p {
