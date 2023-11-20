@@ -189,8 +189,14 @@ main {
 }
 
 /* Weather Card */
+.weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
 
-.box {
+.box, .new-box {
     /* background-color: #000;
     opacity: 0.5; */
     box-shadow: 5px 5px 10px black;
@@ -206,8 +212,14 @@ main {
     width: 40%;
     height: 15%;
 }
+.box {
+    margin-right: 20px;
+}
+.new-box {
+    margin-left: 20px;
+}
 
-.box::after{
+.box::after, .new-box::after{
     content: '';
     background-color: #000;
     /* background-color: #ffff00; */

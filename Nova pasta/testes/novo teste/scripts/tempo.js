@@ -1,7 +1,9 @@
 const apikey = '469b77d53d39523dbb94c8453b1bed1c';
 //const apiCountryURL = 'https://flagsapi.com/BR/flat/32.png';
 const apiCountryURL = 'https://countryflagsapi.com/png/';
-const city = 'Praia Grande'
+const city = 'Praia Grande';
+// const lat = -24.007525439495208;
+// const lon = -46.42287161033189;
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.777&lon=6.66&appid=469b77d53d39523dbb94c8453b1bed1c';
 
 

@@ -1,5 +1,5 @@
 
-const temperature = 50; // Example temperature in Fahrenheit
+const temperature = `${data.main.temp}`; // Example temperature in Fahrenheit
 const windSpeed = 20; // Example wind speed in mph
 const windChill = calculateWindChill(temperature, windSpeed);
 
