@@ -15,14 +15,18 @@ getCompanyData(directoryURL);
 const displayCompanies = (companies) => {
     companies.forEach((company => {
         let partner = document.createElement('section');
-        let name = document.createElement('p');
+        let name = document.createElement('h3');
         let phone = document.createElement('p');
-        let website = document.createElement('url');
+        let website = document.createElement('a');
         let address = document.createElement('p');
         let portrait = document.createElement('img');
         name.textContent = `${company.name}`;
         phone.textContent = company.phone;
         address.textContent = company.address;
+        website.textContent = company.website;
+        website.setAttribute('href', `https://${company.website}`);
+        website.setAttribute('target', '_blank');
+        website.setAttribute('loading', 'lazy')
         //portrait.setAttribute('icon', company.icon);
         portrait.setAttribute('src', company.icon);
         portrait.setAttribute('alt', `Icon of: ${company.name}`);
@@ -37,6 +41,7 @@ const displayCompanies = (companies) => {
         partner.appendChild(name);
         partner.appendChild(phone);
         partner.appendChild(address);
+        partner.appendChild(website);
         
 
         business.appendChild(partner);

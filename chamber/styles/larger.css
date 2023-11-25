@@ -79,5 +79,53 @@
         font-size: 22px;
     }
    
+    * DIRECTORY */
+    .home-grid .menu {        
+        flex-direction: row;
+    }
+    #grid, #list {
+        margin: 26px;
+    }
+
+    #business {
+        /* display: grid; */
+        /* flex-direction: row; */
+        grid-template-columns: 1fr 1fr 1fr;
+        /* align-items: center;
+        justify-content: center;
+        margin: 20px;
+        padding: 20px; */
+        
+    }
+    
+        
+   
+
+    #business section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        /* border: 1px solid #fff; */
+	    box-shadow: 0 0 10px #333;
+        
+        
+    }
+    #business img {
+        margin: 20px;    
+    }
+    #business p {
+        padding: 3px;
+    }
+
+    #business url {
+        padding: 9px;
+    }
+
+
+        
+        
 }
 

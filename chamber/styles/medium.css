@@ -146,6 +146,52 @@
         font-size: 18px;
     }
 
-    
-    
+
+    * DIRECTORY */
+    .home-grid .menu {        
+        flex-direction: row;
+    }
+    #grid, #list {
+        margin: 26px;
+    }
+
+    #business {
+        display: grid;
+        /* flex-direction: row; */
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #business section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 0 0 10px #333;
+        border-bottom: 2px solid #fff;
+        background-color: #396e90;
+
+
+        
+
+        
+    }
+    #business img {
+        margin: 20px;    
+    }
+    #business p {
+        padding: 3px;
+    }
+
+    #business url {
+        padding: 9px;
+    }
+
+
+        
+        
 }
