@@ -23,7 +23,7 @@
         "address": "Av. Guilhermina, 648 cj. 85 - Praia Grande - SP",
         "phone": "5513999888777",
         "website":"açaidujour.com.br",
-        "icon": "",
+        "icon": "./images/acaidujour.png",
         "membershipLevel": "Platinum",
         "ID": "0003"
     },
