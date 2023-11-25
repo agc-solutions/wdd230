@@ -32,7 +32,7 @@
         "address": "Av. Guilhermina, 648 cj. 75 - Praia Grande - SP",
         "phone": "5513999888777",
         "website":"klc.com.br",
-        "icon": "",
+        "icon": "./images/klc-odonto.png",
         "membershipLevel": "Platinum",
         "ID": "0004"
     },
