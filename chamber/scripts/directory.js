@@ -25,6 +25,11 @@ const displayCompanies = (companies) => {
         address.textContent = company.address;
         //portrait.setAttribute('icon', company.icon);
         portrait.setAttribute('src', company.icon);
+        portrait.setAttribute('alt', `Icon of: ${company.name}`);
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '150');
+        portrait.setAttribute('height', '150');
+
         // portrait.setAttribute('name', `Logo of ${company.name}`);
         //console.log(data)
 
