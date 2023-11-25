@@ -7,6 +7,7 @@
         "website":"agcsolutions.com.br",
         "icon": "./images/agc-solutions.png",
         "membershipLevel": "Platinum",
+        "info": "The success of your business starts here!",
         "ID": "0001"
     },
     {
@@ -16,6 +17,7 @@
         "website":"eslc.com.br",
         "icon": "./images/eslc.png",
         "membershipLevel": "Platinum",
+        "info": "Smart leaders, smart cities!",
         "ID": "0002"
     },
     {
@@ -25,6 +27,7 @@
         "website":"açaidujour.com.br",
         "icon": "./images/acaidujour.png",
         "membershipLevel": "Platinum",
+        "info": "Quality açaí to satisfy your craving!",
         "ID": "0003"
     },
     {
@@ -34,6 +37,7 @@
         "website":"klc.com.br",
         "icon": "./images/klc-odonto.png",
         "membershipLevel": "Platinum",
+        "info": "Your best smile is here!",
         "ID": "0004"
     },
     {
@@ -43,6 +47,7 @@
         "website":"k1.com.br",
         "icon": "./images/k1.png",
         "membershipLevel": "Silver",
+        "info": "Pest control services.",
         "ID": "0005"
     },
     {
@@ -52,6 +57,7 @@
         "website":"attentus.com.br",
         "icon": "./images/attentus.jpeg",
         "membershipLevel": "Gold",
+        "info": "Smart accounting!",
         "ID": "0006"
     },
     {
@@ -61,6 +67,7 @@
         "website":"i9.com.br",
         "icon": "./images/inove.ico",
         "membershipLevel": "Gold",
+        "info": "Smart leaders, smart cities!",
         "ID": "0007"
     }
 ]
