@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-box {
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 15px;
+}
+#weather-data h2 {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: .6rem;
+}
+#city {
+    padding: .6rem;
+}

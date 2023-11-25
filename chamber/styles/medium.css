@@ -114,6 +114,18 @@
         padding: 8px;
         font-weight: bold;
     }
+    /* Weather Card */
+    .weather-card {
+    flex-direction: row;
+    }
+
+    .event {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
 
 
      /* ----------------FORM------------------- */
@@ -133,5 +145,7 @@
     .chambermembership p {
         font-size: 18px;
     }
+
+    
     
 }

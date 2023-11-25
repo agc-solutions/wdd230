@@ -63,7 +63,7 @@ body {
     font-size: 10px;
     margin: 0;
     padding: 0;
-    text-shadow: #000 2px 3px 2px;
+    /* text-shadow: #000 2px 3px 2px; */
 }
 /* button sign up */
 .call {
@@ -98,6 +98,7 @@ h1 {
     font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
     font-size: 1.2em;
     margin-top: 10rem;
+    text-shadow: #000 2px 3px 2px;
 }
 
 /* small view navigation */
@@ -122,6 +123,7 @@ h1 {
 h2 {
     font-size: 0.8rem;
     padding: 10px;
+    text-shadow: #000 2px 3px 2px;
 }
 h3 {
     font-size: 0.7rem;
@@ -193,7 +195,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .box, .new-box {
@@ -209,8 +211,8 @@ main {
     border-radius: 25px;
     padding: 20px;
     margin-top: 150px;
-    width: 40%;
-    height: 15%;
+    /* width: 40%; */
+    /* height: 15%; */
 }
 .box {
     margin-right: 20px;
@@ -262,6 +264,34 @@ main {
     font-size: 10px;
     color: #eee;
 }
+
+#weather-data {
+    /* display: flex;
+    flex-direction: column; */
+    /* border-top: 1px solid #fff; */
+    margin-top: .5rem;
+    padding-top: .5rem;
+    text-align: center;
+    color: #bed;
+}
+
+#forecast {
+    /* display: flex;
+    flex-direction: row; */
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid #fff;
+    margin-top: .5rem;
+    padding-top: .9rem;
+    /*text-align: center;
+    color: #bed; */
+}
+
+#day1, #day2, #day3 {
+    margin: 20px;
+    margin-top: 10px;
+}
+
 
 /* humidity & temperature card */
 
@@ -386,9 +416,9 @@ main {
 }
 
 .event {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 .msg {
@@ -830,7 +860,22 @@ ul {
     visibility: visible;
 }
 
+.banner {
+    background-color: yellow;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold
+}
 
+.close-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-weight: bold
+
+}
 
 
 

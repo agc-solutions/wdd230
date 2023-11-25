@@ -56,3 +56,23 @@ body{
     font-weight: bold;
     text-transform: capitalize;
 }
+
+#forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#day1, #day2, #day3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #5c54ed;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+    margin: 10px;
+    
+}

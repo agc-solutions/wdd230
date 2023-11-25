@@ -13,4 +13,4 @@ let text = document.lastModified;
 document.getElementById("lastUpdate").innerHTML = text;
 
 
-document.querySelector('#hoje').textContent = currentDate.toLocaleDateString();
+//document.querySelector('#hoje').textContent = currentDate.toLocaleDateString();

@@ -1,52 +1,62 @@
-const baseURL = "https://agc-solutions.github.io/wdd230/";
+//const baseURL = "https://agc-solutions.github.io/wdd230/";
 const directoryURL = "https://agc-solutions.github.io/wdd230/chamber/data/members.json";
 
+const business = document.querySelector('#business');
 
-const directory = 'data/members.json';
+async function getCompanyData (directoryURL) {
+    const response = await fetch(directoryURL);
+    const data = await response.json();
+    console.table(data.companies);
+    displayCompanies(data.companies);
+}
 
-const companies = document.querySelector("#companies")
+getCompanyData(directoryURL);
 
-fetch(directoryURL).then((Response) => {
-    Response.json().then((members) => {
-        members.companies.map((company) => {
-            companies.innerHTML += `<li> ${company.name} - ${company.address}</li>`
-            let portrait = document.createElement('img');             
-            portrait.setAttribute('src', company.icon);
-            portrait.setAttribute('alt', `Icon of ${company.name}`);
+const displayCompanies = (companies) => {
+    companies.forEach((company => {
+        let partner = document.createElement('section');
+        let name = document.createElement('p');
+        let phone = document.createElement('p');
+        let website = document.createElement('url');
+        let address = document.createElement('p');
+        let portrait = document.createElement('img');
+        name.textContent = `${company.name}`;
+        phone.textContent = company.phone;
+        address.textContent = company.address;
+        //portrait.setAttribute('icon', company.icon);
+        portrait.setAttribute('src', company.icon);
+        // portrait.setAttribute('name', `Logo of ${company.name}`);
+        //console.log(data)
+
+        partner.appendChild(portrait);
+        partner.appendChild(name);
+        partner.appendChild(phone);
+        partner.appendChild(address);
+        
+
+        business.appendChild(partner);
+
+        
+        
+    }));
+    
+}
+
+    
+
+
+//const directory = 'data/members.json';
+// fetch(directoryURL).then((Response) => {
+//     Response.json().then((members) => {
+//         members.companies.map((company) => {
+//             companies.innerHTML += `<li> ${company.name} - ${company.address}</li>`
+//             let portrait = document.createElement('img');             
+//             portrait.setAttribute('src', company.icon);
+//             portrait.setAttribute('alt', `Icon of ${company.name}`);
             
-        })
+//         })
         
         
-        // console.log(companies)
-    })
-})
-
-
-
-// async function getCompaniesData (directory) {
-//     const response = await fetch(directory);
-//     const data = await response.json();
-//     console.table(companies);
-//     displayCompanies(companies);
-// }
-
-// getCompaniesData(directory);
-
-// const displayCompanies = (companies) => {
-//     companies.forEach((company => {
-//         let company = document.createElement('section');
-//         let name = document.createElement('__');
-//         let portrait = document.createElement('img');
-
-//         name.textContent = `${company.name}`;
-
-//         portrait.setAtribute('icon', company.icon);
-//         portrait.setAtribute('name', `Logo of ${company.name}`);
-
-//         company.appendChild(name);
-//         company.appendChild(portrait);
-
-//         companies.appendChild(company);
-        
-//     }));
-// }
+//         // console.log(companies)
+//     })
+// })
