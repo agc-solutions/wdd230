@@ -79,7 +79,7 @@
         font-size: 22px;
     }
    
-    * DIRECTORY */
+    /* * DIRECTORY * */
     .home-grid .menu {        
         flex-direction: row;
     }
