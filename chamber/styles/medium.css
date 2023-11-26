@@ -173,13 +173,12 @@
         padding: 20px;
         box-shadow: 0 0 10px #333;
         border-bottom: 2px solid #fff;
-        background-color: #396e90;
-
-
-        
-
-        
+        background-color: #396e90;       
     }
+
+    #business section p {
+        font-size: 12px;
+        }
     #business img {
         margin: 20px;    
     }

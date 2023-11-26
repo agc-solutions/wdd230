@@ -109,10 +109,13 @@
         padding: 20px;
         border: 1px solid rgba(0, 0, 0, 0.1);
         /* border: 1px solid #fff; */
-	    box-shadow: 0 0 10px #333;
-        
+	    box-shadow: 0 0 10px #333;       
         
     }
+    #business section p {
+    font-size: 15px;
+    }
+
     #business img {
         margin: 20px;    
     }

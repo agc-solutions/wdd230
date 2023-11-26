@@ -20,8 +20,12 @@ const displayCompanies = (companies) => {
         let website = document.createElement('a');
         let address = document.createElement('p');
         let portrait = document.createElement('img');
+        let memberLevel = document.createElement('p');
+        let memberInfo = document.createElement('p');
+        let memberID = document.createElement('p');
+
         name.textContent = `${company.name}`;
-        phone.textContent = company.phone;
+        phone.textContent = `+${company.phone}`;
         address.textContent = company.address;
         website.textContent = company.website;
         website.setAttribute('href', `https://${company.website}`);
@@ -34,6 +38,9 @@ const displayCompanies = (companies) => {
         portrait.setAttribute('width', '150');
         portrait.setAttribute('height', '150');
 
+        memberLevel.textContent = `Membership Level: ${company.membershipLevel}`;
+        memberInfo.textContent = company.info;
+
         // portrait.setAttribute('name', `Logo of ${company.name}`);
         //console.log(data)
 
@@ -41,7 +48,10 @@ const displayCompanies = (companies) => {
         partner.appendChild(name);
         partner.appendChild(phone);
         partner.appendChild(address);
+        partner.appendChild(memberLevel);
+        partner.appendChild(memberInfo);
         partner.appendChild(website);
+
         
 
         business.appendChild(partner);

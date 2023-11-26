@@ -528,11 +528,11 @@ main {
     font-weight: bold;
 }
 
-#content {
+/* #content {
     display: block;
     max-width: 1600px;
     margin: 0 auto;
-}
+} */
 #header2 {
     display: grid;
     grid-template-columns: 100% auto;
@@ -871,6 +871,7 @@ ul {
     background-color: red;
     color: white;
     border: none;
+    border-radius: 8px;
     padding: 5px 10px;
     margin-top: 10px;
     font-weight: bold
@@ -878,6 +879,9 @@ ul {
 }
 
 /* DIRECTORY */
+#directory h2 {
+    color: #ffff00;
+}
 .home-grid .menu {
     display: flex;
     align-items: center;
@@ -905,6 +909,7 @@ ul {
     border-bottom: 2px solid #fff;
     
 }
+
 #business img {
     margin: 20px;    
 }
@@ -920,8 +925,9 @@ ul {
     display: none;
 } */
 
-
-
+#directory, .join-home-grid{
+    margin-top: 300px;
+}
 
 /* .discover-home-grid { */
     /* display: flex;

@@ -7,13 +7,14 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-24&lon=-46.42&
 
 
 
-const tempElement = document.querySelector('#tempt');
-const humidityElement = document.querySelector('.humidity');
+const tempElement = document.querySelector('#tempt span');
+const humidityElement = document.querySelector('.humidity span');
+const todayElement = document.querySelector('#hoje')
 const weatherIconElement = document.querySelector('.prev-img');
 const cityElement = document.querySelector('.location');
 const descElement = document.querySelector('.prev-text');
 const countryElement = document.querySelector('#country');
-const windElement = document.querySelector('#wsp');
+const windElement = document.querySelector('#wsp span');
 const windChillElement = document.querySelector('#wind-chill');
 //const temp2Element = document.querySelector('#tempt2');
 
@@ -55,11 +56,13 @@ const showWeatherData = async(city) => {
     const data = await getWeatherData(city);
     //cityElement.innerText = data.name;
     cityElement.innerText = data.city.name;
+
+    todayElement.innerText =  (new Date((data.list[0].dt)*1000)).toDateString();
     //let tempCels = `${parseInt(data.main.temp)}°C`;
     let tempCels = `${parseInt(data.list[0].main.temp)}°C`;
     //var tempFar = `${parseInt((((data.main.temp) / 5) * 9)+32)}°F`;
     var tempFar = `${parseInt((((data.list[0].main.temp) / 5) * 9)+32)}°F`;
-    tempElement.innerText = `Temperature: ${tempCels} || ${tempFar}`;
+    tempElement.innerText = ` Temperature: ${tempCels} || ${tempFar}`;
     //descElement.innerText = data.weather[0].description;
     descElement.innerText = data.list[0].weather[0].description;
     //weatherIconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
@@ -67,7 +70,7 @@ const showWeatherData = async(city) => {
     //countryElement.setAttribute('src', apiCountryURL + data.sys.country);
     countryElement.setAttribute('src', apiCountryURL + data.city.country);
     //humidityElement.innerText = `Humidity: ${data.main.humidity}%`;
-    humidityElement.innerText = `Humidity: ${data.list[0].main.humidity}%`;
+    humidityElement.innerText = ` Humidity: ${data.list[0].main.humidity}%`;
 
     //let windSpeed = `${(data.wind.speed).toFixed(0)}`;
     let windSpeed = `${(data.list[0].wind.speed).toFixed(0)}`;
@@ -76,7 +79,7 @@ const showWeatherData = async(city) => {
     var mph = (windSpeed / 1.609);
     mph = mph.toFixed(0);
     
-    windElement.innerText = `Wind Speed: ${windSpeed}km/h | ${mph}mph`;
+    windElement.innerText = ` Wind Speed: ${windSpeed}km/h | ${mph}mph`;
     
     //windChillElement.innerText = `Wind Chill Factor: ${parseInt(data.main.feels_like)}°F`;
 
