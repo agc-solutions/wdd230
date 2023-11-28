@@ -913,9 +913,6 @@ ul {
     align-items: center;
     justify-content: center;
 }
-#grid, #list {
-    margin: 26px;
-}
 
 #business {
     display: flex;
@@ -951,6 +948,6 @@ ul {
     display: none;
 }
 
-#directory, .join-home-grid{
+#directory, .join-home-grid {
     margin-top: 300px;
 }
