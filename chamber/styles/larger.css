@@ -88,18 +88,8 @@
     }
 
     #business {
-        /* display: grid; */
-        /* flex-direction: row; */
-        grid-template-columns: 1fr 1fr 1fr;
-        /* align-items: center;
-        justify-content: center;
-        margin: 20px;
-        padding: 20px; */
-        
-    }
-    
-        
-   
+        grid-template-columns: 1fr 1fr 1fr;        
+    }   
 
     #business section {
         display: flex;
@@ -125,10 +115,6 @@
 
     #business url {
         padding: 9px;
-    }
-
-
-        
-        
+    }       
 }
 

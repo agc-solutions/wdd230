@@ -21,7 +21,9 @@ const displayCompanies = (companies) => {
         let address = document.createElement('p');
         let portrait = document.createElement('img');
         let memberLevel = document.createElement('p');
+        memberLevel.setAttribute("id", "level");
         let memberInfo = document.createElement('p');
+        memberInfo.setAttribute("id", "info");
         let memberID = document.createElement('p');
 
         name.textContent = `${company.name}`;

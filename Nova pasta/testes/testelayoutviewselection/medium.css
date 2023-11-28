@@ -1,0 +1,19 @@
+/* * DIRECTORY * */
+@media only screen and (min-width: 37.5em){
+    section #business{
+        display: grid;
+        /* flex-direction: row; */
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    /* .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+    } */
+}
