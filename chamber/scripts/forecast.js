@@ -65,7 +65,7 @@
 
 //const apikey = '469b77d53d39523dbb94c8453b1bed1c';
 //const apiCountryURL = 'https://flagsapi.com/BR/flat/32.png';
-const apiCountryURL = 'https://countryflagsapi.com/png/';
+const apiCountryURL = 'https://flagsapi.com/png/';
 //const city = 'praia grande';
 // const lat = -24.007525439495208;
 // const lon = -46.42287161033189;

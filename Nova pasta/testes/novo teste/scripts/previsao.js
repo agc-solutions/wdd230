@@ -90,7 +90,7 @@ const showForecastData = async() => {
     // }
 
     // // let displayWeatherDay = function (dayOfWeek, description, icon, sunrise, sunset) {
-    // //     let out = "<div class='weatherDay"><img src='https://countryflagsapi.com/png' </head>{
+    // //     let out = "<div class='weatherDay"><img src='https://flagsapi.com/png' </head>{
     // //     out += "<h2>" + dayOfWeek + "<h2>";
     // //     out += "<h3>" + dayOfWeek + "<h3>";
     // //     out += "<p>" + dayOfWeek + "<p>";
