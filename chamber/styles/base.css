@@ -570,6 +570,12 @@ h4 {
     text-align: center;
     font-weight: bold;
     margin-top: -1%;
+    color: #ffff00;
+    text-shadow: 5px 5px 10px black;
+    /* text-shadow: #000 2px 3px 2px; */
+    font-size: 1rem;
+    padding: 20px;
+
     /* margin-block-start: 1.33em;
     margin-inline-end: 1.33em;
     margin-inline-start: 0px;
