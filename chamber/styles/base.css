@@ -889,7 +889,6 @@ ul {
 #grid, #list {
     backdrop-filter:opacity(100%);
     background-color:transparent;
-    text-shadow: #000;
     /* mix-blend-mode: multiply; */
     border: none;
     display: flex;
