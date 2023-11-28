@@ -63,7 +63,7 @@
     
 
 
-const apikey = '469b77d53d39523dbb94c8453b1bed1c';
+//const apikey = '469b77d53d39523dbb94c8453b1bed1c';
 //const apiCountryURL = 'https://flagsapi.com/BR/flat/32.png';
 const apiCountryURL = 'https://countryflagsapi.com/png/';
 //const city = 'praia grande';
@@ -115,14 +115,14 @@ const showForecastData = async(city) => {
     
     const hj = 1700805600;
 
-    const dt1 = data.list[1].dt;
+    const dt1 = data.list[4].dt;
     var day1 = new Date(dt1*1000);
 
-    // const dt2 = data.list[2].dt;
+    // const dt2 = data.list[12].dt;
     // //console.log(dt2);
     // var day2 = new Date(dt2*1000);
 
-    const dt3 = data.list[3].dt;
+    const dt3 = data.list[20].dt;
     var day3 = new Date(dt3*1000);
 
     //const dt = data.list[0].dt;    
@@ -135,14 +135,14 @@ const showForecastData = async(city) => {
 
     //hoyElement.innerText = data.list[0].dt;
     //pday1Element.innerText = data.list[1].dt;
-    pday2Element.innerText = data.list[2].dt;
-    pday3Element.innerText = data.list[3].dt;
+    pday2Element.innerText = data.list[12].dt;
+    pday3Element.innerText = data.list[20].dt;
 
     //tempElement.innerText = parseInt(data.main.temp);
     //tempElement.innerText = parseInt(data.list[0].main.temp);
-    temp1Element.innerText = parseInt(data.list[1].main.temp);
-    temp2Element.innerText = parseInt(data.list[2].main.temp);
-    temp3Element.innerText = parseInt(data.list[3].main.temp);
+    temp1Element.innerText = `hoje:${parseInt(data.list[4].main.temp)}°C`;
+    temp2Element.innerText = parseInt(data.list[12].main.temp);
+    temp3Element.innerText = parseInt(data.list[20].main.temp);
 
     //descElement.innerText = data.weather[0].description;
     //weatherIconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
@@ -150,11 +150,11 @@ const showForecastData = async(city) => {
     //weatherIconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png`);
     //countryElement.setAttribute('src', `https://flagsapi.com/${data.sys.country}/flat/32.png/`);
 
-    desc1Element.innerText = data.list[1].weather[0].description;
+    desc1Element.innerText = data.list[4].weather[0].description;
     weather1IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[1].weather[0].icon}.png`);
-    desc2Element.innerText = data.list[2].weather[0].description;
+    desc2Element.innerText = data.list[12].weather[0].description;
     weather2IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[2].weather[0].icon}.png`);
-    desc3Element.innerText = data.list[3].weather[0].description;
+    desc3Element.innerText = data.list[20].weather[0].description;
     weather3IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[3].weather[0].icon}.png`);
 }
 

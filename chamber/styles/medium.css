@@ -213,6 +213,7 @@
     } */
     .list a {
         color: #ffff00;
+        text-align: center;
     }
     .list #business section {
         display: grid;

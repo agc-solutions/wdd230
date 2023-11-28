@@ -1,7 +1,7 @@
 const apikey = '469b77d53d39523dbb94c8453b1bed1c';
 //const apiCountryURL = 'https://flagsapi.com/BR/flat/32.png';
-const apiCountryURL = 'https://countryflagsapi.com/png/';
-const city = 'praia grande';
+const apiCountryURL = 'https://flagsapi.com/';
+const city = 'Santos';
 // const lat = -24.007525439495208;
 // const lon = -46.42287161033189;
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.777&lon=6.66&appid=469b77d53d39523dbb94c8453b1bed1c';
@@ -40,7 +40,7 @@ const getWeatherData = async(city) => {
 
     const res = await fetch(apiWeatherURL);
     const data = await res.json();
-    // console.log(data);
+    console.log(data);
     return data
 }
 const showWeatherData = async(city) => {
@@ -65,10 +65,10 @@ const showWeatherData = async(city) => {
     const d1 = new Date(data.list[4].dt);
     d1.getDay();
 
-    const d2 = new Date(data.list[2].dt);
+    const d2 = new Date(data.list[12].dt);
     d2.getDay();
 
-    const d3 = new Date(data.list[3].dt);
+    const d3 = new Date(data.list[20].dt);
     d3.getDay();
 
     const tday = 1700881200;
@@ -101,28 +101,32 @@ const showWeatherData = async(city) => {
     1701237600 // wed 29/11 38
     1701259200 // wed 29/11 40
 
-    const dt1 = data.list[1].dt;
-    var day1 = new Date(dt1*1000);
+    
+    
 
-    // const dt2 = data.list[2].dt;
-    // //console.log(dt2);
-    // var day2 = new Date(dt2*1000);
-
-    const dt3 = data.list[3].dt;
+    const dt3 = data.list[20].dt;
     var day3 = new Date(dt3*1000);
 
     const dt = data.list[0].dt;    
     var day0 = new Date(dt*1000);
-    hoyElement.innerText = dt0.toDateString();
+    hoyElement.innerText = day0.toDateString();
+
+    const dt1 = data.list[4].dt;
+    var day1 = new Date(dt1*1000);
+
+    const dt2 = data.list[12].dt;
+    //console.log(dt2);
+    var day2 = new Date(dt2*1000);
+
 
     //hoyElement.innerHTML = day0.toDateString();
     //hoyElement.innerHTML = d.getDay();
-    //pday1Element.innerText = day1.toDateString();
-    pday1Element.innerText = d1.getDay();
-    // pday2Element.innerText = day2.toDateString();
-    pday2Element.innerText = d2.getDay();
-    //pday3Element.innerText = day3.toDateString();
-    pday3Element.innerText = d3.getDay();
+    pday1Element.innerText = day1.toDateString();
+    //pday1Element.innerText = day1.getDay();
+    pday2Element.innerText = day2.toDateString();
+    //pday2Element.innerText = day2.getDay();
+    pday3Element.innerText = day3.toDateString();
+    //pday3Element.innerText = day3.getDay();
 
     //hoyElement.innerText = data.list[0].dt;
     //pday1Element.innerText = data.list[1].dt;
@@ -131,21 +135,21 @@ const showWeatherData = async(city) => {
 
     //tempElement.innerText = parseInt(data.main.temp);
     tempElement.innerText = parseInt(data.list[0].main.temp);
-    temp1Element.innerText = parseInt(data.list[1].main.temp);
-    temp2Element.innerText = parseInt(data.list[2].main.temp);
-    temp3Element.innerText = parseInt(data.list[3].main.temp);
+    temp1Element.innerText = parseInt(data.list[4].main.temp);
+    temp2Element.innerText = parseInt(data.list[12].main.temp);
+    temp3Element.innerText = parseInt(data.list[20].main.temp);
 
     //descElement.innerText = data.weather[0].description;
     //weatherIconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     descElement.innerText = data.list[0].weather[0].description;    
     weatherIconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png`);
-    countryElement.setAttribute('src', `https://flagsapi.com/${data.sys.country}/flat/32.png/`);
+    countryElement.setAttribute('src', `https://flagsapi.com/${data.city.country}/flat/32.png/`);
 
-    desc1Element.innerText = data.list[1].weather[0].description;
+    desc1Element.innerText = data.list[4].weather[0].description;
     weather1IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[1].weather[0].icon}.png`);
-    desc2Element.innerText = data.list[2].weather[0].description;
+    desc2Element.innerText = data.list[12].weather[0].description;
     weather2IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[2].weather[0].icon}.png`);
-    desc3Element.innerText = data.list[3].weather[0].description;
+    desc3Element.innerText = data.list[20].weather[0].description;
     weather3IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[3].weather[0].icon}.png`);
 }
 

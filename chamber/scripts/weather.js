@@ -1,6 +1,6 @@
 const apikey = '469b77d53d39523dbb94c8453b1bed1c';
 //const apiCountryURL = 'https://flagsapi.com/BR/flat/32.png';
-const apiCountryURL = 'https://countryflagsapi.com/png/';
+const apiCountryURL = 'https://flagsapi.com/png/';
 const city = 'Praia Grande';
 //const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.777&lon=6.66&appid=469b77d53d39523dbb94c8453b1bed1c';
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-24&lon=-46.42&appid=469b77d53d39523dbb94c8453b1bed1c';
@@ -9,6 +9,7 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-24&lon=-46.42&
 
 const tempElement = document.querySelector('#tempt span');
 const humidityElement = document.querySelector('.humidity span');
+const humidityIcon = document.querySelector('#hum');
 const todayElement = document.querySelector('#hoje')
 const weatherIconElement = document.querySelector('.prev-img');
 const cityElement = document.querySelector('.location');
@@ -57,7 +58,7 @@ const showWeatherData = async(city) => {
     //cityElement.innerText = data.name;
     cityElement.innerText = data.city.name;
 
-    todayElement.innerText =  (new Date((data.list[0].dt)*1000)).toDateString();
+    todayElement.innerText = (new Date((data.list[0].dt)*1000)).toDateString();
     //let tempCels = `${parseInt(data.main.temp)}°C`;
     let tempCels = `${parseInt(data.list[0].main.temp)}°C`;
     //var tempFar = `${parseInt((((data.main.temp) / 5) * 9)+32)}°F`;
@@ -68,7 +69,8 @@ const showWeatherData = async(city) => {
     //weatherIconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
     weatherIconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png`);
     //countryElement.setAttribute('src', apiCountryURL + data.sys.country);
-    countryElement.setAttribute('src', apiCountryURL + data.city.country);
+    //countryElement.setAttribute('src', apiCountryURL + data.city.country);
+    countryElement.setAttribute('src', `https://flagsapi.com/${data.city.country}/flat/32.png/`);
     //humidityElement.innerText = `Humidity: ${data.main.humidity}%`;
     humidityElement.innerText = ` Humidity: ${data.list[0].main.humidity}%`;
 
@@ -143,9 +145,9 @@ const showWeatherData = async(city) => {
     //pday2Element.innerText = data.list[2].dt;
     //pday3Element.innerText = data.list[20].dt;
 
-    temp1Element.innerText = parseInt(data.list[4].main.temp);
-    temp2Element.innerText = parseInt(data.list[12].main.temp);
-    temp3Element.innerText = parseInt(data.list[20].main.temp);
+    temp1Element.innerText = `${parseInt(data.list[4].main.temp)}°C`;
+    temp2Element.innerText = `${parseInt(data.list[12].main.temp)}°C`;
+    temp3Element.innerText = `${parseInt(data.list[20].main.temp)}°C`;
 
     desc1Element.innerText = data.list[4].weather[0].description;
     weather1IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[1].weather[0].icon}.png`);

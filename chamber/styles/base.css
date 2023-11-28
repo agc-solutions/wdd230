@@ -284,8 +284,7 @@ main {
     border-top: 1px solid #fff;
     margin-top: .5rem;
     padding-top: .9rem;
-    /*text-align: center;
-    color: #bed; */
+    line-height: 2rem;
 }
 
 #day1, #day2, #day3 {
@@ -510,7 +509,7 @@ main {
     /* justify-content:flex-end; */
   }
 
-  .prev-text {
+  .prev-text, #description1, #description2, #description3 {
     font-weight: bold;
     text-transform: capitalize;
 }
@@ -887,7 +886,7 @@ ul {
 }
 /* #grade, #lista { */
 #grid, #list {
-    backdrop-filter:opacity(100%);
+    /* backdrop-filter:opacity(100%); */
     background-color:transparent;
     /* mix-blend-mode: multiply; */
     border: none;
