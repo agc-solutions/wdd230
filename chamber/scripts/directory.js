@@ -6,7 +6,7 @@ const business = document.querySelector('#business');
 async function getCompanyData (directoryURL) {
     const response = await fetch(directoryURL);
     const data = await response.json();
-    console.table(data.companies);
+    //console.table(data.companies);
     displayCompanies(data.companies);
 }
 

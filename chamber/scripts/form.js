@@ -135,7 +135,7 @@ function checkform() {
         alert ("Cadastro realizado com sucesso!")
     }
 
-    console.log(isValid);
+    //console.log(isValid);
 
 } 
 

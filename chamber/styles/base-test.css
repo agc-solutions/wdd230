@@ -185,13 +185,13 @@ nav {
 
 .location {
     color: #ffff;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
 }
 
 .date {
     color: #ffff;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 300;
     margin-top: 15px;
 }
@@ -207,15 +207,15 @@ nav {
     margin-right: 10px;
 }
 .prev-text {
-    font-size: 10px;
+    font-size: 12px;
     color: #eee;
 }
 .temp {
-    font-size: 10px;
+    font-size: 12px;
     color: #ffff;
 }
 .prev-hum {
-    font-size: 10px;
+    font-size: 12px;
     color: #ffff;
     margin-top: 20px;
 }
@@ -262,7 +262,7 @@ nav {
     padding: 10px;
     margin-bottom: 1px;
     border-radius: 15px;
-    font-size: 10px;
+    font-size: 12px;
     background-color: #ffff00;
     text-shadow: none;
     float: right;  

@@ -8,7 +8,7 @@ $(document).ready(function() {
     }
   
     function error() {
-      console.log("There was an error");
+      //console.log("There was an error");
     }
   
     function weather(lat, long) {
