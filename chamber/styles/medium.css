@@ -233,6 +233,21 @@
     .list #business section:nth-child(even) {
         background-color: #001d3d;
     }
+
+
+    .join-event-content p, .digital-content {
+        font-size: 15px;        
+    }
+
+    .join-event-content h2, .digital-content h2 {
+        margin-top: 50px;
+        font-size: 1.4rem;        
+    }
+
+    .join-event-container.active, .digital-container.active {
+        width: 400px;
+        height: 400px;
+    }
         
         
 }

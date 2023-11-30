@@ -387,6 +387,7 @@ main {
 /* buttons */
 .digcert, .network, .spee {
     padding: 10px;
+    margin-top: 20px;
     margin-bottom: 1px;
     border-radius: 15px;
     font-size: 12px;
@@ -955,4 +956,113 @@ ul {
 
 #directory, .join-home-grid {
     margin-top: 300px;
+}
+
+.join-event-container, .digital-container {
+    position: relative;
+    width: 0;
+    height: 0;
+    background: #003566;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    transition: 0.5s;
+}
+.join-event-container.active, .digital-container.active {
+    width: 400px;
+    height: 300px;
+    transition-delay: 0.5s;
+}
+
+
+.join-event-container::before, .digital-container::before  {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    width: 40px;
+    height: 40px;
+    background: #ffff00;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.join-event-container.active::before, .digital-container.active::before  {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.togglebtn, .togglebtn1 {
+    position: absolute;
+    min-width: 60px;
+    height: 60px;
+    background:#ffff00;
+    bottom: -50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.join-event-container.active .togglebtn1, .digital-container.active .togglebtn {
+    bottom: -90px;
+    transform: rotate(135deg);
+    background: red;
+}
+.togglebtn:hover, .togglebtn1:hover {
+    background: #001D3D;
+    transition: 0.5s;
+}
+
+.togglebtn::before, .togglebtn1::before {
+    content: "+";
+    font-size: 2.5rem;
+    color: black;
+    transition: 0.5s;
+}
+
+.togglebtn:hover::before, .togglebtn1:hover::before {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.join-event-container.active .togglebtn1:hover::before, .digital-container.active .togglebtn:hover::before {
+    color: #040305;
+}
+/* ?????   .join-event-container .join-event-content */
+.join-event-content, .digital-content {
+    min-width: 500px;
+    padding: 40px;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.join-event-container.active .join-event-content, .digital-container.active .digital-content {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s;
+}
+
+.join-event-content h2, .digital-content h2 {
+    /* padding-bottom: 20px; */
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+.join-event-content h2 {
+    margin-top: 50px;
+}
+
+.join-event-content p, .digital-content p {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;    
+    font-weight: bold;
+    color: #fff;
 }
