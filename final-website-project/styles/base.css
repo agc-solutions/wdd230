@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Gruppo', sans-serif; */
+    font-family: 'Jura', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;
+    font-family: 'Rock Salt', cursive; */
+}
+
+main {
+    background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+nav a {
+    text-align: center;
+}
+/* RENTAL PAGE */
+
+#rent{
+   
+    
+    /* background-color: #000; */
+}
+
+/* RENTAL PAGE */
+
+#hero-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    /* background-color: #5c54ed; */
+    background-color: #000;
+    opacity: 0.8;
+    /* box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px; */
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+}
+
+#weather-data {
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+#weather-data h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .6rem;
+}
+
+#weather-data h2 {
+    font-size: 1rem
+}
+#weather-data span {
+    margin: 0.6rem;
+}
+
+#country {
+    height:25px;
+}
+
+#description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+    
+}
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+#forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#day1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    /* background-image: url("https://source.unsplash.com/1600x900/?landscape"); */
+    background-color: #5c54ed;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+    margin: 10px;    
+}
+#prices {
+    background-image:url('./moto.webp'); /*url('./2024-pioneer6.webp');*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-position: top, bottom; */
+    background-position: fixed;
+    /* background-position: center; */
+}
+
+#prices img {
+    max-width:400px;
+    margin: 10px;
+    border: 2px solid grey;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #001d3d;
+    text-align: center;
+    /* color: #ffff00; */
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 50px;
+    /* margin-top: 200px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}    
+footer a:hover {
+    font-size: 1.2em;
+    text-decoration: underline;
+    color: white;
+}
+footer a {
+    color: #ffff00;
+    text-decoration: none;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Jura:wght@300;400;500;600;700&family=Montserrat&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <!-- Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta property="og:title" content="Motor Scooter Rental">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/agc-solutions/wdd230/blob/main/images/rsz_4praiagrande.png">
+    <meta property="og:url" content="https://agc-solutions.github.io/wdd230/final-website-project/index.html">
+    
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/table.css">
+    <script src="./scripts/wpage.js" defer></script>
+
+    <title>Scoots - Motor Scooter Rental</title>
+</head>
+<body>
+    <header>
+        <h1 id="company">Scoots - Motor Scooter Rental</h1>
+    
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <a href="index.html">Home</a>
+                <a href="./rental.html">Rental</a>
+                <a href="./reservation.html">Reservations</a>
+                <a href="./contact.html">Contact</a>
+            </ul>
+        </nav>
+    </header>
+    <div id="hero">
+        <div id="hero-box">
+            <img src="./images/webp/sccoterbeach.webp" alt="" id="hero-img">
+        </div>
+    </div>
+<body id="rent">
+
+    <!-- The Rentals page describes the available rental options and prices with images. -->
+    <!-- https://powersports.honda.com/motorcycle/scooter/metropolitan/gallery -->
+    <!-- https://www.calallencdjr.com/all-inventory/index.htm?search=jeep%20wrangler -->
+    <!-- The prices displayed on the site must be obtained from a JSON data source of your own making.
+         Store this .json file in a data 📁 folder in this project folder.
+         Incorporate a data table in your HTML structure to display some portion of this information. -->
+    <h1>Rentals</h1>
+    <div id="prices">
+        <h2>Prices</h2>
+        <div id="metro">
+            <h3>Honda Metro Scooter</h3>
+            <img src="./images/webp/2024-metro.webp" alt="" id="mtsctr">
+            <p id="metroprice"></p>
+        </div>
+    
+        <div id="dio">
+            <h3>Honda Dio Scooter</h3>
+            <img src="./images/webp/dio.webp" alt="" id="dsctr">
+            <p id="dioprice"></p>
+        </div>
+
+        <div id="pcx">
+            <h3>Honda PCX150 Scooter</h3>
+            <img src="./images/webp/2022-pcx.webp" alt="" id="dsctr">
+            <p id="pcxprice"></p>
+        </div>
+
+        <div id="pioneer">
+            <h3>Honda Pioneer ATV</h3>
+            <img src="./images/webp/2024-pioneer.webp" alt="" id="dsctr">
+            <p id="pioneerprice"></p>
+        </div>
+
+        <div id="jw4">
+            <h3>Jeep Wrangler - 4 door with a/c</h3>
+            <img src="./images/webp/PJF.webp" alt="" id="dsctr">
+            <p id="jw4price"></p>
+        </div>
+
+        <div id="jw2">
+            <h3>Jeep Wrangler - 2 door</h3>
+            <img src="./images/webp/jw2p.webp" alt="" id="dsctr">
+            <p id="jw2price"></p>
+        </div>
+    </div>
+
+
+
+    <div id="table">Table
+        <table>
+            <caption>* Please read the Rental Services and Agreements</caption>
+            <thead>
+                <tr>
+                    <th colspan="6" scope="colgroup">Max Rental Pricing</th>
+                </tr>
+                <tr>
+                    
+                    <th colspan="2" scope="col" class="highlight"></th>
+                    <th colspan="2" scope="col">Reservation</th>
+                    <th colspan="2" scope="col">Walk-in</th>
+                </tr>
+                <tr>
+                    <th scope="col">Rental Type</th>
+                    <th scope="col">Max. Persons</th>
+                    <th scope="col">Half Day (3hrs)</th>
+                    <th scope="col">Full Day</th>
+                    <th scope="col">Half Day (3hrs)</th>
+                    <th scope="col">Full Day</th>                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Honda Metro Scooter</td>
+                    <td>1</td>
+                    <td>$20</td>
+                    <td>$30</td>
+                    <td>$25</td>
+                    <td>$35</td>
+                </tr>
+                <tr>
+                    <td>Honda Dio Scooter</td>
+                    <td>2</td>
+                    <td>$30</td>
+                    <td>$40</td>
+                    <td>$35</td>
+                    <td>$45</td>
+                <tr>
+                    <td>Honda PCX150 Scooter</td>
+                    <td>2</td>
+                    <td>$40</td>
+                    <td>$50</td>
+                    <td>$45</td>
+                    <td>$55</td>
+                </tr>
+                <tr>
+                    <td>Honda Pioneer ATV</td>
+                    <td>6</td>
+                    <td>$50</td>
+                    <td>$70</td>
+                    <td>$60</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>Jeep Wrangler - 4 door with a/c</td>
+                    <td>5</td>
+                    <td>$70</td>
+                    <td>$100</td>
+                    <td>$85</td>
+                    <td>$125</td>
+                </tr>
+                <tr>
+                    <td>Honda Pioneer ATV</td>
+                    <td>4</td>
+                    <td>$60</td>
+                    <td>$85</td>
+                    <td>$70</td>
+                    <td>$90</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
