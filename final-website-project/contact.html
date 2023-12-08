@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Jura:wght@300;400;500;600;700&family=Montserrat&family=Rock+Salt&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" href="./images/scooters/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/final-website-project/images/scooters/logo.webp /favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <!-- Fonts Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -17,34 +23,48 @@
     <meta property="og:image" content="https://github.com/agc-solutions/wdd230/blob/main/images/rsz_4praiagrande.png">
     <meta property="og:url" content="https://agc-solutions.github.io/wdd230/final-website-project/index.html">
     
-    <!-- <link rel="stylesheet" href="./styles/base.css"> -->
-    <script src="./scripts/wpage.js" defer></script>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="">
+
+    <!-- <script src="./scripts/wpage.js" defer></script> -->
+    <script src="./scripts/hambmenu.js" defer></script>
+    <script src="./scripts/dark.js" defer></script>
 
     <title>Scoots - Motor Scooter Rental</title>
 </head>
 <body>
     <header>
+        <a id="logo_link" href="index.html">
+             <!-- <img class="logo" src="./images/scooters/logo.webp" alt="Scoots - Motor Rental"> -->
+             <img class="logo" src="./images/scooters/logo-small.png" alt="Scoots - Motor Rental">
+        </a>
         <h1 id="company">Scoots - Motor Scooter Rental</h1>
+        <!-- </header> -->
+        <div id="mode">🕶️</div>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./rental.html">Rental</a></li>
+                <li><a href="./reservation.html">Reservations</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <button id="menu"></button>
-        <ul class="navigation">
-            <a href="index.html">Home</a>
-            <a href="./rental.html">Rental</a>
-            <a href="./reservation.html">Reservations</a>
-            <a href="./contact.html">Contact</a>
-        </ul>
-    </nav>
-<body>
-    <!--  The Contact page will contain: -->
-    <!--  essential contact information, -->
-    <!-- an embedded Google map showing the two locations on Cozumel, and -->
-    <!-- a basic contact us form with name, email, and comment. -->
-    <h1>Contact</h1>
+    <main id="contact">
 
-    <div id="info">About Us</div>
-    <div id="map">Map</div>
-    <div id="contact-us">Contact Us Form</div>
-    
+        <!--  The Contact page will contain: -->
+        <!--  essential contact information, -->
+        <!-- an embedded Google map showing the two locations on Cozumel, and -->
+        <!-- a basic contact us form with name, email, and comment. -->
+        <h1>Contact</h1>
+
+        <div id="info">About Us</div>
+        <div id="map">Map</div>
+        <div id="contact-us">Contact Us Form</div>
+    </main>   
 </body>
 </html>

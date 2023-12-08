@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #001d3d;
+    color: #fff;
+}
+#company {
+    width: 40%;
+}
+nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    padding: 20px;
+    color: #fff;
+}
+
+.logo {
+    width: 80px;
+    padding-top: 5px;
+}
+
+.pai {
+    background-color: #8a2be2;
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: stretch;
+  }

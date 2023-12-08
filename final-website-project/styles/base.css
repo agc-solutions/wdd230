@@ -8,28 +8,163 @@
     font-family: 'Rock Salt', cursive; */
 }
 
-main {
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #001d3d;
+    color: #bed;
+    max-width: 100%;
+}
+
+.logo {
+    width: 80px;
+    padding-top: 5px;
+}
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+#company {
+    width: 50%;
+}
+nav {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    align-items:center;
+    /* margin-right: -500vh; */
+    width: 50%;
+}
+nav a {
+    display: block;
+    text-align: center;
+    color: #bed;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px  rgba(0,0,0,.3);
+	/* padding: .25rem .75rem;
+	background-color: #eee; */
+    padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+/* nav, navigation,  –> menu header */
+/* nav {
+    margin: 0;
+    margin-top: -1.35rem;
+    padding: 0;
+    box-sizing: border-box;
+    margin-left: 40%;
+    margin-right: -20%;
+} */
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    /* background-color: black; */
+}
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    /* color: #ffff00; */
+}
+.navigation li a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+}
+
+.active::before {
+    content: "📍 ";
+}
+
+.stuff {
+    margin: .5rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    background-color: #bed;
+    max-width: 580px;
+    height: 100vh;
+}
+main #home {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#mode {
+    position: absolute;
+    top: 5.1rem;
+    right: 3.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+    /* margin-top: 55px; */
+    /* justify-content:flex-end; */
+  }
+
+  main #home{
     background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-nav a {
-    text-align: center;
-}
+
 /* RENTAL PAGE */
 
-#rent{
-   
-    
-    /* background-color: #000; */
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
+
+.preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* #rent{
+    */
+
+    /* background-color: #000; */
+/* } */
 
 /* RENTAL PAGE */
 
@@ -80,7 +215,7 @@ nav a {
     justify-content: center;
     align-items: center;
     margin: 0.6rem 0;
-    
+
 }
 #description {
     font-weight: bold;
@@ -104,7 +239,7 @@ nav a {
     padding: 2rem;
     color: #fdfdfd;
     border-radius: 1rem;
-    margin: 10px;    
+    margin: 10px;
 }
 #prices {
     background-image:url('./moto.webp'); /*url('./2024-pioneer6.webp');*/
@@ -129,18 +264,21 @@ footer {
     /* color: #ffff00; */
     color: #fff;
     text-decoration: none;
-    padding: 25px 50px;
+    padding: 25px 35px;
     /* margin-top: 200px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
-}    
+}
 footer a:hover {
     font-size: 1.2em;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: white;
 }
 footer a {
     color: #ffff00;
     text-decoration: none;
+}
+.social img {
+    padding-top: 15px;
 }
