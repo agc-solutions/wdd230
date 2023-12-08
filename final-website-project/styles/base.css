@@ -1,12 +1,23 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     /* font-family: 'Gruppo', sans-serif; */
     font-family: 'Jura', sans-serif;
     /*font-family: 'Montserrat', sans-serif;
     font-family: 'Rock Salt', cursive; */
 }
+html {
+    height: 100%;
+    min-height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ HEADER  ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
 
 header {
     display: flex;
@@ -116,6 +127,9 @@ nav a {
     max-width: 580px;
     height: 100vh;
 }
+
+/* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ HEADER  ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆  */
+
 main #home {
     padding-left: 5%;
     padding-right: 5%;
@@ -139,6 +153,34 @@ main #home {
     height: 100vh;
     flex-direction: column;
 }
+/* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ FOOTER  ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
+footer {
+    background-color: #001d3d;
+    text-align: center;
+    /* color: #ffff00; */
+    color: #fff;
+    text-decoration: none;
+    padding: 25px 35px;
+    /* margin-top: 200px; */
+    margin-top:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a:hover {
+    font-size: 1.2em;
+    /* text-decoration: underline; */
+    color: white;
+}
+footer a {
+    color: #ffff00;
+    text-decoration: none;
+}
+.social img {
+    padding-top: 15px;
+}
+
+/* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ FOOTER  ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆  */
 
 /* RENTAL PAGE */
 
@@ -183,6 +225,7 @@ h3 {
     padding: 2rem;
     color: #fdfdfd;
     border-radius: 1rem;
+    margin: 3rem;
 }
 
 #weather-data {
@@ -258,27 +301,3 @@ h3 {
     border-radius: 20px;
 }
 
-footer {
-    background-color: #001d3d;
-    text-align: center;
-    /* color: #ffff00; */
-    color: #fff;
-    text-decoration: none;
-    padding: 25px 35px;
-    /* margin-top: 200px; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-footer a:hover {
-    font-size: 1.2em;
-    /* text-decoration: underline; */
-    color: white;
-}
-footer a {
-    color: #ffff00;
-    text-decoration: none;
-}
-.social img {
-    padding-top: 15px;
-}
