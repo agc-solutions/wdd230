@@ -74,5 +74,6 @@ body{
     color: #fdfdfd;
     border-radius: 1rem;
     margin: 10px;
+    text-transform: capitalize;
     
 }

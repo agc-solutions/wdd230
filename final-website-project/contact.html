@@ -12,8 +12,8 @@
     <link rel="shortcut icon" href="./images/scooters/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/final-website-project/images/scooters/logo.webp /favicon.ico" type="image/x-icon">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> -->
 
     <!-- Fonts Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,7 +32,7 @@
     <script src="./scripts/hambmenu.js" defer></script>
     <script src="./scripts/dark.js" defer></script>
 
-    <title>Scoots - Motor Scooter Rental</title>
+    <title>Scoots - Motor Scooter Rental - Contact</title>
 </head>
 <body>
     <header>
@@ -55,16 +55,133 @@
         </nav>
     </header>
     <main id="contact">
-
         <!--  The Contact page will contain: -->
         <!--  essential contact information, -->
         <!-- an embedded Google map showing the two locations on Cozumel, and -->
         <!-- a basic contact us form with name, email, and comment. -->
-        <h1>Contact</h1>
+        <h1 id="ct">Contact Us</h1>
 
-        <div id="info">About Us</div>
-        <div id="map">Map</div>
-        <div id="contact-us">Contact Us Form</div>
-    </main>   
+        <div id="cttus">
+            <p>Your feedback is very much welcome and important to us. Please do not hesitate to contact us with your questions, comments or suggestions as indicated below.</p>
+        </div>
+        <div id="ourinfo">     
+            
+            <div id="contact-us">Contact Us Form</div>
+                <form action="/my-handling-form-page" method="post">
+                <!-- <form action="tks.html" method="get"> -->
+                    <div id="form" class="form">
+                        <fieldset class="info">
+                            <legend>Contact Us</legend>
+                            <div class="form-content">
+                                <label class="top" for="fname">First Name* <input type="text" name="fname" id="fname"
+                                        placeholder="Type your first name...." required>
+                                    <a>Error message.....</a>
+                                </label>
+                            </div>
+                            <div class="form-content">
+                                <label class="top" for="lname">Last Name* <input type="text" name="lname" id="lname"
+                                        placeholder="Type your last name...." required>
+                                    <a>Error message.....</a>
+                                </label>
+                            </div>
+                            <div class="form-content">
+                                <label class="top" for="email">email* <input type="email" name="email" id="email"
+                                        placeholder="Type your@gmail.com" required>
+                                    <a>Error message.....</a>
+                                </label>
+                            </div>
+                            <div class="form-content">
+                                <label class="top">Comments</label>
+                                <textarea class="txta" name="descript" id="descript" rows="4" cols="50"></textarea>
+                                <label class="timestamp"> <input type="hidden" name="timestamp" id="timestamp" value=""></label>
+                            </div>
+                        </fieldset>
+                        <button id="btnfrm" type="submit">Send your message</button>
+                    </div>
+                </form>
+                <div id="ourinfo2">
+                    <div id="m-address">
+                        <h3>Mailing Address</h3>
+
+                        <div id="store-one">
+                            <h5>Store One</h5>
+                            <p>Playa del Carmen-Cozumel Ferry dock</p>
+                            <p>1023 Main Street - Centro Cozumel</p>
+                            <p>77600 - Cozumel - Mexico</p>
+                            <p>Phone: 800 123 4567 </p>
+                        </div>
+
+                        <div id="store-two">
+                            <h5>Store Two</h5>
+                            <p>Terminal Puerta Del Maya</p>
+                            <p>23 Main Street - Isla Cozumel</p>
+                            <p>Cozumel - Mexico</p>
+                            <p>Phone: 800 123 6789</p>
+                        </div>
+                    </div>
+                    <div id="emails">
+                        <h3>Email</h3>
+                        <div id="strone">
+                            <h5>Store One</h5>
+                            <p>infosone@scoots.com</p>
+                        </div>
+                        <div id="strtwo">
+                            <h5>Store Two</h5>
+                            <p>infostwo@scoots.com</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            <div id="map">Map</div>
+        </div>
+    </main>
+    <footer>        
+        <p>Scoots - Motor Scooter Rental
+            &copy;<span id="year">2023</span>
+        </p>
+        <div id="address">
+            <p>Store One - Playa del Carmen-Cozumel Ferry dock - Centro Cozumel - Phone: 800 123 4567</p>
+            <p>Store Two - Terminal Puerta Maya - Cozumel Island - Phone: 800 123 6789</p>
+        </div>
+        <p>Mexico</p>
+        <img src="https://flagsapi.com/MX/flat/32.png" alt="Bandeira do país" id="country">
+
+        <div class="social">                            
+                        
+            <a href="https://facebook.com" target="_blank">
+                <img src="./images/rsz_neon_social_media_facebook_azul.png" alt="">
+            </a>
+            
+            <a href="https://instagram.com" target="_blank">
+                    <img src="./images/rsz_insta_azul3.png" alt="">               
+            </a>
+            
+            </a>                   
+            <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">
+                <img src="./images/rsz_neon_social_media_whatsapp_icon.png" alt="">
+            </a>
+        </div>
+    </footer>    
 </body>
+</html>   
+</body>
+
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('contact-us');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.fname.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+
 </html>

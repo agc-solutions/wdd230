@@ -1,7 +1,7 @@
 const apikey = '469b77d53d39523dbb94c8453b1bed1c';
 //const apiCountryURL = 'https://flagsapi.com/BR/flat/32.png';
 const apiCountryURL = 'https://flagsapi.com/';
-const city = 'Cozumel';
+const city = 'santos';
 // const lat = -24.007525439495208;
 // const lon = -46.42287161033189;
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.777&lon=6.66&appid=469b77d53d39523dbb94c8453b1bed1c';
@@ -14,6 +14,9 @@ const cityElement = document.querySelector('#city');
 const countryElement = document.querySelector('#country');
 const hoyElement = document.querySelector('#hoy');
 
+const hoyMxElement = document.querySelector('#hoyMx span'); 
+const hoyMnElement = document.querySelector('#hoyMn span');
+
 const day1Element = document.querySelector('#day1');
 const day2Element = document.querySelector('#day2');
 const day3Element = document.querySelector('#day3');
@@ -22,9 +25,18 @@ const pday1Element = document.querySelector('#pday1');
 const pday2Element = document.querySelector('#pday2');
 const pday3Element = document.querySelector('#pday3');
 
-const temp1Element = document.querySelector('#temp1 span');             
+const temp1Element = document.querySelector('#temp1 span'); 
+const temp1MxElement = document.querySelector('#temp1Mx span'); 
+const temp1MnElement = document.querySelector('#temp1Mn span'); 
+
+
 const temp2Element = document.querySelector('#temp2 span');
+const temp2MxElement = document.querySelector('#temp2Mx span'); 
+const temp2MnElement = document.querySelector('#temp2Mn span'); 
+
 const temp3Element = document.querySelector('#temp3 span');
+const temp3MxElement = document.querySelector('#temp3Mx span'); 
+const temp3MnElement = document.querySelector('#temp3Mn span'); 
 
 const desc1Element = document.querySelector('#description1');
 const weather1IconElement = document.querySelector('#weather-icon1');
@@ -104,8 +116,7 @@ const showWeatherData = async(city) => {
     
     
 
-    const dt3 = data.list[20].dt;
-    var day3 = new Date(dt3*1000);
+    
 
     const dt = data.list[0].dt;    
     var day0 = new Date(dt*1000);
@@ -117,6 +128,9 @@ const showWeatherData = async(city) => {
     const dt2 = data.list[12].dt;
     //console.log(dt2);
     var day2 = new Date(dt2*1000);
+
+    const dt3 = data.list[20].dt;
+    var day3 = new Date(dt3*1000);
 
 
     //hoyElement.innerHTML = day0.toDateString();
@@ -135,9 +149,26 @@ const showWeatherData = async(city) => {
 
     //tempElement.innerText = parseInt(data.main.temp);
     tempElement.innerText = parseInt(data.list[0].main.temp);
+
+    hoyMxElement.innerText = `Max: ${parseInt(data.list[0].main.temp_max)}`;
+    hoyMnElement.innerText = `Min: ${parseInt(data.list[0].main.temp_min)}`;
+
+
     temp1Element.innerText = parseInt(data.list[4].main.temp);
+
+    temp1MxElement.innerText = `Max: ${parseInt(data.list[4].main.temp_max)}`;
+    temp1MnElement.innerText = `Min: ${parseInt(data.list[4].main.temp_min)}`;
+
+
     temp2Element.innerText = parseInt(data.list[12].main.temp);
+
+    temp2MxElement.innerText = `Max: ${parseInt(data.list[12].main.temp_max)}`;
+    temp2MnElement.innerText = `Min: ${parseInt(data.list[12].main.temp_min)}`;
+
     temp3Element.innerText = parseInt(data.list[20].main.temp);
+
+    temp3MxElement.innerText = `Max: ${parseInt(data.list[20].main.temp_max)}`;
+    temp3MnElement.innerText = `Min: ${parseInt(data.list[20].main.temp_min)}`;
 
     //descElement.innerText = data.weather[0].description;
     //weatherIconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
@@ -146,11 +177,11 @@ const showWeatherData = async(city) => {
     countryElement.setAttribute('src', `https://flagsapi.com/${data.city.country}/flat/32.png/`);
 
     desc1Element.innerText = data.list[4].weather[0].description;
-    weather1IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[1].weather[0].icon}.png`);
+    weather1IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[4].weather[0].icon}.png`);
     desc2Element.innerText = data.list[12].weather[0].description;
-    weather2IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[2].weather[0].icon}.png`);
+    weather2IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[12].weather[0].icon}.png`);
     desc3Element.innerText = data.list[20].weather[0].description;
-    weather3IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[3].weather[0].icon}.png`);
+    weather3IconElement.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[20].weather[0].icon}.png`);
 }
 
     showWeatherData(city);

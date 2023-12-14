@@ -22,7 +22,7 @@
     <meta property="og:url" content="https://agc-solutions.github.io/wdd230/final-website-project/index.html">
     
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/base.css">
+    <!-- <link rel="stylesheet" href="./styles/base.css"> -->
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="">
 
@@ -30,7 +30,7 @@
     <script src="./scripts/hambmenu.js" defer></script>
     <script src="./scripts/dark.js" defer></script>
 
-    <title>Scoots - Motor Scooter Rental</title>
+    <title>Scoots - Motor Scooter Rental - Reservation</title>
 </head>
 <body>
     <header>
@@ -58,7 +58,88 @@
          Use CSS Grid and/or CSS Flex to design the layout. -->
     <h1>Reservations</h1>
     <div id="rent-info">Rental Agreement Information</div>
-    <div id="form">Rental Details</div>
+    <div id="form2">Rental Details</div>
+
+    <div id="contact-us2">Reservation Us Form</div>
+    <form action2="/my-handling-form-page" method="post">
+    <!-- <form action="tks.html" method="get"> -->
+        <div id="form2" class="form2">
+            <fieldset class="info2">
+                <legend>Contact Us</legend>
+                <div class="form-content2">
+                                            
+                        <select name="location" id="location">Pickup Location 
+                            <option value="Store One - Playa del Carmen">Store One - Playa del Carmen</option>
+                            <option value="Store Two - Isla Cozumel">Store Two - Isla Cozumel</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-content2">
+                    <label class="top" for="pcdatetm">Picup Date/Time <input type="date" name="pcdatetm" id="pcdatetm"
+                            placeholder="12/12/2023" required>
+                    </label>
+                </div>
+                
+                <div class="form-content2">
+                    <label class="top" for="pcdatet"><input type="time" name="pcdatet" id="pcdatet">
+                    </label>
+                </div>
+                
+                <div class="form-content2">
+                    <label class="top" for="drpoff">Dropoff Date/Time <input type="date" name="drpoff" id="drpoff">
+                    </label>
+                </div>
+                <div class="form-content2">
+                    <label class="top" for="pcdated"><input type="time" name="pcdated" id="pcdated">
+                    </label>
+                </div>
+                <div class="form-content2">
+                    <label class="top" for="vehicle">Vehicle <input type="text" name="vt" id="vt">
+                        <select name="" id="location">
+                            <option value="Honda Metro Scooter">Store One - Playa del Carmen</option>
+                            <option value="Honda Di Scooter">Store Two - Isla Cozumel</option>
+                            <option value="Honda PCX150 Scooter">Store One - Playa del Carmen</option>
+                            <option value="Honda Pioneer ATV">Store Two - Isla Cozumel</option>
+                            <option value="Jeep Wrangler - 4 door">Store One - Playa del Carmen</option>
+                            <option value="Jeep Wrangler - 2 door">Store One - Playa del Carmen</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+            <button id="btnfrm" type="submit">Send your message</button>
+        </div>
+    </form>
+
+
 </main>
+<footer>        
+    <p>Scoots - Motor Scooter Rental
+        &copy;<span id="year">2023</span>
+    </p>
+    <div id="address">
+        <p>Store One - Playa del Carmen-Cozumel Ferry dock - Centro Cozumel - Phone: 800 123 4567</p>
+        <p>Store Two - Terminal Puerta Maya - Cozumel Island - Phone: 800 123 6789</p>
+    </div>
+    <p>Mexico</p>
+    <img src="https://flagsapi.com/MX/flat/32.png" alt="Bandeira do país" id="country">
+
+    <div class="social">                            
+                    
+        <a href="https://facebook.com" target="_blank">
+            <img src="./images/rsz_neon_social_media_facebook_azul.png" alt="">
+        </a>
+        
+        <a href="https://instagram.com" target="_blank">
+                <img src="./images/rsz_insta_azul3.png" alt="">               
+        </a>
+        
+        </a>                   
+        <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">
+            <img src="./images/rsz_neon_social_media_whatsapp_icon.png" alt="">
+        </a>
+    </div>
+</footer>    
+</body>
+</html>
 </body>
 </html>

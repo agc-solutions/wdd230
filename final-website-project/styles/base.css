@@ -25,8 +25,14 @@ header {
     align-items: center;
     background-color: #001d3d;
     color: #bed;
-    max-width: 100%;
+    /* max-width: 100%; */
+    /* top: 0; */
+    width: 100%;
+    /* position: fixed;*/
+    /* opacity: .8;  */
 }
+
+
 
 .logo {
     width: 80px;
@@ -42,10 +48,8 @@ header {
 }
 nav {
     display: flex;
-    /* flex-direction: row; */
-    justify-content: flex-end;
+    justify-content:flex-start;
     align-items:center;
-    /* margin-right: -500vh; */
     width: 50%;
 }
 nav a {
@@ -75,21 +79,11 @@ nav a {
 	content: "❎";
 }
 
-/* nav, navigation,  –> menu header */
-/* nav {
-    margin: 0;
-    margin-top: -1.35rem;
-    padding: 0;
-    box-sizing: border-box;
-    margin-left: 40%;
-    margin-right: -20%;
-} */
-
 .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
-    /* background-color: black; */
+    text-align: left;
 }
 .navigation li {
     display: none;
@@ -100,7 +94,6 @@ nav a {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    /* color: #ffff00; */
 }
 .navigation li a:hover {
     background-color: #bbb;
@@ -130,29 +123,6 @@ nav a {
 
 /* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ HEADER  ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆  */
 
-main #home {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-#mode {
-    position: absolute;
-    top: 5.1rem;
-    right: 3.5rem;
-    font-size: 3rem;
-    cursor: pointer;
-    /* margin-top: 55px; */
-    /* justify-content:flex-end; */
-  }
-
-  main #home{
-    background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
 /* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ FOOTER  ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
 footer {
     background-color: #001d3d;
@@ -161,7 +131,6 @@ footer {
     color: #fff;
     text-decoration: none;
     padding: 25px 35px;
-    /* margin-top: 200px; */
     margin-top:auto;
     display: flex;
     justify-content: space-around;
@@ -181,51 +150,129 @@ footer a {
 }
 
 /* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ FOOTER  ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆  */
+#mode {
+    position: absolute;
+    top: 5.1rem;
+    right: 3.5rem;
+    font-size: 3rem;
+    cursor: pointer;
+  }
 
-/* RENTAL PAGE */
-
-.prices {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+#home {
+    padding-left: 5%;
+    padding-right: 5%;
 }
-
-.preco {
+#home, #contact{
+    background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.home {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
 }
 
-h3 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
+
+
+/* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ SLIDES  ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
+.slides {
+    height: 300px;
+    width: 540px;
+    border-radius: 20px;
+    /* margin-top: 60px; */
+    margin-top: 36%;
+    overflow: hidden;
+    /* position: absolute; */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
 }
 
-/* #rent{
-    */
-
-    /* background-color: #000; */
-/* } */
-
-/* RENTAL PAGE */
-
-#hero-img {
-    display: block;
-    margin: 0 auto;
+.slides .slide img {
+    height: 100%;
     width: 100%;
-    max-height: 100%;
 }
+
+.navigation2 {
+    /* position: absolute; */
+    position:relative;
+    bottom: 130px;
+    /* left: 850px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    /* transform: .5s ease; */
+    transition: .6s;
+}
+.bar:hover {
+    background-color: #fff;
+}
+.input1 {
+    display: none;
+}
+
+.slid {
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+.slide {
+    width: 33.333%;
+    transition: .6s;
+}
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+#slide2:checked ~ .s1 {
+    margin-left: -33.333%;
+}
+#slide3:checked ~ .s1 {
+    margin-left: -66.666%;
+}
+
+/* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ SLIDES  ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆  */
 
 .container {
-    /* background-color: #5c54ed; */
-    background-color: #000;
+    background-color: #5c54ed;
     opacity: 0.8;
-    /* box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
     padding: 2rem;
     color: #fdfdfd;
     border-radius: 1rem;
     margin: 3rem;
+    margin-top: 20px;
+}
+
+#prevtday {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tempMx {
+    border-right: 1.5px solid #fff;
+    margin-right: -10px;
+}
+#tempMx, #tempMn {
+    padding: 5px;
+}
+#hoy, #temperature, #prevtday, #humidity, #wind {
+    padding: 3px;
 }
 
 #weather-data {
@@ -260,30 +307,186 @@ h3 {
     margin: 0.6rem 0;
 
 }
-#description {
+#description, .fc {
     font-weight: bold;
     text-transform: capitalize;
 }
 
-#forecast {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#hero img {
+    width: 100%;
+    height: 100%;
 }
-#day1 {
+
+/*  ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ FORECAST  ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇  */
+
+#forecast-bigbox, #forecast, #day1, #day2, #day3, #day4, #day5, .fc  {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 10px;
-    /* background-image: url("https://source.unsplash.com/1600x900/?landscape"); */
-    background-color: #5c54ed;
-    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
-    padding: 2rem;
-    color: #fdfdfd;
-    border-radius: 1rem;
-    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+
 }
+#day1, #day2, #day3, #day4, #day5 {
+    font-size: 12px;
+    color: #fdfdfd;
+    /* background-image: url("https://source.unsplash.com/1600x900/?landscape"); */
+    /* background-color: #5c54ed;
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px; */
+    /* padding: 2rem; */
+}
+#forecast-bigbox {
+    position: relative;
+    width: 0;
+    height: 0;
+    transform: .5s;
+}
+
+#forecast-bigbox #forecast {
+    /* min-width: 400px; */
+    max-width: 500px;
+    padding: 40px;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+#forecast-bigbox.active #forecast {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 0.5s;
+}
+#forecast-bigbox.active {
+    /*width: 600px; verificar se auto fica melhlor*/
+    width: auto;
+    height: auto;
+    transition-delay: 0.5s;
+}
+/* verificar a necessidade deste */
+#forecast-bigbox::before {
+    content: "";
+    position: absolute;
+    bottom: -50px;
+    width: 40px;
+    height: 40px;
+    background: #040305;
+    border-radius: 5px;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#forecast-bigbox.active::before {
+    opacity: 1;
+    transition-delay: .5s;
+}
+
+.togglebtn {
+    position: absolute;
+    min-width: 40px;
+    height: 40px;
+    background: #000;
+    bottom: -60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.togglebtn {
+    align-items: center;
+    justify-content: center;
+}
+
+#forecast-bigbox.active .togglebtn {
+    bottom: -90px;
+    transform: rotate(135deg);
+    background: red;
+}
+.togglebtn::before {
+    content: "➕";
+    font-size: 2em;
+    color: #fff;
+    transition: 0.5s;
+}
+.togglebtn:hover {
+    background: #fff;
+    transition: 0.5s;
+}
+.togglebtn:hover::before {
+    color: #000;
+    transition: 0.5s;
+}
+
+#forecast-bigbox.active .togglebtn:hover::before {
+    color: #ffff00;
+}
+
+#forecast-title{
+    padding: 20px;
+    margin: 5px;
+
+}
+#day2, #day3, #day4, #day5 {
+    border-top: 1px solid #fff;
+}
+
+/* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ FORECAST  ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆  */
+.banner {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 16px;
+    /* margin-top: 20vh; */
+    /* margin-top:5.5rem */
+}
+
+/* RENTAL PAGE */
+
+#hero-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 100%;
+}
+
+
+.prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.preco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.pctr {
+    width: 100%;
+    /* background: #000; */
+    animation: fade 15s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+
 #prices {
     background-image:url('./moto.webp'); /*url('./2024-pioneer6.webp');*/
     background-size: 100%;
@@ -301,3 +504,244 @@ h3 {
     border-radius: 20px;
 }
 
+/* #rent{
+    */
+
+    /* background-color: #000; */
+/* } */
+
+/* RENTAL PAGE */
+/* CONTACT US */
+
+form {
+    /* Center the form on the page */
+    margin: 5em;
+    width: 380px;
+    /* Form outline */
+    padding: 1em;
+    border: 3px solid #ccc;
+    border-radius: 1em;
+    background-image: url('./sea-6691961_640.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  ::placeholder {
+    color: #ffff00;
+  }
+  #m-address, #emails {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: 3rem;
+    /* margin: 0 1rem;
+    padding: 0 .5rem; */
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: #fff;
+}
+h5 p {
+    color: #fff;
+}
+
+
+  #store-one {
+    background-image: url('./playa-del-camen.webp');
+  }
+  #store-two {
+    background-image: url('./isla-cozumel.webp');
+  }
+
+
+
+#store-one, #store-two {
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+#store-one::after, #store-two::after, form::after {
+    content: '';
+    background-color: black;
+    position:absolute;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    z-index: -1;
+}
+#ct, textarea {
+    color: #fff;
+}
+  #cttus {
+    font-size: 20px;
+    padding: 2rem;
+    margin: 2rem;
+    color: #fff;
+    font-weight: bold;
+  }
+  #ourinfo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  form legend {
+    /* color: #445ba9; */
+    /* color: #000; */
+    color: #fff;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 16px;
+}
+
+#store-one, #strone {
+    margin: 10px 0 10px 0;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #445ba9;
+    border-radius: 10px;
+    padding: 1rem 2%;
+    /* background-color:#fafafa; */
+    overflow: hidden;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    /* color: #9c2c13; */
+    /* color: #000; */
+    color: #fff;
+    font-weight: bold;
+    font-size: .8rem;
+    position: relative;
+}
+
+form label.top input, form label.top select, .txta {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 8px;
+    padding: .75rem;
+    /* color: #555; */
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.form-content input {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid #dfdfdf;
+    color: #fff;
+}
+
+
+.form-content a, #err {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    visibility: hidden;
+}
+
+
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 330px; /* same size as the label elements*/
+  }
+  .close-button {
+    margin-top: 20px;
+  }
+
+  /* button { */
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    /* margin-left: 0.5em;
+    font-family: 'Michroma', 'Montserrat', 'Poiret One', 'Poppins', sans-serif;
+    background-color: darkred;
+    color: #ffff00;
+  } */
+  button:hover {
+    background-color: darkred;
+    color: #ffff00;
+}
+#btnfrm {
+    background-color: #001d3d;
+    color: #ffff00;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+#contact-us {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    text-align: center;
+    /* make this element invisible until we are ready for it */
+    display: none;
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+
+
+
+/* label { */
+    /* Uniform size & alignment */
+    /* display: inline-block;
+    width: 150px;
+    text-align: right; */
+    /* color: #ffff00; */
+  /* }
+
+  input,
+  textarea { */
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    /* font: 1em sans-serif; */
+
+    /* Uniform text field size */
+    /* width: 580px;
+    box-sizing: border-box; */
+
+    /* Match form field borders */
+    /* border: 1px solid #999;
+  } */
+
+  /* input:focus,
+  textarea:focus { */
+    /* Additional highlight for focused elements */
+    /* border-color: #000;
+  } */
+
+  /* textarea { */
+    /* Align multiline text fields with their labels */
+    /* vertical-align: top; */
+
+    /* Provide space to type some text */
+    /* height: 5em;
+  } */

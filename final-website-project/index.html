@@ -24,12 +24,15 @@
         <link rel="stylesheet" href="./styles/normalize.css">
         <link rel="stylesheet" href="./styles/base.css">
         <link rel="stylesheet" href="./styles/medium.css">
-        <link rel="stylesheet" href="">
+        <!-- <link rel="stylesheet" href="./styles/weather.css"> -->
 
         <!-- <script src="./scripts/wpage.js" defer></script> -->
         <script src="./scripts/hambmenu.js" defer></script>
         <script src="./scripts/dark.js" defer></script>
-        <script src="./scripts/coz-weather.js"></script>
+        <script src="./scripts/coz-weather.js" defer></script>
+        <script src="./scripts/banner.js" defer></script>
+        <script src="./scripts/btnforecast.js" defer></script>
+        <script src="./scripts/slides.js" defer></script>
 
         <title>Scoots - Motor Scooter Rental</title>
     </head>
@@ -40,7 +43,6 @@
                 <img class="logo" src="./images/scooters/logo-small.png" alt="Scoots - Motor Rental">
             </a>
             <h1 id="company">Scoots - Motor Scooter Rental</h1>
-            <!-- </header> -->
             <div id="mode">🕶️</div>
             <nav>
                 <button id="menu"></button>
@@ -62,14 +64,50 @@
             ✔️ Include at least the current temperature, current condition description, and humidity.
             ✔️ Include any weather alerts if available (applicable) from the government and display it as a closeable message at the top of the page.
             ✔️ Also display and label a one day forecast. -->
-        <main id="home">
-            <div id="reservation">Reserve</div>
-            <div id="summaryTypes">Rental"s Types</div>
-            <div id="weather"></div>
+        <section id="hero">
+            <div id="hero-box">
+                <!-- <img id=" hero-img" src="./images/webp/playa-del-camen.webp" alt="Playa del Camen">
+                <img src="./images/webp/isla-cozumel.webp" alt="Isla Cozumel"> -->
+                <img id=" hero-img" src="./images/webp/cozumel-sunrise.webp" alt="Cozumel Sunrise">                
+            </div>
+        </section>      
+            <main id="home">
+                <div class="home">
+                    <div id="summary-types">
+                        <h2>Rental's Types</h2>
+                            </div>
+                    <div class="slides">
+                        <div class="slid">
+                            <input class="input1" type="radio" name="slide" id="slide1" checked>
+                            <input class="input1" type="radio" name="slide" id="slide2">
+                            <input class="input1" type="radio" name="slide" id="slide3">
                             
-            <div id="govAlert"></div>            
+                            <div class="slide s1">
+                                <img src="./images/webp/jeep-wrangler.webp" alt="">
+                            </div>
             
-            <div class="container">
+                            <div class="slide">
+                                <img src="./images/webp/jungle-buggy.webp" alt="">
+                            </div>
+                            
+                            <div class="slide">
+                                <img src="./images/webp/scooter.webp" alt="">
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="navigation2">
+                        <label class="bar" for="slide1"></label>
+                        <label class="bar" for="slide2"></label>
+                        <label class="bar" for="slide3"></label>
+                    </div>
+                    <div class="button-box">
+                        <a class='call' href="./rental.html" target="_blank">Rent a Vehicle</a>
+                    </div>                  
+                
+                    <div id="weather"></div>                       
+                            
+                    
+                    <div class="container">
             
                 <div id="weather-data">
                     <h2>
@@ -79,12 +117,16 @@
                     </h2>
                     <p id="hoy">Today</p>
                     <p id="temperature"><i class="fa-solid fa-temperature-half"></i><span>4</span>&deg;C</p>
+                    <div id="prevtday">
+                        <p id="tempMx"><span>5</span>&deg;C</p>
+                        <p id="tempMn"><span>5</span>&deg;C</p>
+                    </div>
                     <div id="humidity">
                         <i class="fa-solid fa-droplet"></i>
                         <span>Humidity</span>
                     </div>
 
-                    <div id="humidity">
+                    <div id="wind">
                         <i class="fa-solid fa-wind"></i>
                         <span>Wind</span>
                     </div>
@@ -96,18 +138,87 @@
             
         
                 </div>
-                <div id="forecast">
-                    <div id="day1"><p id="pday1">Tomorrow</p>
-                        <p id="temp1"><span>5</span>&deg;C</p>
-                        <div id="description-container1">
-                            <p id="description1">Sunny</p>
-                            <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon1">
-                        </div>
-                    </div>
+                <div id="forecast-bigbox">
                     
+                    <div id="forecast">  
+                        <div id="forecast-title"><h4>Weather Forecast - next 5 days</h4></div>                  
+                        <div id="otherbox">
+                            <div id="day1"><p id="pday1">Tomorrow</p>
+                                <p id="temp1"><span>5</span>&deg;C</p>
+                                <div id="description-container1">
+                                    <p id="description1">Sunny</p>
+                                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon1">
+                                </div>
+                            </div>
+                            <div id="day2"><p id="pday2">Second Day</p>
+                                <p id="temp2"><span>5</span>&deg;C</p>
+                                <div id="description-container1">
+                                    <p id="description2">Sunny</p>
+                                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon2">
+                                </div>
+                            </div>
+                            <div id="day3"><p id="pday3">Thirth Day</p>
+                                <p id="temp3"><span>5</span>&deg;C</p>
+                                <div id="description-container3">
+                                    <p id="description3">Sunny</p>
+                                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon3">
+                                </div>
+                            </div>
+                            <div id="day4"><p id="pday4">Forth Day</p>
+                                <p id="temp4"><span>5</span>&deg;C</p>
+                                <div id="description-container4">
+                                    <p id="description4">Sunny</p>
+                                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon4">
+                                </div>
+                            </div>
+                            <div id="day5"><p id="pday5">Fifth Day</p>
+                                <p id="temp5"><span>5</span>&deg;C</p>
+                                <div id="description-container5">
+                                    <p id="description5">Sunny</p>
+                                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon5">
+                                </div>
+                            </div>
+                        </div>                                              
+                    </div>
+                    <div class="togglebtn"></div>  
+                                     
                 </div>
-            </div>
-        
+                <div class="fc"></div> 
+                    </div>
+                </div>
+            <div id="govAlert"></div> 
+            <div id="reservation">Reserve</div>
+         
+        <div class="pctr">
+            <!-- <section class="photos"> -->                
+            <figure>
+                <img class="a1" src="images/webp/isla-cozumel.webp" alt="Praia Grande" loading="lazy" width="600" height="400">
+                <figcaption class="leg1">Isla Cozumel - Toten</figcaption>
+            </figure>                
+            <figure>
+                <img class="a2" src="images/webp/playa-del-camen.webp" alt="" loading="lazy" width="600" height="400">
+                <figcaption class="leg">Playa del Carmen - Toten</figcaption>
+            </figure>
+            <figure>
+               
+                <img class="a3" src="images/webp/nature.webp" alt="" loading="lazy" width="600" height="400">
+                <figcaption class="leg"></figcaption>
+            </figure>
+            <figure>
+                <img class="a4" src="images/webp/cozumel1.webp" alt="" loading="lazy" width="600" height="400">
+                <figcaption class="leg">Beach</figcaption>
+            </figure>
+            <figure>
+                <img class="a5" src="images/webp/cozumel2.webp" alt="" loading="lazy" width="600" height="400">
+                <figcaption class="leg">Beach</figcaption>
+            </figure>
+            <figure>
+                <img class="a6" src="images/webp/lighthouse.webp" alt="" loading="lazy" width="600" height="400">
+                <figcaption class="leg">Plaza Punta Langosta - Shopping Center</figcaption>
+            </figure>
+            <!-- </section>  -->
+        </div>
+       
 
 
             
@@ -117,8 +228,8 @@
                 &copy;<span id="year">2023</span>
             </p>
             <div id="address">
-                <p>Store One - Playa del Carmen-Cozumel Ferry dock - Centro Cozumel</p>
-                <p>Store Two - Terminal Puerta Maya - Cozumel Island</p>
+                <p>Store One - Playa del Carmen-Cozumel Ferry dock - Centro Cozumel - Phone: 800 123 4567</p>
+                <p>Store Two - Terminal Puerta Maya - Cozumel Island - Phone: 800 123 6789</p>
             </div>
             <p>Mexico</p>
             <img src="https://flagsapi.com/MX/flat/32.png" alt="Bandeira do país" id="country">

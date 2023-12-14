@@ -4,6 +4,10 @@
     #menu {
         display: none; /*hide hamburger button */
     } 
+
+    nav {
+        justify-content:flex-end;
+    }
     .navigation {
         flex-direction: row;
     }
@@ -18,5 +22,34 @@
 
     .box {
         margin-top: 300px;
+    }
+
+    #otherbox{
+        display: flex;
+        flex-direction: row;
+    }
+    #ourinfo {
+        flex-direction: row;
+      }
+
+    #day2, #day3, #day4, #day5 {
+        border-left: 1px solid #fff;
+        border-top: none;
+    }
+    #day1, #day2, #day3, #day4, #day5 {
+        padding: 2rem;
+        font-size: 16px;
+    }
+    /* .container {
+        margin-top: 1px;
+    } */
+
+    /* .home {
+        flex-direction: row;        
+    }
+     */
+
+    .pctr {
+        display: flex;
     }
 }
