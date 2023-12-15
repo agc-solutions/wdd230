@@ -1,206 +1,44 @@
+
+
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Jura:wght@300;400;500;600;700&family=Montserrat&family=Rock+Salt&display=swap" rel="stylesheet">
+<html>
+<head>
+  <title>Mapa de Cozumel</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mapa de Cozumel</h1>
+  <div id="map"></div>
 
-        <link rel="shortcut icon" href="./images/scooters/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="/final-website-project/images/scooters/logo.webp /favicon.ico" type="image/x-icon">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlaTXcUsehwmbep02rICdFRLX6d6SJq_8"></script>
+  <script>
+    function initMap() {
+      var location1 = {lat: 20.621801673374378, lng: -87.07535187881072}; // Coordenadas do dock de Playa del Carmen-Cozumel Ferry
+      var location2 = {lat: 20.477523495408963, lng: -86.97327537638841}; // Coordenadas do Terminal Puerta Maya
+      
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 12,
+        center: location1 // Defina o centro do mapa como a primeira localização
+      });
 
+      var marker1 = new google.maps.Marker({
+        position: location1,
+        map: map,
+        title: 'Dock de Playa del Carmen-Cozumel Ferry'
+      });
 
-        <!-- Fonts Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-        <meta property="og:title" content="Motor Scooter Rental">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://github.com/agc-solutions/wdd230/blob/main/images/rsz_4praiagrande.png">
-        <meta property="og:url" content="https://agc-solutions.github.io/wdd230/final-website-project/index.html">
-        
-        <link rel="stylesheet" href="./styles/normalize.css">
-        <!-- <link rel="stylesheet" href="./styles/base.css">
-        <link rel="stylesheet" href="./styles/medium.css"> -->
-        <link rel="stylesheet" href="./styles/weather.css">
-
-        <!-- <script src="./scripts/wpage.js" defer></script> -->
-        <script src="./scripts/hambmenu.js" defer></script>
-        <script src="./scripts/dark.js" defer></script>
-        <script src="./scripts/coz-weather.js" defer></script>
-
-        <title>Scoots - Motor Scooter Rental</title>
-    </head>
-    <body>
-        <header>
-            <a id="logo_link" href="index.html">
-                <!-- <img class="logo" src="./images/scooters/logo.webp" alt="Scoots - Motor Rental"> -->
-                <img class="logo" src="./images/scooters/logo-small.png" alt="Scoots - Motor Rental">
-            </a>
-            <h1 id="company">Scoots - Motor Scooter Rental</h1>
-            <!-- </header> -->
-            <div id="mode">🕶️</div>
-            <nav>
-                <button id="menu"></button>
-                <ul class="navigation">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="./rental.html">Rental</a></li>
-                    <li><a href="./reservation.html">Reservations</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    
-                </ul>
-            </nav>
-        </header>
-        <!-- The Home page is a contemporary, exciting landing page providing images of the island and rental facilities and must include the following: -->
-        <!-- A call to action to make a rental reservation.
-            Readily available navigation and contact information.
-            Summary information about all the types of rentals.
-            Social media links (a general link is OK)
-            The current weather information, obtained from the free version of openweathermap.org.
-            ✔️ Include at least the current temperature, current condition description, and humidity.
-            ✔️ Include any weather alerts if available (applicable) from the government and display it as a closeable message at the top of the page.
-            ✔️ Also display and label a one day forecast. -->
-        <main id="home">
-            <div id="reservation">Reserve</div>
-            <div id="summaryTypes">Rental"s Types</div>
-            <div id="weather"></div>
-                            
-            <div id="govAlert"></div>            
-            
-            <div class="container">
-            
-                <div id="weather-data">
-                    <h2>
-                        <i class="fa-solid fa-location-dot"></i>
-                        <span id="city">Cozumel</span>
-                        <img src="https://flagsapi.com/MX/flat/32.png" alt="Bandeira do país" id="country">
-                    </h2>
-                    <p id="hoy">Today</p>
-                    <p id="temperature"><i class="fa-solid fa-temperature-half"></i><span>4</span>&deg;C</p>
-                    <div id="prevtday">
-                        <p id="tempMx"><span>5</span>&deg;C</p>
-                        <p id="tempMn"><span>5</span>&deg;C</p>
-                    </div>
-                    <div id="humidity">
-                        <i class="fa-solid fa-droplet"></i>
-                        <span>Humidity</span>
-                    </div>
-
-                    <div id="wind">
-                        <i class="fa-solid fa-wind"></i>
-                        <span>Wind</span>
-                    </div>
-                
-                    <div id="description-container">
-                        <p id="description">Sunny</p>                       
-                        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon">
-                    </div>
-            
-        
-                </div>
-                <div id="forecast-bigbox">
-                    <div id="forecast-title"><h4>Weather Forecast - next 5 days</h4></div>
-                    <div id="forecast">                    
-                        <div id="day1"><p id="pday1">Tomorrow</p>
-                            <p id="temp1"><span>5</span>&deg;C</p>
-                            <div id="description-container1">
-                                <p id="description1">Sunny</p>
-                                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon1">
-                            </div>
-                        </div>
-                        <div id="day2"><p id="pday2">Second Day</p>
-                            <p id="temp2"><span>5</span>&deg;C</p>
-                            <div id="description-container1">
-                                <p id="description2">Sunny</p>
-                                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon2">
-                            </div>
-                        </div>
-                        <div id="day3"><p id="pday3">Thirth Day</p>
-                            <p id="temp3"><span>5</span>&deg;C</p>
-                            <div id="description-container3">
-                                <p id="description3">Sunny</p>
-                                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon3">
-                            </div>
-                        </div>
-                        <div id="day4"><p id="pday4">Forth Day</p>
-                            <p id="temp4"><span>5</span>&deg;C</p>
-                            <div id="description-container4">
-                                <p id="description4">Sunny</p>
-                                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon4">
-                            </div>
-                        </div>
-                        <div id="day5"><p id="pday5">Fifth Day</p>
-                            <p id="temp5"><span>5</span>&deg;C</p>
-                            <div id="description-container5">
-                                <p id="description5">Sunny</p>
-                                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon5">
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-         
-         <!-- <div class="container">
-        
-            <div id="weather-data">
-                <h2>
-                    <i class="fa-solid fa location-dot"></i>
-                <span id="city">Praia_Grande</span>
-                <img src="https://flagsapi.com/BR/flat/32.png" alt="Bandeira do país" id="country">
-            </h2>
-            <p id="hoy">Today</p>
-            <p id="temperature"><span>4</span>&deg;C</p>
-            <div id="description-container">
-                <p id="description">Sunny</p>
-                <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon">
-            </div>
-           
-    
-            </div>
-            <div id="forecast">
-                <div id="day1"><p id="pday1">One day after</p>
-                    <p id="temp1"><span>5</span>&deg;C</p>
-                    <div id="description-container1">
-                        <p id="description1">Sunny</p>
-                        <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Condição do tempo" id="weather-icon1">
-                    </div>
-                </div>
-                
-            </div>
-        </div> -->
-
-
-            
-        </main>
-        <footer>        
-            <p>Scoots - Motor Scooter Rental
-                &copy;<span id="year">2023</span>
-            </p>
-            <div id="address">
-                <p>Store One - Playa del Carmen-Cozumel Ferry dock - Centro Cozumel</p>
-                <p>Store Two - Terminal Puerta Maya - Cozumel Island</p>
-            </div>
-            <p>Mexico</p>
-            <img src="https://flagsapi.com/MX/flat/32.png" alt="Bandeira do país" id="country">
-
-            <div class="social">                            
-                            
-                <a href="https://facebook.com" target="_blank">
-                    <img src="./images/rsz_neon_social_media_facebook_azul.png" alt="">
-                </a>
-                
-                <a href="https://instagram.com" target="_blank">
-                        <img src="./images/rsz_insta_azul3.png" alt="">               
-                </a>
-                
-                </a>                   
-                <a href="https://api.whatsapp.com/send?phone=5511999999999" target="_blank">
-                    <img src="./images/rsz_neon_social_media_whatsapp_icon.png" alt="">
-                </a>
-            </div>
-        </footer>    
-    </body>
+      var marker2 = new google.maps.Marker({
+        position: location2,
+        map: map,
+        title: 'Terminal Puerta Maya'
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlaTXcUsehwmbep02rICdFRLX6d6SJq_8&callback=initMap"></script>
+</body>
 </html>

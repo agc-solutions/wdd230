@@ -488,7 +488,7 @@ h3 {
 
 
 #prices {
-    background-image:url('./moto.webp'); /*url('./2024-pioneer6.webp');*/
+    background-image:url('../images/webp/moto.webp'); /*url('./2024-pioneer6.webp');*/
     background-size: 100%;
     background-repeat: no-repeat;
     /* background-position: top, bottom; */
@@ -521,9 +521,11 @@ form {
     padding: 1em;
     border: 3px solid #ccc;
     border-radius: 1em;
-    background-image: url('./sea-6691961_640.jpg');
-    background-repeat: no-repeat;
+    background-image: url("../images/webp/seasunset.webp");
+    /* background-repeat: no-repeat; */
     background-size: 100%;
+    position: relative;
+    z-index: 1;
   }
   ::placeholder {
     color: #ffff00;
@@ -548,10 +550,10 @@ h5 p {
 
 
   #store-one {
-    background-image: url('./playa-del-camen.webp');
+    background-image: url('../images/webp/playa-del-camen.webp');
   }
   #store-two {
-    background-image: url('./isla-cozumel.webp');
+    background-image: url('../images/webp/isla-cozumel.webp');
   }
 
 
@@ -707,7 +709,10 @@ form label.top input, form label.top select, .txta {
     margin-top: 3em;
 }
 
-
+#map {
+    width: 80%;
+    height: 300px;
+}
 
 
 /* label { */
