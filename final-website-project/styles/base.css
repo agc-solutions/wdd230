@@ -339,7 +339,7 @@ footer a {
     position: relative;
     width: 0;
     height: 0;
-    transform: .5s;
+    /* transform: .5s; */
 }
 
 #forecast-bigbox #forecast {
