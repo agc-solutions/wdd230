@@ -492,7 +492,7 @@ h3 {
     background-size: 100%;
     background-repeat: no-repeat;
     /* background-position: top, bottom; */
-    background-position: fixed;
+    /* background-position: fixed; */
     /* background-position: center; */
 }
 
