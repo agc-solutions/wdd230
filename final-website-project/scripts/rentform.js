@@ -93,12 +93,16 @@ fullinfo.appendChild(countryInput);
 form.appendChild(fullinfo);
 
 
-
+const button = document.createElement("div");
+button.classList.add("button");
 const submitButton = document.createElement("input");
 submitButton.type = "submit";
-submitButton.value = "send";
+submitButton.value = "CHECK OUT";
 
-form.appendChild(submitButton);
+button.appendChild(submitButton);
+
+//form.appendChild(submitButton);
+form.appendChild(button);
 
 
 rentform.appendChild(form);
