@@ -192,7 +192,8 @@ footer a {
     color: #fff;
     font-weight: bold;
     margin-top: 10%; 
-    padding: 1px;   
+    padding: 1px;  
+    left: 50%; 
 }
 
 .slides, .slides2 {    

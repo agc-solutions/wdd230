@@ -52,4 +52,7 @@
     .pctr {
         display: flex;
     }
+    .slides2{
+        left: 30%; 
+    }
 }
