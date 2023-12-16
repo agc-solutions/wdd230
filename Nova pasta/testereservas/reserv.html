@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve</title>
+    <link rel="stylesheet" href="reserv.css">
+</head>
+<body>
+    <div class="mult-box">
+        <div class="mult-box-container">
+            <div class="local">
+                <div class="locico"></div>
+                <div class="loc-store">
+                    <label class="loc-store" for="">Picup Location</label>
+                </div>
+            </div>
+        </div>
+        <div class="arrow-icon"></div>
+    </div>
+
+    <form action="">
+        <label>Telefone <input type="number" name="telefone"></label>
+        <label>oi<input type="radio" name="store" value="Cozumel"/> Cozumel<br/></label>
+        <label class="top" for="drpoff">Dropoff Date/Time <input type="date" name="drpoff" id="drpoff">
+        <fieldset>
+            <legend>Pickup Location </legend>
+            <input type="radio" name="store" value="Cozumel"/> Cozumel<br/>
+            <input type="radio" name="store" value="Playa del Carmen"/> Playa del Carmen<br/>
+            <select name="location" id="location">
+                <option value="Playa del Carmen">Playa del Carmen</option>
+                <option value="Cozumel">Cozumel</option>
+            </select>
+        </fieldset>
+    </form>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">Opções</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Escolher...</option>
+          <option value="1">Um</option>
+          <option value="2">Dois</option>
+          <option value="3">Três</option>
+        </select>
+      </div>
+      
+      <div class="input-group mb-3">
+        <select class="custom-select" id="inputGroupSelect02">
+          <option selected>Escolher...</option>
+          <option value="1">Um</option>
+          <option value="2">Dois</option>
+          <option value="3">Três</option>
+        </select>
+        <div class="input-group-append">
+          <label class="input-group-text" for="inputGroupSelect02">Opções</label>
+        </div>
+      </div>
+      
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-secondary" type="button">Botão</button>
+        </div>
+        <select class="custom-select" id="inputGroupSelect03" aria-label="Exemplo de select com botão addon">
+          <option selected>Escolher...</option>
+          <option value="1">Um</option>
+          <option value="2">Dois</option>
+          <option value="3">Três</option>
+        </select>
+      </div>
+      
+      <div class="input-group">
+        <select class="custom-select" id="inputGroupSelect04" aria-label="Exemplo de select com botão addon">
+          <option selected>Escolher...</option>
+          <option value="1">Um</option>
+          <option value="2">Dois</option>
+          <option value="3">Três</option>
+        </select>
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button">Botão</button>
+        </div>
+      </div>
+      
+      <h1>Reservations</h1>
+      <div id="rent-info">Rental Agreement Information</div>
+      <div id="form2">Rental Details</div>
+  
+      <div id="contact-us2">Reservation Us Form</div>
+      <form action2="/my-handling-form-page" method="post">
+      <!-- <form action="tks.html" method="get"> -->
+          <div id="form2" class="form2">
+              <fieldset class="info2">
+                  <legend>Make your Reserve</legend>
+                  <div class="locations">
+                    <div class="form-content2"> 
+                        <label for="">Pickup Location:</label><br>                                           
+                            <select name="location" id="ourlocation">                            
+                                <option value="Store One - Playa del Carmen">Store One - Playa del Carmen</option>
+                                <option value="Store Two - Isla Cozumel">Store Two - Isla Cozumel</option>
+                            </select>                            
+                        </label>
+                    </div>
+                    <div class="form-content2"> 
+                        <label for="">Dropoff Location:</label><br> 
+                            <select name="location" id="ourlocation">                            
+                                <option value="Store One - Playa del Carmen">Same as Pick-up Location</option>
+                            </select>                            
+                        </label>
+                    </div>
+                </div>
+                <div class="pic-date-time">
+                    <div class="form-content2">
+                        <label class="top" for="pcdatetm">Picup Date/Time <input type="date" name="pcdatetm" id="pcdatetm">
+                        </label>
+                    </div>                    
+                    <div class="form-content2">
+                        <label class="top" for="pcdatet"><input type="time" name="pcdatet" id="pcdatet">
+                        </label>
+                    </div>
+                </div>
+                <div class="droff-date-time">
+                    <div class="form-content2">
+                        <label class="top" for="drpoff">Dropoff Date/Time <input type="date" name="drpoff" id="drpoff">
+                        </label>
+                    </div>
+                    <div class="form-content2">
+                        <label class="top" for="pcdated"><input type="time" name="pcdated" id="pcdated">
+                        </label>
+                    </div>
+                </div>
+                  <div class="form-content2">
+                      <!-- <label class="top" for="vehicle">Vehicle <input type="text" name="vt" id="vt"> -->
+                          <label for="">Vehicle:</label><br>
+                          <select name="" id="location">
+                              <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                              <option value="Honda Di Scooter">Honda Di Scooter</option>
+                              <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                              <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                              <option value="Jeep Wrangler - 4 door">Jeep Wrangler - 4 door</option>
+                              <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                          </select>
+                      </label>
+                  </div>
+              </fieldset>
+              <button id="btnfrm" type="submit">Send your message</button>
+          </div>
+      </form>
+      
+
+
+
+</body>
+</html>

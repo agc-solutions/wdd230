@@ -1,3 +1,12 @@
+const mymapURL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAlaTXcUsehwmbep02rICdFRLX6d6SJq_8&callback=initMap";
+
+async function getMymap (mymapURL) {
+    const response = await fetch(mymapURL);
+    // const data = await response.json(); 
+    // displayMymap(data.map);
+}
+getMymap(mymapURL);
+
 function initMap() {
     // Localization of dock Playa del Carmen-Cozumel Ferry
     var location1 = {lat: 20.621801673374378, lng: -87.07535187881072};

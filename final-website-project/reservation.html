@@ -60,41 +60,63 @@
     <div id="rent-info">Rental Agreement Information</div>
     <div id="form2">Rental Details</div>
 
-    <div id="contact-us2">Reservation Us Form</div>
-    <form action2="/my-handling-form-page" method="post">
+    <div id="contact-us2">Reservation Form</div>
+    <form action="/my-handling-form-page" method="post">
     <!-- <form action="tks.html" method="get"> -->
         <div id="form2" class="form2">
             <fieldset class="info2">
-                <legend>Contact Us</legend>
-                <div class="form-content2">
-                                            
-                        <select name="location" id="location">Pickup Location 
-                            <option value="Store One - Playa del Carmen">Store One - Playa del Carmen</option>
-                            <option value="Store Two - Isla Cozumel">Store Two - Isla Cozumel</option>
-                        </select>
-                    </label>
+                <legend>Reserves</legend>
+                <div class="locations">
+
+                    <div class="form-content2"> 
+                        <label for="">Pickup Location:</label><br>                                           
+                            <select name="location" id="ourlocation">                            
+                                <option value="Store One - Playa del Carmen">Store One - Playa del Carmen</option>
+                                <option value="Store Two - Isla Cozumel">Store Two - Isla Cozumel</option>
+                            </select>                            
+                        </label>
+                    </div>
+
+                    <div class="form-content2"> 
+                        <label for="">Dropoff Location:</label><br>                                           
+                            <select name="location" id="ourlocation">                            
+                                <option value="Same as Pick-up Location">Same as Pick-up Location</option>
+                            </select>                            
+                        </label>
+                    </div>
                 </div>
-                <div class="form-content2">
-                    <label class="top" for="pcdatetm">Picup Date/Time <input type="date" name="pcdatetm" id="pcdatetm"
-                            placeholder="12/12/2023" required>
-                    </label>
+
+                <div class="pic-date-time">
+
+                    <div class="form-content2">
+                        <label class="top" for="pcdatetm">Picup Date<input type="date" name="pcdatetm" id="pcdatetm">
+                                <!-- placeholder="12/12/2023" required -->
+                        </label>
+                    </div>
+                    
+                    <div class="form-content2">
+                        <label class="top" for="pcdatet">Time <input type="time" name="pcdatet" id="pcdatet">
+                        </label>
+                    </div>
+
                 </div>
-                
-                <div class="form-content2">
-                    <label class="top" for="pcdatet"><input type="time" name="pcdatet" id="pcdatet">
-                    </label>
+
+                <div class="droff-date-time">
+
+                    <div class="form-content2">
+                        <label class="top" for="drpoff">Dropoff Date<input type="date" name="drpoff" id="drpoff">
+                        </label>
+                    </div>
+                    <div class="form-content2">
+                        <label class="top" for="pcdated">Time<input type="time" name="pcdated" id="pcdated">
+                        </label>
+                    </div>
+
                 </div>
-                
-                <div class="form-content2">
-                    <label class="top" for="drpoff">Dropoff Date/Time <input type="date" name="drpoff" id="drpoff">
-                    </label>
-                </div>
-                <div class="form-content2">
-                    <label class="top" for="pcdated"><input type="time" name="pcdated" id="pcdated">
-                    </label>
-                </div>
+
                 <div class="form-content2">
                     <!-- <label class="top" for="vehicle">Vehicle <input type="text" name="vt" id="vt"> -->
+                        <label for="">Vehicle:</label><br>
                         <select name="" id="location">
                             <option value="Honda Metro Scooter">Honda Metro Scooter</option>
                             <option value="Honda Di Scooter">Honda Di Scooter</option>
@@ -106,9 +128,17 @@
                     </label>
                 </div>
             </fieldset>
-            <button id="btnfrm" type="submit">Send your message</button>
+            <!-- <button id="btnfrm" type="submit">Make your Reservation</button> -->
         </div>
     </form>
+    
+        <div class="rentform"></div>
+        <div class="togglebtn"></div>  
+
+    
+
+    <script src="scripts/rentform.js"></script>
+    <script src="scripts/btnforecast.js"></script>
 
 
 </main>

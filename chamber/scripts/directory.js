@@ -56,9 +56,7 @@ const displayCompanies = (companies) => {
 
         
 
-        business.appendChild(partner);
-
-        
+        business.appendChild(partner);       
         
     }));
     

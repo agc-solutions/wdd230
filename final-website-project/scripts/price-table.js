@@ -1,3 +1,5 @@
+const table2 = document.querySelector('#table2');
+
 const tableURL = "https://agc-solutions.github.io/wdd230/final-website-project/data/table.json";
 async function getTableRentData(tableURL) {
     const response = await fetch(tableURL);
@@ -105,4 +107,5 @@ const displayTableRent = (rentalType) => {
     table.appendChild(tbody);
   }))
 }
-document.body.appendChild(table);
+// document.body.appendChild(table);
+table2.appendChild(table);
