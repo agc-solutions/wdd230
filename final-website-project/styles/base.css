@@ -162,7 +162,7 @@ footer a {
     padding-left: 5%;
     padding-right: 5%;
 }
-#home, #contact{
+#home, #contact, #rental, #reservation{
     background: linear-gradient(180deg, #594cee 0%, #8dd0f5 100%);
     display: flex;
     justify-content: center;
@@ -179,23 +179,40 @@ footer a {
 
 
 /* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ SLIDES  ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
-.slides {
+.slides{
     height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: 36%;
+}
+.slides2{
+    height: 50px;
+    width: 500px;
+    background: #f78b00;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 10%;    
+}
+
+.slides, .slides2 {    
     width: 540px;
     border-radius: 20px;
     /* margin-top: 60px; */
-    margin-top: 36%;
+    
     overflow: hidden;
     /* position: absolute; */
     position: relative;
-    top: 50%;
-    left: 50%;
+   
     transform: translate(-50%, -50%);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
 }
 
 .slides .slide img {
+    height: 100%;
+    width: 100%;
+}
+.slides2 .slide2 p {
     height: 100%;
     width: 100%;
 }
@@ -232,10 +249,13 @@ footer a {
     width: 300%;
     height: 100%;
 }
+
 .slide {
     width: 33.333%;
     transition: .6s;
 }
+
+
 #slide1:checked ~ .s1 {
     margin-left: 0;
 }
@@ -244,7 +264,50 @@ footer a {
 }
 #slide3:checked ~ .s1 {
     margin-left: -66.666%;
+
+
 }
+.slid2 {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+}
+.slide2 {
+    width: 10%;
+    transition: .6s;
+}
+
+#slide11:checked ~ .s11 {
+    margin-left: 0px;
+}
+#slide12:checked ~ .s11 {
+    margin-left: -10%;
+}
+#slide13:checked ~ .s11 {
+    margin-left: -20%;
+}
+#slide14:checked ~ .s11 {
+    margin-left: -30%;
+}
+#slide15:checked ~ .s11 {
+    margin-left: -40%;
+}
+#slide16:checked ~ .s11 {
+    margin-left: -50%;
+}
+#slide17:checked ~ .s11 {
+    margin-left: -60%;
+}
+#slide18:checked ~ .s11 {
+    margin-left: -70%;
+}
+#slide19:checked ~ .s11 {
+    margin-left: -80%;
+}
+#slide20:checked ~ .s11 {
+    margin-left: -90%;
+}
+
 
 /* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ SLIDES  ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆  */
 
