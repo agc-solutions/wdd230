@@ -1,7 +1,7 @@
-let counter = 1;
+let counter = 11;
 
 setInterval(function() {
-    document.getElementById('slide2' + counter).checked = true;
+    document.getElementById('slide' + counter).checked = true;
     counter ++;
 
     if(counter > 20) {
